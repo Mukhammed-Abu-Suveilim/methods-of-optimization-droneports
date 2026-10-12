@@ -1,0 +1,6 @@
+{
+  "source": "https://query.wikidata.org/sparql",
+  "retrieved_utc": "2026-10-12T09:57:09.730832+00:00",
+  "license": "CC0 (Wikidata)",
+  "query": "\nSELECT ?item ?name ?coord (MAX(?popRaw) AS ?pop) ?regionLabel (GROUP_CONCAT(DISTINCT ?typeLabel; SEPARATOR=\"|\") AS ?types) WHERE {\n  VALUES ?regionLabel { \"Псковская область\"@ru \"Новгородская область\"@ru \"Тверская область\"@ru }\n  ?region rdfs:label ?regionLabel .\n  ?item wdt:P131+ ?region ;\n        wdt:P625 ?coord ;\n        rdfs:label ?name .\n  FILTER(LANG(?name) = \"ru\")\n  FILTER(REGEX(?name, \"^(городской округ |муниципальный округ |городское поселение |сельское поселение )?[АБВЮЯ]\"))\n  OPTIONAL { ?item wdt:P1082 ?popRaw . }\n  OPTIONAL { ?item wdt:P31 ?t . ?t rdfs:label ?typeLabel . FILTER(LANG(?typeLabel) = \"ru\") }\n}\nGROUP BY ?item ?name ?coord ?regionLabel\n"
+}

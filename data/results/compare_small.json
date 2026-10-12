@@ -1,0 +1,7 @@
+{
+  "milp_exact_trips": 193543,
+  "milp_plan_under_evaluator": 163318,
+  "greedy_evaluator": 199310,
+  "sa_evaluator": 228033,
+  "note": "evaluator - общий эвристический критерий для greedy/SA; MILP - точная модель на тех же данных"
+}

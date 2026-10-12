@@ -1,0 +1,105 @@
+{
+  "exp1_scale": [
+    {
+      "n": 12,
+      "greedy_trips": 199310,
+      "sa_trips": 227367,
+      "served_share": 0.3601,
+      "wall_s": 0.1
+    },
+    {
+      "n": 25,
+      "greedy_trips": 242832,
+      "sa_trips": 257036,
+      "served_share": 0.3091,
+      "wall_s": 0.5
+    },
+    {
+      "n": 50,
+      "greedy_trips": 233884,
+      "sa_trips": 234811,
+      "served_share": 0.256,
+      "wall_s": 2.5
+    },
+    {
+      "n": 75,
+      "greedy_trips": 233884,
+      "sa_trips": 233884,
+      "served_share": 0.252,
+      "wall_s": 5.2
+    }
+  ],
+  "exp2_funding": {
+    "rows": [
+      {
+        "budget_mult": 0.5,
+        "trips": 136231,
+        "served_share": 0.1468
+      },
+      {
+        "budget_mult": 0.75,
+        "trips": 195236,
+        "served_share": 0.2104
+      },
+      {
+        "budget_mult": 1.0,
+        "trips": 233884,
+        "served_share": 0.252
+      },
+      {
+        "budget_mult": 1.25,
+        "trips": 306090,
+        "served_share": 0.3298
+      },
+      {
+        "budget_mult": 1.5,
+        "trips": 324484,
+        "served_share": 0.3496
+      },
+      {
+        "budget_mult": 2.0,
+        "trips": 456345,
+        "served_share": 0.4917
+      }
+    ],
+    "share_deltas": [
+      0.0636,
+      0.0416,
+      0.0778,
+      0.0198,
+      0.1421
+    ],
+    "breakpoint_mult": 2.0
+  },
+  "exp3_data_quality": {
+    "A_drop_missing": {
+      "points": 75,
+      "greedy_trips": 233884
+    },
+    "B_impute_type_median": {
+      "points": 75,
+      "greedy_trips": 233884
+    },
+    "overlap_points": 71
+  },
+  "exp4_randomness": {
+    "seeds": [
+      233884,
+      235493,
+      237442,
+      234490,
+      233884,
+      234671,
+      234594,
+      234200,
+      235737,
+      233884
+    ],
+    "mean": 234827.9,
+    "std": 1123.6,
+    "greedy": 233884,
+    "sign_test_positive": 7,
+    "sign_test_pvalue": 0.3438,
+    "criterion": "знаковый тест для парных различий (SA seed против greedy на той же instance); ANOVA не применяется: нормальность и гомогенность дисперсий не проверялись"
+  }
+}

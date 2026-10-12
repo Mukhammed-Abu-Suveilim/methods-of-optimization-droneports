@@ -1,0 +1,42 @@
+{
+  "version": 1,
+  "status": "учебные допущения; чувствительность проверяется экспериментами",
+  "drone": {
+    "seats": 10,
+    "cruise_speed_kmh": 120,
+    "turnaround_min": 5,
+    "recharge_min": 25,
+    "range_km": 200,
+    "price_rub": 250000000
+  },
+  "droneport": {
+    "capex_small_rub": 60000000,
+    "capex_hub_rub": 120000000,
+    "hub_if_population_ge": 20000,
+    "opex_per_year_rub": 10000000,
+    "takeoffs_per_hour": 6,
+    "charge_slots_small": 2,
+    "charge_slots_hub": 4
+  },
+  "operations": {
+    "day_start_hour": 7,
+    "day_end_hour": 21,
+    "typical_days_per_year": 365,
+    "cost_per_flight_hour_rub": 50000
+  },
+  "budget": {
+    "tranche_rub_per_year": 1000000000,
+    "carry_over": true,
+    "horizon_years": 3
+  },
+  "demand": {
+    "model": "gravity",
+    "formula": "q_ij = K * P_i * P_j / (d_ij + d0)^gamma * s(d_ij); s(d) = d^2/(d^2+d1^2) - доля воздушного модального выбора; K калибруется по годовой норме поездок на жителя",
+    "gamma": 2.0,
+    "d0_km": 10.0,
+    "mode_share_d1_km": 20.0,
+    "trips_per_capita_per_year": 0.5,
+    "year_growth": [1.0, 1.15, 1.32],
+    "rounding": "floor + целочисленный остаток по строке"
+  }
+}

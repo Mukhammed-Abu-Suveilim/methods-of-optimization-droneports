@@ -1,0 +1,274 @@
+{
+  "date": "2026-10-25",
+  "checks": {
+    "main": {
+      "points": 75,
+      "edges": 1168,
+      "components": 1,
+      "isolated": 0,
+      "demand_totals": [
+        267450,
+        307571,
+        353032
+      ]
+    },
+    "small": {
+      "points": 12,
+      "edges": 28,
+      "components": 1,
+      "isolated": 0,
+      "demand_totals": [
+        181973,
+        209266,
+        240197
+      ]
+    }
+  },
+  "data_quality": {
+    "raw_rows": 3977,
+    "raw_missing_population": 1411,
+    "main_missing_population": 0,
+    "population_observation_year_present": false,
+    "duplicate_names": [
+      {
+        "wikidata_id": "Q23902848",
+        "name": "Юрино",
+        "region": "Новгородская область"
+      },
+      {
+        "wikidata_id": "Q19691485",
+        "name": "Юрьево",
+        "region": "Новгородская область"
+      },
+      {
+        "wikidata_id": "Q29567614",
+        "name": "Юрьево",
+        "region": "Новгородская область"
+      },
+      {
+        "wikidata_id": "Q4534917",
+        "name": "Юрино",
+        "region": "Псковская область"
+      },
+      {
+        "wikidata_id": "Q19989085",
+        "name": "Южный",
+        "region": "Тверская область"
+      },
+      {
+        "wikidata_id": "Q20638030",
+        "name": "Южный",
+        "region": "Тверская область"
+      },
+      {
+        "wikidata_id": "Q3328850",
+        "name": "Юрино",
+        "region": "Тверская область"
+      }
+    ]
+  },
+  "plans": {
+    "greedy": {
+      "saved_trips": 233884,
+      "recomputed_trips": 233884,
+      "recomputed_cost_rub": 2954835671,
+      "served_share": 0.252015779271227,
+      "annual_audit": [
+        {
+          "year": 1,
+          "trips": 48123,
+          "passenger_flights": 4841,
+          "min_empty_flights_from_imbalance": 3509,
+          "empty_flights_in_min_hours_solution": 3509,
+          "min_empty_flight_hours": 1111.79,
+          "assumed_empty_flight_hours": 166.866333,
+          "extra_empty_cost_rub": 47246183,
+          "original_cost_rub": 961776483,
+          "corrected_cost_rub": 1009022667,
+          "corrected_cumulative_rub": 1009022667,
+          "cumulative_budget_rub": 1000000000
+        },
+        {
+          "year": 2,
+          "trips": 79180,
+          "passenger_flights": 7933,
+          "min_empty_flights_from_imbalance": 4878,
+          "empty_flights_in_min_hours_solution": 4878,
+          "min_empty_flight_hours": 2612.945,
+          "assumed_empty_flight_hours": 511.692,
+          "extra_empty_cost_rub": 105062650,
+          "original_cost_rub": 1031430600,
+          "corrected_cost_rub": 1136493250,
+          "corrected_cumulative_rub": 2145515917,
+          "cumulative_budget_rub": 2000000000
+        },
+        {
+          "year": 3,
+          "trips": 106581,
+          "passenger_flights": 11126,
+          "min_empty_flights_from_imbalance": 6262,
+          "empty_flights_in_min_hours_solution": 6386,
+          "min_empty_flight_hours": 3431.088333,
+          "assumed_empty_flight_hours": 784.77925,
+          "extra_empty_cost_rub": 132315454,
+          "original_cost_rub": 961628587,
+          "corrected_cost_rub": 1093944042,
+          "corrected_cumulative_rub": 3239459958,
+          "cumulative_budget_rub": 3000000000
+        }
+      ]
+    },
+    "sa": {
+      "saved_trips": 237442,
+      "recomputed_trips": 237442,
+      "recomputed_cost_rub": 2936019033,
+      "served_share": 0.25584961203724355,
+      "annual_audit": [
+        {
+          "year": 1,
+          "trips": 48123,
+          "passenger_flights": 4841,
+          "min_empty_flights_from_imbalance": 3509,
+          "empty_flights_in_min_hours_solution": 3509,
+          "min_empty_flight_hours": 1111.79,
+          "assumed_empty_flight_hours": 166.866333,
+          "extra_empty_cost_rub": 47246183,
+          "original_cost_rub": 961776483,
+          "corrected_cost_rub": 1009022667,
+          "corrected_cumulative_rub": 1009022667,
+          "cumulative_budget_rub": 1000000000
+        },
+        {
+          "year": 2,
+          "trips": 82738,
+          "passenger_flights": 8355,
+          "min_empty_flights_from_imbalance": 5330,
+          "empty_flights_in_min_hours_solution": 5870,
+          "min_empty_flight_hours": 2829.149167,
+          "assumed_empty_flight_hours": 495.66175,
+          "extra_empty_cost_rub": 116674371,
+          "original_cost_rub": 952613962,
+          "corrected_cost_rub": 1069288333,
+          "corrected_cumulative_rub": 2078311000,
+          "cumulative_budget_rub": 2000000000
+        },
+        {
+          "year": 3,
+          "trips": 106581,
+          "passenger_flights": 11126,
+          "min_empty_flights_from_imbalance": 6262,
+          "empty_flights_in_min_hours_solution": 6386,
+          "min_empty_flight_hours": 3431.088333,
+          "assumed_empty_flight_hours": 784.77925,
+          "extra_empty_cost_rub": 132315454,
+          "original_cost_rub": 1021628587,
+          "corrected_cost_rub": 1153944042,
+          "corrected_cumulative_rub": 3232255042,
+          "cumulative_budget_rub": 3000000000
+        }
+      ]
+    }
+  },
+  "schedule": {
+    "timeline_reproduced": true,
+    "flight_operations_checks_passed": true,
+    "flight_operations_failures": [],
+    "charge_peaks": {
+      "Великий Новгород": 2,
+      "Валдай": 1,
+      "Яжелбицы": 1,
+      "Бологое": 1,
+      "Андреаполь": 1,
+      "Волот": 1,
+      "Борисовичи": 1,
+      "Бежаницы": 1
+    },
+    "actual_timeline_flights": 36,
+    "annual_flight_cost_rub": 482469167,
+    "temporal_passengers": {
+      "status": "Optimization terminated successfully. (HiGHS Status 7: Optimal)",
+      "claimed_daily_trips": 101,
+      "max_daily_trips_lp_upper_bound": 101.0,
+      "transfer_min": 0,
+      "all_flows_integral": true,
+      "allowances": "дробные пассажиры, все рейсы доступны пассажирам",
+      "unserved_pairs": []
+    },
+    "temporal_passengers_transfer_5min": {
+      "status": "Optimization terminated successfully. (HiGHS Status 7: Optimal)",
+      "claimed_daily_trips": 101,
+      "max_daily_trips_lp_upper_bound": 101.0,
+      "transfer_min": 5,
+      "all_flows_integral": true,
+      "allowances": "дробные пассажиры, все рейсы доступны пассажирам",
+      "unserved_pairs": []
+    },
+    "rounding_exceeds_original_annual_demand": []
+  },
+  "reruns": {
+    "small": {
+      "greedy_trips": 199310,
+      "greedy_seconds": 0.027,
+      "sa_seed": 0,
+      "sa_iterations": 400,
+      "sa_trips": 219044,
+      "sa_seconds": 0.081
+    },
+    "main": {
+      "greedy_trips": 233884,
+      "greedy_seconds": 3.892,
+      "sa_seed": 2,
+      "sa_iterations": 800,
+      "sa_trips": 237442,
+      "sa_seconds": 1.95
+    }
+  },
+  "sa_distribution": {
+    "wins": 7,
+    "ties": 3,
+    "losses": 0,
+    "best_gain_percent": 1.5212669528484213,
+    "mean_gain_percent": 0.4035761317576103,
+    "sign_test_excluding_ties_pvalue": 0.015625
+  },
+  "staged_plan_reload": {
+    "saved_trips": 236674,
+    "reloaded_trips": 236550,
+    "ambiguous_names": [
+      "Юрьево"
+    ]
+  },
+  "funding_slopes": [
+    {
+      "from_budget_mult": 0.5,
+      "to_budget_mult": 0.75,
+      "share_gain_per_budget_mult": 0.2544
+    },
+    {
+      "from_budget_mult": 0.75,
+      "to_budget_mult": 1.0,
+      "share_gain_per_budget_mult": 0.1664
+    },
+    {
+      "from_budget_mult": 1.0,
+      "to_budget_mult": 1.25,
+      "share_gain_per_budget_mult": 0.3112
+    },
+    {
+      "from_budget_mult": 1.25,
+      "to_budget_mult": 1.5,
+      "share_gain_per_budget_mult": 0.0792
+    },
+    {
+      "from_budget_mult": 1.5,
+      "to_budget_mult": 2.0,
+      "share_gain_per_budget_mult": 0.2842
+    }
+  ],
+  "frozen_input_sha256": {
+    "data/parameters.json": "a7e4d0674a1c308a562f6e2c9c30641ac96c69fff538fbd0cde4f741f1929859",
+    "data/processed/points_main.csv": "48baf349cee76833d8dae7591a02b3fcc2fa88c2577bce2cb9582ca0c845d126",
+    "data/processed/points_small.csv": "301eb53eccbc438c323ce002159aba701e98c009dd255e19ece56648ba4abbb4",
+    "data/processed/demand_main.csv": "e9812237a8c595dfc3ed9c187acf49a918f576e274a7501c9c7af85e18984b08"
+  }
+}

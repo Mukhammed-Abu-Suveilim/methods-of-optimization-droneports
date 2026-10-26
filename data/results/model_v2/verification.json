@@ -1,0 +1,38 @@
+{
+  "model_version": "2.1",
+  "verified": true,
+  "report_mode": "available_results",
+  "all_experiments_completed": false,
+  "input_hashes": {
+    "data/parameters.json": "a7e4d0674a1c308a562f6e2c9c30641ac96c69fff538fbd0cde4f741f1929859",
+    "data/processed/points_main.csv": "48baf349cee76833d8dae7591a02b3fcc2fa88c2577bce2cb9582ca0c845d126",
+    "data/processed/points_small.csv": "301eb53eccbc438c323ce002159aba701e98c009dd255e19ece56648ba4abbb4",
+    "data/processed/demand_main.csv": "e9812237a8c595dfc3ed9c187acf49a918f576e274a7501c9c7af85e18984b08"
+  },
+  "configurations": 15,
+  "validated_base_results": 228,
+  "validated_scenario_results": 55,
+  "small_gap_percent": 10.863245268930816,
+  "plan_tables_agree": true,
+  "artifact_hashes": {
+    "output\\reports\\report.md": "d5fce3bc7fbd990aae399aee4ef7188022b01a9a0eba990b07db0771f8aff664",
+    "output\\reports\\management_memo.md": "6b376a04901f2397c94cb2e51666516802a7d85648fbd60f4d3ccac751b68591",
+    "output\\pdf\\report.pdf": "b0aa0282c710f08b662047575f62a8e48a8f4f9c25cd3c6c94f0fe53e47c5be1",
+    "output\\pdf\\management_memo.pdf": "46b5e75f0ea7de0d10d7c1a1811e424e8a4fd5e831821ef5ea060df85fca79cb",
+    "data\\results\\model_v2\\plan\\budget.csv": "4bfe0ac4e7ae05413a1afa141abc5d15f40fa72eb55936c70fe3eb18665f59fb",
+    "data\\results\\model_v2\\plan\\openings.csv": "8d3c0078fd43ed7480eb209d17fdf1beecf3959856b8ddce60272b9809778788",
+    "data\\results\\model_v2\\plan\\fleet.csv": "e7f673848b36b0ba9603cdd44ecc161085ae22ee7d3a6448ec523b33fe91cfed",
+    "data\\results\\model_v2\\plan\\flights.csv": "b1019623985256a2e09ed1203acac1b2a6bcbde067cb6bb11d8eb4f4fac9c66c",
+    "data\\results\\model_v2\\plan\\charging.csv": "7fb19466e67dcf73be3684c2ee1d0f6c80b3050b004e6d1ef8632b9a0484d4aa",
+    "data\\results\\model_v2\\plan\\passenger_itineraries.csv": "ca445cb1b348cbdd5cfe32829209fde8b89a57118345eab900156353e595daf5",
+    "data\\results\\model_v2\\figures\\map_0.png": "3a8ce0a310a26184d282d863eace28990875195d0752a423d8a1322f1e0fe7ea",
+    "data\\results\\model_v2\\figures\\map_1.png": "1379a86dc5bcd835b66244ddd9f3b4973f627777271f20535de5945f4ecfa437",
+    "data\\results\\model_v2\\figures\\map_2.png": "351f4811eaa33211e414c4a44016d042a4720ff98214a3b99162f35000d0ba80",
+    "data\\results\\model_v2\\figures\\map_3.png": "3f8fef738aba6524fe36b76abe3efa5002e36801901824f36a40364faf0f6a86"
+  },
+  "pdf_pages": {
+    "output\\pdf\\report.pdf": 16,
+    "output\\pdf\\management_memo.pdf": 1
+  },
+  "visual_review": "passed: all 17 pages; see pdf_visual_review.json"
+}

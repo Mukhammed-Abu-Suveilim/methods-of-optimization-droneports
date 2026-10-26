@@ -12,6 +12,19 @@ wheels/
 # Jupyter
 .ipynb_checkpoints/
 
+# Кэши инструментов качества
+.cache/
+.mypy_cache/
+.ruff_cache/
+
 # Локальная оркестрация агентов — не публиковать
 AGENTS.md
 PROJECT.md
+
+# Временные рендеры, процессы и рабочие файлы решателя
+/tmp/
+/output/background/
+/output/analysis/analyze_project.py
+/output/analysis/analyze_project.py.txt
+/output/analysis/profile_funding2_plan.json
+/small_bound_*-pulp.*

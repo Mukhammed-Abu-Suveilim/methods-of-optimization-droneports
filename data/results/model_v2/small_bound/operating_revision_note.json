@@ -1,0 +1,6 @@
+{
+  "from_operating_model": "2.0",
+  "to_operating_model": "2.1",
+  "reason": "Lifetime basing only restricts scheduled feasibility; annual relaxation unchanged. Re-evaluate lower bounds with 2.1; retain correct CBC upper bounds.",
+  "invalid_probe_excluded": true
+}

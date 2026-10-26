@@ -1,0 +1,48 @@
+Welcome to the CBC MILP Solver 
+Version: 2.10.3 
+Build Date: Dec 15 2019 
+
+command line - C:\Users\Mo\work\study\Магистратура\2к\1с\Методы оптимзации\.venv\Lib\site-packages\pulp\apis\../solverdir/cbc/win/i64/cbc.exe C:\Users\Mo\AppData\Local\Temp\55973a59327e4810b7f19d1612123212-pulp.mps -max -sec 420 -randomSeed 1 -randomCbcSeed 1 -threads 0 -timeMode elapsed -solve -printingOptions all -solution C:\Users\Mo\AppData\Local\Temp\55973a59327e4810b7f19d1612123212-pulp.sol (default strategy 1)
+At line 2 NAME          MODEL
+At line 3 ROWS
+At line 5836 COLUMNS
+At line 79359 RHS
+At line 85191 BOUNDS
+At line 85603 ENDATA
+Problem MODEL has 5831 rows, 22983 columns and 72298 elements
+Coin0008I MODEL read with 0 errors
+seconds was changed from 1e+100 to 420
+randomSeed was changed from 1234567 to 1
+randomCbcSeed was changed from -1 to 1
+Option for timeMode changed from cpu to elapsed
+Continuous objective value is 181312 - 2.58 seconds
+Cgl0004I processed model has 5433 rows, 22983 columns (411 integer (36 of which binary)) and 71156 elements
+Cbc0031I 84 added rows had average density of 598.55952
+Cbc0013I At root node, 84 cuts changed objective from -181311.84 to -176438.71 in 10 passes
+Cbc0014I Cut generator 0 (Probing) - 12 row cuts average 2.1 elements, 56 column cuts (56 active)  in 0.051 seconds - new frequency is 1
+Cbc0014I Cut generator 1 (Gomory) - 166 row cuts average 826.8 elements, 0 column cuts (0 active)  in 0.277 seconds - new frequency is 1
+Cbc0014I Cut generator 2 (Knapsack) - 0 row cuts average 0.0 elements, 0 column cuts (0 active)  in 0.089 seconds - new frequency is -100
+Cbc0014I Cut generator 3 (Clique) - 0 row cuts average 0.0 elements, 0 column cuts (0 active)  in 0.000 seconds - new frequency is -100
+Cbc0014I Cut generator 4 (MixedIntegerRounding2) - 5 row cuts average 9.8 elements, 0 column cuts (0 active)  in 0.038 seconds - new frequency is -100
+Cbc0014I Cut generator 5 (FlowCover) - 0 row cuts average 0.0 elements, 0 column cuts (0 active)  in 0.254 seconds - new frequency is -100
+Cbc0014I Cut generator 6 (TwoMirCuts) - 58 row cuts average 92.2 elements, 0 column cuts (0 active)  in 0.171 seconds - new frequency is 1
+Cbc0010I After 0 nodes, 1 on tree, 1e+50 best solution, best possible -176438.71 (8.48 seconds)
+Cbc0010I After 100 nodes, 60 on tree, 1e+50 best solution, best possible -176438.71 (23.79 seconds)
+Cbc0004I Integer solution of -23607 found after 30296 iterations and 187 nodes (24.73 seconds)
+Cbc0038I Full problem 5433 rows 22983 columns, reduced to 2549 rows 7069 columns
+Cbc0038I Full problem 5433 rows 22983 columns, reduced to 849 rows 1306 columns
+Cbc0010I After 200 nodes, 95 on tree, -23607 best solution, best possible -176438.71 (32.81 seconds)
+Cbc0012I Integer solution of -51161 found by rounding after 50921 iterations and 238 nodes (35.54 seconds)
+Cbc0012I Integer solution of -51356 found by rounding after 60840 iterations and 251 nodes (39.85 seconds)
+Cbc0012I Integer solution of -51391 found by rounding after 62507 iterations and 293 nodes (41.48 seconds)
+Cbc0038I Full problem 5433 rows 22983 columns, reduced to 411 rows 806 columns
+Cbc0010I After 300 nodes, 48 on tree, -51391 best solution, best possible -176438.71 (42.50 seconds)
+Cbc0012I Integer solution of -51401 found by rounding after 62941 iterations and 318 nodes (43.03 seconds)
+Cbc0010I After 400 nodes, 46 on tree, -51401 best solution, best possible -176438.71 (44.94 seconds)
+Cbc0038I Full problem 5433 rows 22983 columns, reduced to 417 rows 813 columns
+Cbc0010I After 500 nodes, 42 on tree, -51401 best solution, best possible -176438.71 (51.10 seconds)
+Cbc0010I After 600 nodes, 64 on tree, -51401 best solution, best possible -176438.71 (53.96 seconds)
+Cbc0038I Full problem 5433 rows 22983 columns, reduced to 420 rows 819 columns
+Cbc0010I After 700 nodes, 73 on tree, -51401 best solution, best possible -176438.71 (57.16 seconds)
+Cbc0010I After 800 nodes, 79 on tree, -51401 best solution, best possible -176438.71 (59.35 seconds)
+Cbc0038I Full problem 5433 rows 22983 columns, reduced to 410 rows 809 

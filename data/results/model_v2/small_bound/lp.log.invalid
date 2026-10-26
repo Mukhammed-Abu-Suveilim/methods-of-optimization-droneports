@@ -1,0 +1,42 @@
+Welcome to the CBC MILP Solver 
+Version: 2.10.3 
+Build Date: Dec 15 2019 
+
+command line - C:\Users\Mo\work\study\Магистратура\2к\1с\Методы оптимзации\.venv\Lib\site-packages\pulp\apis\../solverdir/cbc/win/i64/cbc.exe C:\Users\Mo\AppData\Local\Temp\8ea55eb43e544da5a66c820fa917d90b-pulp.mps -max -threads 0 -timeMode elapsed -solve -printingOptions all -solution C:\Users\Mo\AppData\Local\Temp\8ea55eb43e544da5a66c820fa917d90b-pulp.sol (default strategy 1)
+At line 2 NAME          MODEL
+At line 3 ROWS
+At line 5836 COLUMNS
+At line 78537 RHS
+At line 84369 BOUNDS
+At line 84745 ENDATA
+Problem MODEL has 5831 rows, 22983 columns and 72298 elements
+Coin0008I MODEL read with 0 errors
+Option for timeMode changed from cpu to elapsed
+Presolve 5433 (-398) rows, 22983 (0) columns and 71156 (-1142) elements
+Perturbing problem by 0.001% of 14.24729 - largest nonzero change 0.00012833076 ( 0.00090073798%) - largest zero change 0.0001283118
+0  Obj -0 Dual inf 5641.8892 (396)
+183  Obj 631427.72 Primal inf 345468.67 (785)
+366  Obj 631426.56 Primal inf 1873400.1 (824)
+513  Obj 631424.6 Primal inf 1660704.4 (867)
+662  Obj 631421.79 Primal inf 3831779.9 (926)
+834  Obj 631411.98 Primal inf 4233868.3 (991)
+1017  Obj 381300.7 Primal inf 8255554.5 (964)
+1200  Obj 304560.69 Primal inf 4250543.5 (850)
+1383  Obj 264938.91 Primal inf 475889.92 (834)
+1566  Obj 244289.42 Primal inf 471145.89 (801)
+1749  Obj 231462.4 Primal inf 111794.07 (752)
+1932  Obj 220628.07 Primal inf 268358.74 (714)
+2115  Obj 214853.37 Primal inf 122949.68 (655)
+2298  Obj 210619.82 Primal inf 332289.22 (558)
+2481  Obj 194832.84 Primal inf 317178.5 (503)
+2664  Obj 190362.75 Primal inf 184566.03 (453)
+2847  Obj 183913.02 Primal inf 58388.283 (296)
+3030  Obj 182025.39 Primal inf 11824.898 (144)
+3213  Obj 181310.4 Primal inf 361.37937 (7)
+3219  Obj 181309.35
+Optimal - objective value 181311.84
+After Postsolve, objective 181311.84, infeasibilities - dual 0 (0), primal 0 (0)
+Optimal objective 181311.8376 - 3219 iterations time 0.312, Presolve 0.02
+Option for printingOptions changed from normal to all
+Total time (CPU seconds):       0.42   (Wallclock seconds):       0.42
+

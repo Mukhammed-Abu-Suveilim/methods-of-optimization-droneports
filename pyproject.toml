@@ -1,7 +1,7 @@
 [project]
 name = "droneports"
 version = "0.1.0"
-description = "Add your description here"
+description = "Reproducible three-year passenger droneport optimization"
 requires-python = ">=3.11"
 dependencies = [
     "matplotlib>=3.11.2",
@@ -17,4 +17,47 @@ dependencies = [
 dev = [
     "ipykernel>=7.4.0",
     "jupyter>=1.1.1",
+    "mypy>=2.4.0",
+    "pandas-stubs>=3.0.5.260914",
+    "pypdf>=6.21.2",
+    "reportlab>=5.1.0",
+    "ruff>=0.17.2",
+    "scipy-stubs>=1.17.1.5",
+    "types-networkx>=3.6.1.20261024",
+    "types-reportlab>=5.0.0.20261008",
+    "types-requests>=2.33.0.20261006",
 ]
+
+[tool.ruff]
+target-version = "py311"
+line-length = 79
+extend-exclude = [".cache", "data"]
+
+[tool.ruff.lint]
+select = ["E", "F", "W", "I", "N"]
+extend-select = ["W505"]
+
+[tool.ruff.lint.pycodestyle]
+max-doc-length = 72
+
+[tool.ruff.format]
+quote-style = "double"
+indent-style = "space"
+line-ending = "auto"
+docstring-code-format = true
+
+[tool.mypy]
+python_version = "3.11"
+files = ["."]
+mypy_path = "."
+explicit_package_bases = true
+exclude = '(^|/)(data|build|dist|node_modules)/'
+check_untyped_defs = true
+disallow_untyped_defs = true
+disallow_incomplete_defs = true
+no_implicit_optional = true
+warn_return_any = true
+warn_redundant_casts = true
+warn_unused_ignores = true
+warn_unused_configs = true
+show_error_codes = true

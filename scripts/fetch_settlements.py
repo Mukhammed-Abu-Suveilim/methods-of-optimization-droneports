@@ -1,3 +1,5 @@
+"""Получение нового сырого снимка Wikidata с происхождением данных."""
+
 import json
 import re
 from datetime import datetime, timezone
@@ -6,14 +8,20 @@ from pathlib import Path
 import pandas as pd
 import requests
 
-NAME_PREFIX_RE = re.compile(r"^(городской округ|муниципальный округ|городское поселение|сельское поселение)\s+")
+NAME_PREFIX_RE = re.compile(
+    (
+        "^(городской округ|муниципальный округ|городск"
+        "ое поселение|сельское поселение)\\s+"
+    )
+)
 
 ENDPOINT = "https://query.wikidata.org/sparql"
 REGIONS = ["Псковская область", "Новгородская область", "Тверская область"]
 LETTERS = ["А", "Б", "В", "Ю", "Я"]
 
 QUERY = """
-SELECT ?item ?name ?coord (MAX(?popRaw) AS ?pop) ?regionLabel (GROUP_CONCAT(DISTINCT ?typeLabel; SEPARATOR="|") AS ?types) WHERE {
+SELECT ?item ?name ?coord (MAX(?popRaw) AS ?pop) ?regionLabel
+       (GROUP_CONCAT(DISTINCT ?typeLabel; SEPARATOR="|") AS ?types) WHERE {
   VALUES ?regionLabel { %s }
   ?region rdfs:label ?regionLabel .
   ?item wdt:P131+ ?region ;
@@ -22,31 +30,43 @@ SELECT ?item ?name ?coord (MAX(?popRaw) AS ?pop) ?regionLabel (GROUP_CONCAT(DIST
   FILTER(LANG(?name) = "ru")
   FILTER(%s)
   OPTIONAL { ?item wdt:P1082 ?popRaw . }
-  OPTIONAL { ?item wdt:P31 ?t . ?t rdfs:label ?typeLabel . FILTER(LANG(?typeLabel) = "ru") }
+  OPTIONAL {
+    ?item wdt:P31 ?t . ?t rdfs:label ?typeLabel .
+    FILTER(LANG(?typeLabel) = "ru")
+  }
 }
 GROUP BY ?item ?name ?coord ?regionLabel
 """
 
 
-def build_query():
+def build_query() -> str:
+    """Составить исходный SPARQL-запрос варианта А."""
     values = " ".join(f'"{r}"@ru' for r in REGIONS)
-    prefixes = "(городской округ |муниципальный округ |городское поселение |сельское поселение )?"
+    prefixes = (
+        "(городской округ |муниципальный округ |городс"
+        "кое поселение |сельское поселение )?"
+    )
     letter_filter = f'REGEX(?name, "^{prefixes}[{"".join(LETTERS)}]")'
     return QUERY % (values, letter_filter)
 
 
-def parse_coord(value):
+def parse_coord(value: str) -> tuple[float, float]:
+    """Преобразовать координаты Point в широту и долготу."""
     inner = value[value.index("(") + 1 : value.index(")")]
     lon, lat = inner.split()
     return float(lat), float(lon)
 
 
-def main():
+def main() -> None:
+    """Получить снимок, не перезаписывая существующий архив."""
+    # 1. Выполнить опубликованный запрос с ограничением ожидания.
     query = build_query()
     resp = requests.get(
         ENDPOINT,
         params={"query": query, "format": "json"},
-        headers={"User-Agent": "droneports-study-project/0.1 (educational research)"},
+        headers={
+            "User-Agent": "droneports-study-project/0.1 (educational research)"
+        },
         timeout=180,
     )
     resp.raise_for_status()
@@ -68,11 +88,17 @@ def main():
             }
         )
 
-    df = pd.DataFrame(rows).drop_duplicates("wikidata_id").sort_values(["region", "name"])
+    df = (
+        pd.DataFrame(rows)
+        .drop_duplicates("wikidata_id")
+        .sort_values(["region", "name"])
+    )
     out_dir = Path("data/raw")
     out_dir.mkdir(parents=True, exist_ok=True)
     stamp = datetime.now(timezone.utc).strftime("%Y%m%d")
     csv_path = out_dir / f"wikidata_settlements_{stamp}.csv"
+    if csv_path.exists():
+        raise FileExistsError("Снимок уже существует; перезапись запрещена")
     df.to_csv(csv_path, index=False)
     (out_dir / f"wikidata_settlements_{stamp}.provenance.json").write_text(
         json.dumps(
@@ -88,8 +114,12 @@ def main():
         encoding="utf-8",
     )
     print(f"rows: {len(df)} -> {csv_path}")
-    print(df.groupby(["region", df["name"].str[0]]).size().unstack(fill_value=0))
-    print("missing population share:", round(df["population"].isna().mean(), 3))
+    print(
+        df.groupby(["region", df["name"].str[0]]).size().unstack(fill_value=0)
+    )
+    print(
+        "missing population share:", round(df["population"].isna().mean(), 3)
+    )
 
 
 if __name__ == "__main__":

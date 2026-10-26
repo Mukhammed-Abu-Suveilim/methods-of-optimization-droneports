@@ -1,0 +1,47 @@
+Welcome to the CBC MILP Solver 
+Version: 2.10.3 
+Build Date: Dec 15 2019 
+
+command line - C:\Users\Mo\work\study\Магистратура\2к\1с\Методы оптимзации\.venv\Lib\site-packages\pulp\apis\../solverdir/cbc/win/i64/cbc.exe C:\Users\Mo\AppData\Local\Temp\fd28cdddfec44ec48193882012259e4a-pulp.mps -max -threads 0 -timeMode elapsed -solve -printingOptions all -solution C:\Users\Mo\AppData\Local\Temp\fd28cdddfec44ec48193882012259e4a-pulp.sol (default strategy 1)
+At line 2 NAME          MODEL
+At line 3 ROWS
+At line 5836 COLUMNS
+At line 78162 RHS
+At line 83994 BOUNDS
+At line 84370 ENDATA
+Problem MODEL has 5831 rows, 22983 columns and 71926 elements
+Coin0008I MODEL read with 0 errors
+Option for timeMode changed from cpu to elapsed
+Presolve 5435 (-396) rows, 22983 (0) columns and 71530 (-396) elements
+Perturbing problem by 0.001% of 14.24729 - largest nonzero change 0.00012833076 ( 0.00090073798%) - largest zero change 0.00012489864
+0  Obj -0 Dual inf 5641.8892 (396)
+183  Obj 631427.72 Primal inf 345309.53 (784)
+366  Obj 631426.76 Primal inf 211241.37 (787)
+549  Obj 631425.51 Primal inf 3695758 (848)
+685  Obj 631424.24 Primal inf 2740358.8 (880)
+827  Obj 631421.76 Primal inf 2275461.2 (897)
+1002  Obj 631410.27 Primal inf 4229984.7 (922)
+1185  Obj 453245.52 Primal inf 3208266.8 (886)
+1368  Obj 398091.31 Primal inf 513214.22 (831)
+1551  Obj 384272.15 Primal inf 265805.06 (816)
+1734  Obj 372919.16 Primal inf 161122.62 (797)
+1917  Obj 367324.55 Primal inf 124871.39 (768)
+2100  Obj 359469.66 Primal inf 91679.415 (763)
+2283  Obj 355739.22 Primal inf 53026.171 (712)
+2466  Obj 353570.2 Primal inf 32176.019 (619)
+2649  Obj 349540.87 Primal inf 139637.03 (478)
+2832  Obj 347285.13 Primal inf 103641.7 (443)
+3015  Obj 345756.52 Primal inf 9845.7951 (367)
+3198  Obj 344450.81 Primal inf 19001.523 (200)
+3381  Obj 343860.95 Primal inf 653.98293 (19)
+3411  Obj 343834.96
+Optimal - objective value 343839.88
+After Postsolve, objective 343839.88, infeasibilities - dual 0 (0), primal 3.7683716e-07 (1)
+Presolved model was optimal, full model needs cleaning up
+0  Obj 343839.88 Primal inf 2564.8377 (3)
+2  Obj 343839.88
+Optimal - objective value 343839.88
+Optimal objective 343839.8844 - 3413 iterations time 0.162, Presolve 0.01
+Option for printingOptions changed from normal to all
+Total time (CPU seconds):       0.22   (Wallclock seconds):       0.22
+

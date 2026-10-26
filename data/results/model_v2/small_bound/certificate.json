@@ -1,0 +1,67 @@
+{
+  "relaxation_version": "annual-resource-2",
+  "configuration_hash": "28326ce888f34aaade6c8f9b0146aa7674a7833d8b2df66f4e9529679d330cb8",
+  "input_hashes": {
+    "data/parameters.json": "a7e4d0674a1c308a562f6e2c9c30641ac96c69fff538fbd0cde4f741f1929859",
+    "data/processed/points_main.csv": "48baf349cee76833d8dae7591a02b3fcc2fa88c2577bce2cb9582ca0c845d126",
+    "data/processed/points_small.csv": "301eb53eccbc438c323ce002159aba701e98c009dd255e19ece56648ba4abbb4",
+    "data/processed/demand_main.csv": "e9812237a8c595dfc3ed9c187acf49a918f576e274a7501c9c7af85e18984b08"
+  },
+  "model_version": "2.1",
+  "lp_upper_bound": 343839.8843909,
+  "upper_bound": 242700.10799999998,
+  "lower_bound": 216335,
+  "gap_percent": 10.863245268930816,
+  "definition": "100*(upper-scheduled_lower)/upper",
+  "attempts": [
+    {
+      "limit_s": 420,
+      "wall_s": 422.2985854999997,
+      "solver_status": "Optimal",
+      "solution_status": "Solution Found",
+      "termination": "time_limit",
+      "has_integer_incumbent": true,
+      "scheduled_lower_bound": 162242,
+      "upper_bound": 275008.12299999996,
+      "gap_percent": 41.00465170623341
+    },
+    {
+      "limit_s": 840,
+      "wall_s": 842.7038141000003,
+      "solver_status": "Optimal",
+      "solution_status": "Solution Found",
+      "termination": "time_limit",
+      "has_integer_incumbent": true,
+      "scheduled_lower_bound": 162242,
+      "upper_bound": 266419.982,
+      "gap_percent": 39.10291608682716
+    },
+    {
+      "limit_s": 1680,
+      "wall_s": 1683.2961232999996,
+      "solver_status": "Optimal",
+      "solution_status": "Solution Found",
+      "termination": "time_limit",
+      "has_integer_incumbent": true,
+      "scheduled_lower_bound": 162242,
+      "upper_bound": 258256.228,
+      "gap_percent": 37.17789450560704
+    },
+    {
+      "limit_s": 3360,
+      "wall_s": 3363.7203508000002,
+      "solver_status": "Optimal",
+      "solution_status": "Solution Found",
+      "termination": "time_limit",
+      "has_integer_incumbent": true,
+      "scheduled_lower_bound": 216335,
+      "upper_bound": 242700.10799999998,
+      "gap_percent": 10.863245268930816
+    }
+  ],
+  "stale_attempts": 0,
+  "adaptive": true,
+  "complete": false,
+  "stopping_rule": "optimal or 3 gap gains <0.1 percentage point",
+  "relaxation_proof": "Each day starts/ends full. Recharge restores <=range; distance<=range*charges. Actual flight+turn+charge time fits fleet hours. Omitting event ordering enlarges feasibility."
+}

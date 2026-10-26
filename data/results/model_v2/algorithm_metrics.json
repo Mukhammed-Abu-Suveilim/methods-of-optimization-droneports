@@ -1,0 +1,134 @@
+[
+  {
+    "method": "Main greedy",
+    "trips": 224259,
+    "served_share": 0.24164460434910506,
+    "cost_rub": 2759549666.666667,
+    "loaded_flights": 24436,
+    "empty_flights": 15132,
+    "fleet": [
+      1,
+      2,
+      3
+    ],
+    "ports": [
+      7,
+      9,
+      10
+    ],
+    "valid": true,
+    "upper_bound": 928053.0,
+    "gap_percent": 75.83553956508949,
+    "bound_kind": "total demand"
+  },
+  {
+    "method": "Main staged",
+    "trips": 228367,
+    "served_share": 0.24607107568210004,
+    "cost_rub": 2786768666.666667,
+    "loaded_flights": 24800,
+    "empty_flights": 14040,
+    "fleet": [
+      1,
+      2,
+      3
+    ],
+    "ports": [
+      6,
+      9,
+      10
+    ],
+    "valid": true,
+    "upper_bound": 928053.0,
+    "gap_percent": 75.39289243178999,
+    "bound_kind": "total demand"
+  },
+  {
+    "method": "Main SA",
+    "trips": 250647,
+    "served_share": 0.2700783252680612,
+    "cost_rub": 2843711083.333333,
+    "loaded_flights": 27326,
+    "empty_flights": 13684,
+    "fleet": [
+      1,
+      2,
+      3
+    ],
+    "ports": [
+      6,
+      10,
+      11
+    ],
+    "valid": true,
+    "upper_bound": 928053.0,
+    "gap_percent": 72.99216747319387,
+    "bound_kind": "total demand"
+  },
+  {
+    "method": "Small greedy",
+    "trips": 150905,
+    "served_share": 0.2389870073926732,
+    "cost_rub": 2999250000.0,
+    "loaded_flights": 18850,
+    "empty_flights": 5270,
+    "fleet": [
+      2,
+      3,
+      4
+    ],
+    "ports": [
+      5,
+      6,
+      7
+    ],
+    "valid": true,
+    "upper_bound": 242700.10799999998,
+    "gap_percent": 37.822442172131204,
+    "bound_kind": "CBC"
+  },
+  {
+    "method": "Small SA",
+    "trips": 216335,
+    "served_share": 0.3426079602683407,
+    "cost_rub": 2972430666.6666665,
+    "loaded_flights": 26417,
+    "empty_flights": 4299,
+    "fleet": [
+      1,
+      3,
+      4
+    ],
+    "ports": [
+      5,
+      6,
+      6
+    ],
+    "valid": true,
+    "upper_bound": 242700.10799999998,
+    "gap_percent": 10.863245268930816,
+    "bound_kind": "CBC"
+  },
+  {
+    "method": "Small MILP-derived",
+    "trips": 156352,
+    "served_share": 0.2476133764942132,
+    "cost_rub": 2964836250.0,
+    "loaded_flights": 19837,
+    "empty_flights": 5011,
+    "fleet": [
+      1,
+      3,
+      4
+    ],
+    "ports": [
+      5,
+      6,
+      6
+    ],
+    "valid": true,
+    "upper_bound": 242700.10799999998,
+    "gap_percent": 35.57810860141849,
+    "bound_kind": "CBC"
+  }
+]

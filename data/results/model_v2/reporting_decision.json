@@ -1,0 +1,7 @@
+{
+  "decision": "Publish verified available results; stop additional CBC refinement",
+  "date": "2026-10-26",
+  "bound_search_converged": false,
+  "certificate_preserved": true,
+  "remaining_experiments_completed": false
+}

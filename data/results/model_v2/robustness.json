@@ -1,0 +1,1922 @@
+{
+  "model_version": "2.1",
+  "input_hashes": {
+    "data/parameters.json": "a7e4d0674a1c308a562f6e2c9c30641ac96c69fff538fbd0cde4f741f1929859",
+    "data/processed/points_main.csv": "48baf349cee76833d8dae7591a02b3fcc2fa88c2577bce2cb9582ca0c845d126",
+    "data/processed/points_small.csv": "301eb53eccbc438c323ce002159aba701e98c009dd255e19ece56648ba4abbb4",
+    "data/processed/demand_main.csv": "e9812237a8c595dfc3ed9c187acf49a918f576e274a7501c9c7af85e18984b08"
+  },
+  "baseline_hash": "484ed31d512a67c0362e0f275f31547e5e227709e6f355cbd351c6bcbb4e6d0e",
+  "recourse_version": 3,
+  "baseline_state_hash": "35854e9f18a2acfdef8be1ab12cd926ba6299a724125f9c6d97f4343f5e5ce32",
+  "base_scenarios": [
+    {
+      "scenario": "base",
+      "trips": 250647,
+      "cost_rub": 2843711083.333333,
+      "valid": true,
+      "per_year": [
+        45419,
+        84872,
+        120356
+      ],
+      "schedule_reference": "base"
+    },
+    {
+      "scenario": "low",
+      "trips": 200887,
+      "cost_rub": 2823100500.0,
+      "valid": true,
+      "per_year": [
+        35568,
+        69039,
+        96280
+      ],
+      "schedule_reference": "low"
+    },
+    {
+      "scenario": "high",
+      "trips": 282451,
+      "cost_rub": 2819396250.0,
+      "valid": true,
+      "per_year": [
+        49343,
+        97184,
+        135924
+      ],
+      "schedule_reference": "high"
+    },
+    {
+      "scenario": "range160",
+      "trips": 246919,
+      "cost_rub": 2815155916.6666665,
+      "valid": true,
+      "per_year": [
+        44889,
+        82658,
+        119372
+      ],
+      "schedule_reference": "range160"
+    },
+    {
+      "scenario": "failure_Q23905997",
+      "trips": 250647,
+      "cost_rub": 2843711083.333333,
+      "valid": true,
+      "per_year": [
+        45419,
+        84872,
+        120356
+      ],
+      "schedule_reference": "base"
+    },
+    {
+      "scenario": "failure_Q4066438",
+      "trips": 250647,
+      "cost_rub": 2843711083.333333,
+      "valid": true,
+      "per_year": [
+        45419,
+        84872,
+        120356
+      ],
+      "schedule_reference": "base"
+    },
+    {
+      "scenario": "failure_Q29566984",
+      "trips": 250647,
+      "cost_rub": 2843711083.333333,
+      "valid": true,
+      "per_year": [
+        45419,
+        84872,
+        120356
+      ],
+      "schedule_reference": "base"
+    },
+    {
+      "scenario": "failure_Q108786941",
+      "trips": 250647,
+      "cost_rub": 2843711083.333333,
+      "valid": true,
+      "per_year": [
+        45419,
+        84872,
+        120356
+      ],
+      "schedule_reference": "base"
+    },
+    {
+      "scenario": "failure_Q4071757",
+      "trips": 250647,
+      "cost_rub": 2843711083.333333,
+      "valid": true,
+      "per_year": [
+        45419,
+        84872,
+        120356
+      ],
+      "schedule_reference": "base"
+    },
+    {
+      "scenario": "failure_Q1970884",
+      "trips": 243321,
+      "cost_rub": 2833477083.333333,
+      "valid": true,
+      "per_year": [
+        45419,
+        84872,
+        113030
+      ],
+      "schedule_reference": "failure_Q1970884"
+    },
+    {
+      "scenario": "failure_Q4090210",
+      "trips": 241725,
+      "cost_rub": 2846025000.0,
+      "valid": true,
+      "per_year": [
+        45419,
+        84872,
+        111434
+      ],
+      "schedule_reference": "failure_Q4090210"
+    },
+    {
+      "scenario": "failure_Q4091244",
+      "trips": 245092,
+      "cost_rub": 2841584166.6666665,
+      "valid": true,
+      "per_year": [
+        45419,
+        84872,
+        114801
+      ],
+      "schedule_reference": "failure_Q4091244"
+    },
+    {
+      "scenario": "failure_Q132714",
+      "trips": 213720,
+      "cost_rub": 2678571916.6666665,
+      "valid": true,
+      "per_year": [
+        45419,
+        84872,
+        83429
+      ],
+      "schedule_reference": "failure_Q132714"
+    },
+    {
+      "scenario": "failure_Q4097035",
+      "trips": 236143,
+      "cost_rub": 2848557333.333333,
+      "valid": true,
+      "per_year": [
+        45419,
+        84872,
+        105852
+      ],
+      "schedule_reference": "failure_Q4097035"
+    },
+    {
+      "scenario": "failure_Q132947",
+      "trips": 242832,
+      "cost_rub": 2849619750.0,
+      "valid": true,
+      "per_year": [
+        45419,
+        84872,
+        112541
+      ],
+      "schedule_reference": "failure_Q132947"
+    },
+    {
+      "scenario": "failure_Q2235",
+      "trips": 170960,
+      "cost_rub": 2680502000.0,
+      "valid": true,
+      "per_year": [
+        45419,
+        84872,
+        40669
+      ],
+      "schedule_reference": "failure_Q2235"
+    },
+    {
+      "scenario": "failure_Q1970880",
+      "trips": 248056,
+      "cost_rub": 2843586166.6666665,
+      "valid": true,
+      "per_year": [
+        45419,
+        84872,
+        117765
+      ],
+      "schedule_reference": "failure_Q1970880"
+    },
+    {
+      "scenario": "failure_Q4124170",
+      "trips": 245164,
+      "cost_rub": 2849677666.6666665,
+      "valid": true,
+      "per_year": [
+        45419,
+        84872,
+        114873
+      ],
+      "schedule_reference": "failure_Q4124170"
+    },
+    {
+      "scenario": "failure_Q641418",
+      "trips": 250647,
+      "cost_rub": 2843711083.333333,
+      "valid": true,
+      "per_year": [
+        45419,
+        84872,
+        120356
+      ],
+      "schedule_reference": "base"
+    },
+    {
+      "scenario": "failure_Q4533539",
+      "trips": 250647,
+      "cost_rub": 2843711083.333333,
+      "valid": true,
+      "per_year": [
+        45419,
+        84872,
+        120356
+      ],
+      "schedule_reference": "base"
+    },
+    {
+      "scenario": "failure_Q23902848",
+      "trips": 250647,
+      "cost_rub": 2843711083.333333,
+      "valid": true,
+      "per_year": [
+        45419,
+        84872,
+        120356
+      ],
+      "schedule_reference": "base"
+    },
+    {
+      "scenario": "failure_Q19691485",
+      "trips": 250647,
+      "cost_rub": 2843711083.333333,
+      "valid": true,
+      "per_year": [
+        45419,
+        84872,
+        120356
+      ],
+      "schedule_reference": "base"
+    },
+    {
+      "scenario": "failure_Q29567614",
+      "trips": 250647,
+      "cost_rub": 2843711083.333333,
+      "valid": true,
+      "per_year": [
+        45419,
+        84872,
+        120356
+      ],
+      "schedule_reference": "base"
+    },
+    {
+      "scenario": "failure_Q14621237",
+      "trips": 250647,
+      "cost_rub": 2843711083.333333,
+      "valid": true,
+      "per_year": [
+        45419,
+        84872,
+        120356
+      ],
+      "schedule_reference": "base"
+    },
+    {
+      "scenario": "failure_Q29404543",
+      "trips": 250647,
+      "cost_rub": 2843711083.333333,
+      "valid": true,
+      "per_year": [
+        45419,
+        84872,
+        120356
+      ],
+      "schedule_reference": "base"
+    },
+    {
+      "scenario": "failure_Q4351871",
+      "trips": 250647,
+      "cost_rub": 2843711083.333333,
+      "valid": true,
+      "per_year": [
+        45419,
+        84872,
+        120356
+      ],
+      "schedule_reference": "base"
+    },
+    {
+      "scenario": "failure_Q13643783",
+      "trips": 250647,
+      "cost_rub": 2843711083.333333,
+      "valid": true,
+      "per_year": [
+        45419,
+        84872,
+        120356
+      ],
+      "schedule_reference": "base"
+    },
+    {
+      "scenario": "failure_Q29403166",
+      "trips": 250647,
+      "cost_rub": 2843711083.333333,
+      "valid": true,
+      "per_year": [
+        45419,
+        84872,
+        120356
+      ],
+      "schedule_reference": "base"
+    },
+    {
+      "scenario": "failure_Q29402306",
+      "trips": 250647,
+      "cost_rub": 2843711083.333333,
+      "valid": true,
+      "per_year": [
+        45419,
+        84872,
+        120356
+      ],
+      "schedule_reference": "base"
+    },
+    {
+      "scenario": "failure_Q4057446",
+      "trips": 250647,
+      "cost_rub": 2843711083.333333,
+      "valid": true,
+      "per_year": [
+        45419,
+        84872,
+        120356
+      ],
+      "schedule_reference": "base"
+    },
+    {
+      "scenario": "failure_Q4066000",
+      "trips": 250647,
+      "cost_rub": 2843711083.333333,
+      "valid": true,
+      "per_year": [
+        45419,
+        84872,
+        120356
+      ],
+      "schedule_reference": "base"
+    },
+    {
+      "scenario": "failure_Q4071590",
+      "trips": 250647,
+      "cost_rub": 2843711083.333333,
+      "valid": true,
+      "per_year": [
+        45419,
+        84872,
+        120356
+      ],
+      "schedule_reference": "base"
+    },
+    {
+      "scenario": "failure_Q4071674",
+      "trips": 250647,
+      "cost_rub": 2843711083.333333,
+      "valid": true,
+      "per_year": [
+        45419,
+        84872,
+        120356
+      ],
+      "schedule_reference": "base"
+    },
+    {
+      "scenario": "failure_Q4073438",
+      "trips": 250647,
+      "cost_rub": 2843711083.333333,
+      "valid": true,
+      "per_year": [
+        45419,
+        84872,
+        120356
+      ],
+      "schedule_reference": "base"
+    },
+    {
+      "scenario": "failure_Q4076376",
+      "trips": 250647,
+      "cost_rub": 2843711083.333333,
+      "valid": true,
+      "per_year": [
+        45419,
+        84872,
+        120356
+      ],
+      "schedule_reference": "base"
+    },
+    {
+      "scenario": "failure_Q2008933",
+      "trips": 250647,
+      "cost_rub": 2843711083.333333,
+      "valid": true,
+      "per_year": [
+        45419,
+        84872,
+        120356
+      ],
+      "schedule_reference": "base"
+    },
+    {
+      "scenario": "failure_Q4082730",
+      "trips": 250647,
+      "cost_rub": 2843711083.333333,
+      "valid": true,
+      "per_year": [
+        45419,
+        84872,
+        120356
+      ],
+      "schedule_reference": "base"
+    },
+    {
+      "scenario": "failure_Q4093919",
+      "trips": 250647,
+      "cost_rub": 2843711083.333333,
+      "valid": true,
+      "per_year": [
+        45419,
+        84872,
+        120356
+      ],
+      "schedule_reference": "base"
+    },
+    {
+      "scenario": "failure_Q4094096",
+      "trips": 250647,
+      "cost_rub": 2843711083.333333,
+      "valid": true,
+      "per_year": [
+        45419,
+        84872,
+        120356
+      ],
+      "schedule_reference": "base"
+    },
+    {
+      "scenario": "failure_Q4105335",
+      "trips": 250647,
+      "cost_rub": 2843711083.333333,
+      "valid": true,
+      "per_year": [
+        45419,
+        84872,
+        120356
+      ],
+      "schedule_reference": "base"
+    },
+    {
+      "scenario": "failure_Q101825",
+      "trips": 250647,
+      "cost_rub": 2843711083.333333,
+      "valid": true,
+      "per_year": [
+        45419,
+        84872,
+        120356
+      ],
+      "schedule_reference": "base"
+    },
+    {
+      "scenario": "failure_Q4107965",
+      "trips": 250647,
+      "cost_rub": 2843711083.333333,
+      "valid": true,
+      "per_year": [
+        45419,
+        84872,
+        120356
+      ],
+      "schedule_reference": "base"
+    },
+    {
+      "scenario": "failure_Q4125811",
+      "trips": 250647,
+      "cost_rub": 2843711083.333333,
+      "valid": true,
+      "per_year": [
+        45419,
+        84872,
+        120356
+      ],
+      "schedule_reference": "base"
+    },
+    {
+      "scenario": "failure_Q18771665",
+      "trips": 250647,
+      "cost_rub": 2843711083.333333,
+      "valid": true,
+      "per_year": [
+        45419,
+        84872,
+        120356
+      ],
+      "schedule_reference": "base"
+    },
+    {
+      "scenario": "failure_Q4534917",
+      "trips": 250647,
+      "cost_rub": 2843711083.333333,
+      "valid": true,
+      "per_year": [
+        45419,
+        84872,
+        120356
+      ],
+      "schedule_reference": "base"
+    },
+    {
+      "scenario": "failure_Q4535523",
+      "trips": 250647,
+      "cost_rub": 2843711083.333333,
+      "valid": true,
+      "per_year": [
+        45419,
+        84872,
+        120356
+      ],
+      "schedule_reference": "base"
+    },
+    {
+      "scenario": "failure_Q4535575",
+      "trips": 250647,
+      "cost_rub": 2843711083.333333,
+      "valid": true,
+      "per_year": [
+        45419,
+        84872,
+        120356
+      ],
+      "schedule_reference": "base"
+    },
+    {
+      "scenario": "failure_Q4535598",
+      "trips": 250647,
+      "cost_rub": 2843711083.333333,
+      "valid": true,
+      "per_year": [
+        45419,
+        84872,
+        120356
+      ],
+      "schedule_reference": "base"
+    },
+    {
+      "scenario": "failure_Q4535607",
+      "trips": 250647,
+      "cost_rub": 2843711083.333333,
+      "valid": true,
+      "per_year": [
+        45419,
+        84872,
+        120356
+      ],
+      "schedule_reference": "base"
+    },
+    {
+      "scenario": "failure_Q13652883",
+      "trips": 250647,
+      "cost_rub": 2843711083.333333,
+      "valid": true,
+      "per_year": [
+        45419,
+        84872,
+        120356
+      ],
+      "schedule_reference": "base"
+    },
+    {
+      "scenario": "failure_Q3742242",
+      "trips": 250647,
+      "cost_rub": 2843711083.333333,
+      "valid": true,
+      "per_year": [
+        45419,
+        84872,
+        120356
+      ],
+      "schedule_reference": "base"
+    },
+    {
+      "scenario": "failure_Q4539359",
+      "trips": 250647,
+      "cost_rub": 2843711083.333333,
+      "valid": true,
+      "per_year": [
+        45419,
+        84872,
+        120356
+      ],
+      "schedule_reference": "base"
+    },
+    {
+      "scenario": "failure_Q4539455",
+      "trips": 250647,
+      "cost_rub": 2843711083.333333,
+      "valid": true,
+      "per_year": [
+        45419,
+        84872,
+        120356
+      ],
+      "schedule_reference": "base"
+    },
+    {
+      "scenario": "failure_Q4539459",
+      "trips": 250647,
+      "cost_rub": 2843711083.333333,
+      "valid": true,
+      "per_year": [
+        45419,
+        84872,
+        120356
+      ],
+      "schedule_reference": "base"
+    },
+    {
+      "scenario": "failure_Q4055436",
+      "trips": 250647,
+      "cost_rub": 2843711083.333333,
+      "valid": true,
+      "per_year": [
+        45419,
+        84872,
+        120356
+      ],
+      "schedule_reference": "base"
+    },
+    {
+      "scenario": "failure_Q4059169",
+      "trips": 250647,
+      "cost_rub": 2843711083.333333,
+      "valid": true,
+      "per_year": [
+        45419,
+        84872,
+        120356
+      ],
+      "schedule_reference": "base"
+    },
+    {
+      "scenario": "failure_Q103604",
+      "trips": 250647,
+      "cost_rub": 2843711083.333333,
+      "valid": true,
+      "per_year": [
+        45419,
+        84872,
+        120356
+      ],
+      "schedule_reference": "base"
+    },
+    {
+      "scenario": "failure_Q4070644",
+      "trips": 250647,
+      "cost_rub": 2843711083.333333,
+      "valid": true,
+      "per_year": [
+        45419,
+        84872,
+        120356
+      ],
+      "schedule_reference": "base"
+    },
+    {
+      "scenario": "failure_Q13667477",
+      "trips": 250647,
+      "cost_rub": 2843711083.333333,
+      "valid": true,
+      "per_year": [
+        45419,
+        84872,
+        120356
+      ],
+      "schedule_reference": "base"
+    },
+    {
+      "scenario": "failure_Q104654",
+      "trips": 250647,
+      "cost_rub": 2843711083.333333,
+      "valid": true,
+      "per_year": [
+        45419,
+        84872,
+        120356
+      ],
+      "schedule_reference": "base"
+    },
+    {
+      "scenario": "failure_Q104984",
+      "trips": 250647,
+      "cost_rub": 2843711083.333333,
+      "valid": true,
+      "per_year": [
+        45419,
+        84872,
+        120356
+      ],
+      "schedule_reference": "base"
+    },
+    {
+      "scenario": "failure_Q4083068",
+      "trips": 250647,
+      "cost_rub": 2843711083.333333,
+      "valid": true,
+      "per_year": [
+        45419,
+        84872,
+        120356
+      ],
+      "schedule_reference": "base"
+    },
+    {
+      "scenario": "failure_Q4084372",
+      "trips": 250647,
+      "cost_rub": 2843711083.333333,
+      "valid": true,
+      "per_year": [
+        45419,
+        84872,
+        120356
+      ],
+      "schedule_reference": "base"
+    },
+    {
+      "scenario": "failure_Q105298",
+      "trips": 215589,
+      "cost_rub": 2687308916.666667,
+      "valid": true,
+      "per_year": [
+        45419,
+        84872,
+        85298
+      ],
+      "schedule_reference": "failure_Q105298"
+    },
+    {
+      "scenario": "failure_Q4104853",
+      "trips": 250647,
+      "cost_rub": 2843711083.333333,
+      "valid": true,
+      "per_year": [
+        45419,
+        84872,
+        120356
+      ],
+      "schedule_reference": "base"
+    },
+    {
+      "scenario": "failure_Q4106764",
+      "trips": 250647,
+      "cost_rub": 2843711083.333333,
+      "valid": true,
+      "per_year": [
+        45419,
+        84872,
+        120356
+      ],
+      "schedule_reference": "base"
+    },
+    {
+      "scenario": "failure_Q133061",
+      "trips": 250647,
+      "cost_rub": 2843711083.333333,
+      "valid": true,
+      "per_year": [
+        45419,
+        84872,
+        120356
+      ],
+      "schedule_reference": "base"
+    },
+    {
+      "scenario": "failure_Q4129078",
+      "trips": 250647,
+      "cost_rub": 2843711083.333333,
+      "valid": true,
+      "per_year": [
+        45419,
+        84872,
+        120356
+      ],
+      "schedule_reference": "base"
+    },
+    {
+      "scenario": "failure_Q134181",
+      "trips": 237443,
+      "cost_rub": 2834794916.6666665,
+      "valid": true,
+      "per_year": [
+        45419,
+        84872,
+        107152
+      ],
+      "schedule_reference": "failure_Q134181"
+    },
+    {
+      "scenario": "failure_Q19989085",
+      "trips": 250647,
+      "cost_rub": 2843711083.333333,
+      "valid": true,
+      "per_year": [
+        45419,
+        84872,
+        120356
+      ],
+      "schedule_reference": "base"
+    },
+    {
+      "scenario": "failure_Q20638030",
+      "trips": 250647,
+      "cost_rub": 2843711083.333333,
+      "valid": true,
+      "per_year": [
+        45419,
+        84872,
+        120356
+      ],
+      "schedule_reference": "base"
+    },
+    {
+      "scenario": "failure_Q3328850",
+      "trips": 250647,
+      "cost_rub": 2843711083.333333,
+      "valid": true,
+      "per_year": [
+        45419,
+        84872,
+        120356
+      ],
+      "schedule_reference": "base"
+    },
+    {
+      "scenario": "failure_Q4535287",
+      "trips": 250647,
+      "cost_rub": 2843711083.333333,
+      "valid": true,
+      "per_year": [
+        45419,
+        84872,
+        120356
+      ],
+      "schedule_reference": "base"
+    },
+    {
+      "scenario": "failure_Q27599149",
+      "trips": 250647,
+      "cost_rub": 2843711083.333333,
+      "valid": true,
+      "per_year": [
+        45419,
+        84872,
+        120356
+      ],
+      "schedule_reference": "base"
+    },
+    {
+      "scenario": "failure_Q4537012",
+      "trips": 250647,
+      "cost_rub": 2843711083.333333,
+      "valid": true,
+      "per_year": [
+        45419,
+        84872,
+        120356
+      ],
+      "schedule_reference": "base"
+    },
+    {
+      "scenario": "failure_Q19989094",
+      "trips": 250647,
+      "cost_rub": 2843711083.333333,
+      "valid": true,
+      "per_year": [
+        45419,
+        84872,
+        120356
+      ],
+      "schedule_reference": "base"
+    },
+    {
+      "scenario": "failure_Q19690782",
+      "trips": 250647,
+      "cost_rub": 2843711083.333333,
+      "valid": true,
+      "per_year": [
+        45419,
+        84872,
+        120356
+      ],
+      "schedule_reference": "base"
+    },
+    {
+      "scenario": "failure_Q4537248",
+      "trips": 250647,
+      "cost_rub": 2843711083.333333,
+      "valid": true,
+      "per_year": [
+        45419,
+        84872,
+        120356
+      ],
+      "schedule_reference": "base"
+    },
+    {
+      "scenario": "failure_Q19929489",
+      "trips": 250647,
+      "cost_rub": 2843711083.333333,
+      "valid": true,
+      "per_year": [
+        45419,
+        84872,
+        120356
+      ],
+      "schedule_reference": "base"
+    }
+  ],
+  "robust_scenarios": [
+    {
+      "scenario": "base",
+      "trips": 234608,
+      "cost_rub": 2995676166.666667,
+      "valid": true,
+      "per_year": [
+        45419,
+        85005,
+        104184
+      ],
+      "schedule_reference": "base"
+    },
+    {
+      "scenario": "low",
+      "trips": 189535,
+      "cost_rub": 2999989166.6666665,
+      "valid": true,
+      "per_year": [
+        35568,
+        69151,
+        84816
+      ],
+      "schedule_reference": "low"
+    },
+    {
+      "scenario": "high",
+      "trips": 272679,
+      "cost_rub": 2995386666.666666,
+      "valid": true,
+      "per_year": [
+        49343,
+        97254,
+        126082
+      ],
+      "schedule_reference": "high"
+    },
+    {
+      "scenario": "range160",
+      "trips": 229735,
+      "cost_rub": 2999545333.333333,
+      "valid": true,
+      "per_year": [
+        44889,
+        82781,
+        102065
+      ],
+      "schedule_reference": "range160"
+    },
+    {
+      "scenario": "failure_Q23905997",
+      "trips": 234608,
+      "cost_rub": 2995676166.666667,
+      "valid": true,
+      "per_year": [
+        45419,
+        85005,
+        104184
+      ],
+      "schedule_reference": "base"
+    },
+    {
+      "scenario": "failure_Q4066438",
+      "trips": 234608,
+      "cost_rub": 2995676166.666667,
+      "valid": true,
+      "per_year": [
+        45419,
+        85005,
+        104184
+      ],
+      "schedule_reference": "base"
+    },
+    {
+      "scenario": "failure_Q29566984",
+      "trips": 234608,
+      "cost_rub": 2995676166.666667,
+      "valid": true,
+      "per_year": [
+        45419,
+        85005,
+        104184
+      ],
+      "schedule_reference": "base"
+    },
+    {
+      "scenario": "failure_Q108786941",
+      "trips": 234608,
+      "cost_rub": 2995676166.666667,
+      "valid": true,
+      "per_year": [
+        45419,
+        85005,
+        104184
+      ],
+      "schedule_reference": "base"
+    },
+    {
+      "scenario": "failure_Q4071757",
+      "trips": 234608,
+      "cost_rub": 2995676166.666667,
+      "valid": true,
+      "per_year": [
+        45419,
+        85005,
+        104184
+      ],
+      "schedule_reference": "base"
+    },
+    {
+      "scenario": "failure_Q1970884",
+      "trips": 230108,
+      "cost_rub": 2990337500.0,
+      "valid": true,
+      "per_year": [
+        45419,
+        85005,
+        99684
+      ],
+      "schedule_reference": "failure_Q1970884"
+    },
+    {
+      "scenario": "failure_Q4090210",
+      "trips": 228263,
+      "cost_rub": 2998101833.3333335,
+      "valid": true,
+      "per_year": [
+        45419,
+        85005,
+        97839
+      ],
+      "schedule_reference": "failure_Q4090210"
+    },
+    {
+      "scenario": "failure_Q4091244",
+      "trips": 231883,
+      "cost_rub": 2998466833.3333335,
+      "valid": true,
+      "per_year": [
+        45419,
+        85005,
+        101459
+      ],
+      "schedule_reference": "failure_Q4091244"
+    },
+    {
+      "scenario": "failure_Q132714",
+      "trips": 211669,
+      "cost_rub": 2966044500.0,
+      "valid": true,
+      "per_year": [
+        45419,
+        85005,
+        81245
+      ],
+      "schedule_reference": "failure_Q132714"
+    },
+    {
+      "scenario": "failure_Q4097035",
+      "trips": 218302,
+      "cost_rub": 2992760666.666667,
+      "valid": true,
+      "per_year": [
+        45419,
+        85005,
+        87878
+      ],
+      "schedule_reference": "failure_Q4097035"
+    },
+    {
+      "scenario": "failure_Q132947",
+      "trips": 227824,
+      "cost_rub": 2994671666.666667,
+      "valid": true,
+      "per_year": [
+        45419,
+        85005,
+        97400
+      ],
+      "schedule_reference": "failure_Q132947"
+    },
+    {
+      "scenario": "failure_Q2235",
+      "trips": 185739,
+      "cost_rub": 2937860833.3333335,
+      "valid": true,
+      "per_year": [
+        45419,
+        85005,
+        55315
+      ],
+      "schedule_reference": "failure_Q2235"
+    },
+    {
+      "scenario": "failure_Q1970880",
+      "trips": 234608,
+      "cost_rub": 2995676166.666667,
+      "valid": true,
+      "per_year": [
+        45419,
+        85005,
+        104184
+      ],
+      "schedule_reference": "failure_Q1970880"
+    },
+    {
+      "scenario": "failure_Q4124170",
+      "trips": 226683,
+      "cost_rub": 2993467750.0,
+      "valid": true,
+      "per_year": [
+        45419,
+        85005,
+        96259
+      ],
+      "schedule_reference": "failure_Q4124170"
+    },
+    {
+      "scenario": "failure_Q641418",
+      "trips": 234608,
+      "cost_rub": 2995676166.666667,
+      "valid": true,
+      "per_year": [
+        45419,
+        85005,
+        104184
+      ],
+      "schedule_reference": "base"
+    },
+    {
+      "scenario": "failure_Q4533539",
+      "trips": 234608,
+      "cost_rub": 2995676166.666667,
+      "valid": true,
+      "per_year": [
+        45419,
+        85005,
+        104184
+      ],
+      "schedule_reference": "base"
+    },
+    {
+      "scenario": "failure_Q23902848",
+      "trips": 234608,
+      "cost_rub": 2995676166.666667,
+      "valid": true,
+      "per_year": [
+        45419,
+        85005,
+        104184
+      ],
+      "schedule_reference": "base"
+    },
+    {
+      "scenario": "failure_Q19691485",
+      "trips": 234608,
+      "cost_rub": 2995676166.666667,
+      "valid": true,
+      "per_year": [
+        45419,
+        85005,
+        104184
+      ],
+      "schedule_reference": "base"
+    },
+    {
+      "scenario": "failure_Q29567614",
+      "trips": 234608,
+      "cost_rub": 2995676166.666667,
+      "valid": true,
+      "per_year": [
+        45419,
+        85005,
+        104184
+      ],
+      "schedule_reference": "base"
+    },
+    {
+      "scenario": "failure_Q14621237",
+      "trips": 234608,
+      "cost_rub": 2995676166.666667,
+      "valid": true,
+      "per_year": [
+        45419,
+        85005,
+        104184
+      ],
+      "schedule_reference": "base"
+    },
+    {
+      "scenario": "failure_Q29404543",
+      "trips": 234608,
+      "cost_rub": 2995676166.666667,
+      "valid": true,
+      "per_year": [
+        45419,
+        85005,
+        104184
+      ],
+      "schedule_reference": "base"
+    },
+    {
+      "scenario": "failure_Q4351871",
+      "trips": 234608,
+      "cost_rub": 2995676166.666667,
+      "valid": true,
+      "per_year": [
+        45419,
+        85005,
+        104184
+      ],
+      "schedule_reference": "base"
+    },
+    {
+      "scenario": "failure_Q13643783",
+      "trips": 234608,
+      "cost_rub": 2995676166.666667,
+      "valid": true,
+      "per_year": [
+        45419,
+        85005,
+        104184
+      ],
+      "schedule_reference": "base"
+    },
+    {
+      "scenario": "failure_Q29403166",
+      "trips": 234608,
+      "cost_rub": 2995676166.666667,
+      "valid": true,
+      "per_year": [
+        45419,
+        85005,
+        104184
+      ],
+      "schedule_reference": "base"
+    },
+    {
+      "scenario": "failure_Q29402306",
+      "trips": 234608,
+      "cost_rub": 2995676166.666667,
+      "valid": true,
+      "per_year": [
+        45419,
+        85005,
+        104184
+      ],
+      "schedule_reference": "base"
+    },
+    {
+      "scenario": "failure_Q4057446",
+      "trips": 234608,
+      "cost_rub": 2995676166.666667,
+      "valid": true,
+      "per_year": [
+        45419,
+        85005,
+        104184
+      ],
+      "schedule_reference": "base"
+    },
+    {
+      "scenario": "failure_Q4066000",
+      "trips": 234608,
+      "cost_rub": 2995676166.666667,
+      "valid": true,
+      "per_year": [
+        45419,
+        85005,
+        104184
+      ],
+      "schedule_reference": "base"
+    },
+    {
+      "scenario": "failure_Q4071590",
+      "trips": 234608,
+      "cost_rub": 2995676166.666667,
+      "valid": true,
+      "per_year": [
+        45419,
+        85005,
+        104184
+      ],
+      "schedule_reference": "base"
+    },
+    {
+      "scenario": "failure_Q4071674",
+      "trips": 234608,
+      "cost_rub": 2995676166.666667,
+      "valid": true,
+      "per_year": [
+        45419,
+        85005,
+        104184
+      ],
+      "schedule_reference": "base"
+    },
+    {
+      "scenario": "failure_Q4073438",
+      "trips": 234608,
+      "cost_rub": 2995676166.666667,
+      "valid": true,
+      "per_year": [
+        45419,
+        85005,
+        104184
+      ],
+      "schedule_reference": "base"
+    },
+    {
+      "scenario": "failure_Q4076376",
+      "trips": 234608,
+      "cost_rub": 2995676166.666667,
+      "valid": true,
+      "per_year": [
+        45419,
+        85005,
+        104184
+      ],
+      "schedule_reference": "base"
+    },
+    {
+      "scenario": "failure_Q2008933",
+      "trips": 234608,
+      "cost_rub": 2995676166.666667,
+      "valid": true,
+      "per_year": [
+        45419,
+        85005,
+        104184
+      ],
+      "schedule_reference": "base"
+    },
+    {
+      "scenario": "failure_Q4082730",
+      "trips": 234608,
+      "cost_rub": 2995676166.666667,
+      "valid": true,
+      "per_year": [
+        45419,
+        85005,
+        104184
+      ],
+      "schedule_reference": "base"
+    },
+    {
+      "scenario": "failure_Q4093919",
+      "trips": 234608,
+      "cost_rub": 2995676166.666667,
+      "valid": true,
+      "per_year": [
+        45419,
+        85005,
+        104184
+      ],
+      "schedule_reference": "base"
+    },
+    {
+      "scenario": "failure_Q4094096",
+      "trips": 234608,
+      "cost_rub": 2995676166.666667,
+      "valid": true,
+      "per_year": [
+        45419,
+        85005,
+        104184
+      ],
+      "schedule_reference": "base"
+    },
+    {
+      "scenario": "failure_Q4105335",
+      "trips": 234608,
+      "cost_rub": 2995676166.666667,
+      "valid": true,
+      "per_year": [
+        45419,
+        85005,
+        104184
+      ],
+      "schedule_reference": "base"
+    },
+    {
+      "scenario": "failure_Q101825",
+      "trips": 234608,
+      "cost_rub": 2995676166.666667,
+      "valid": true,
+      "per_year": [
+        45419,
+        85005,
+        104184
+      ],
+      "schedule_reference": "base"
+    },
+    {
+      "scenario": "failure_Q4107965",
+      "trips": 234608,
+      "cost_rub": 2995676166.666667,
+      "valid": true,
+      "per_year": [
+        45419,
+        85005,
+        104184
+      ],
+      "schedule_reference": "base"
+    },
+    {
+      "scenario": "failure_Q4125811",
+      "trips": 234608,
+      "cost_rub": 2995676166.666667,
+      "valid": true,
+      "per_year": [
+        45419,
+        85005,
+        104184
+      ],
+      "schedule_reference": "base"
+    },
+    {
+      "scenario": "failure_Q18771665",
+      "trips": 234608,
+      "cost_rub": 2995676166.666667,
+      "valid": true,
+      "per_year": [
+        45419,
+        85005,
+        104184
+      ],
+      "schedule_reference": "base"
+    },
+    {
+      "scenario": "failure_Q4534917",
+      "trips": 234608,
+      "cost_rub": 2995676166.666667,
+      "valid": true,
+      "per_year": [
+        45419,
+        85005,
+        104184
+      ],
+      "schedule_reference": "base"
+    },
+    {
+      "scenario": "failure_Q4535523",
+      "trips": 234608,
+      "cost_rub": 2995676166.666667,
+      "valid": true,
+      "per_year": [
+        45419,
+        85005,
+        104184
+      ],
+      "schedule_reference": "base"
+    },
+    {
+      "scenario": "failure_Q4535575",
+      "trips": 234608,
+      "cost_rub": 2995676166.666667,
+      "valid": true,
+      "per_year": [
+        45419,
+        85005,
+        104184
+      ],
+      "schedule_reference": "base"
+    },
+    {
+      "scenario": "failure_Q4535598",
+      "trips": 234608,
+      "cost_rub": 2995676166.666667,
+      "valid": true,
+      "per_year": [
+        45419,
+        85005,
+        104184
+      ],
+      "schedule_reference": "base"
+    },
+    {
+      "scenario": "failure_Q4535607",
+      "trips": 234608,
+      "cost_rub": 2995676166.666667,
+      "valid": true,
+      "per_year": [
+        45419,
+        85005,
+        104184
+      ],
+      "schedule_reference": "base"
+    },
+    {
+      "scenario": "failure_Q13652883",
+      "trips": 234608,
+      "cost_rub": 2995676166.666667,
+      "valid": true,
+      "per_year": [
+        45419,
+        85005,
+        104184
+      ],
+      "schedule_reference": "base"
+    },
+    {
+      "scenario": "failure_Q3742242",
+      "trips": 234608,
+      "cost_rub": 2995676166.666667,
+      "valid": true,
+      "per_year": [
+        45419,
+        85005,
+        104184
+      ],
+      "schedule_reference": "base"
+    },
+    {
+      "scenario": "failure_Q4539359",
+      "trips": 234608,
+      "cost_rub": 2995676166.666667,
+      "valid": true,
+      "per_year": [
+        45419,
+        85005,
+        104184
+      ],
+      "schedule_reference": "base"
+    },
+    {
+      "scenario": "failure_Q4539455",
+      "trips": 234608,
+      "cost_rub": 2995676166.666667,
+      "valid": true,
+      "per_year": [
+        45419,
+        85005,
+        104184
+      ],
+      "schedule_reference": "base"
+    },
+    {
+      "scenario": "failure_Q4539459",
+      "trips": 234608,
+      "cost_rub": 2995676166.666667,
+      "valid": true,
+      "per_year": [
+        45419,
+        85005,
+        104184
+      ],
+      "schedule_reference": "base"
+    },
+    {
+      "scenario": "failure_Q4055436",
+      "trips": 234608,
+      "cost_rub": 2995676166.666667,
+      "valid": true,
+      "per_year": [
+        45419,
+        85005,
+        104184
+      ],
+      "schedule_reference": "base"
+    },
+    {
+      "scenario": "failure_Q4059169",
+      "trips": 234608,
+      "cost_rub": 2995676166.666667,
+      "valid": true,
+      "per_year": [
+        45419,
+        85005,
+        104184
+      ],
+      "schedule_reference": "base"
+    },
+    {
+      "scenario": "failure_Q103604",
+      "trips": 234608,
+      "cost_rub": 2995676166.666667,
+      "valid": true,
+      "per_year": [
+        45419,
+        85005,
+        104184
+      ],
+      "schedule_reference": "base"
+    },
+    {
+      "scenario": "failure_Q4070644",
+      "trips": 234608,
+      "cost_rub": 2995676166.666667,
+      "valid": true,
+      "per_year": [
+        45419,
+        85005,
+        104184
+      ],
+      "schedule_reference": "base"
+    },
+    {
+      "scenario": "failure_Q13667477",
+      "trips": 234608,
+      "cost_rub": 2995676166.666667,
+      "valid": true,
+      "per_year": [
+        45419,
+        85005,
+        104184
+      ],
+      "schedule_reference": "base"
+    },
+    {
+      "scenario": "failure_Q104654",
+      "trips": 234608,
+      "cost_rub": 2995676166.666667,
+      "valid": true,
+      "per_year": [
+        45419,
+        85005,
+        104184
+      ],
+      "schedule_reference": "failure_Q104654"
+    },
+    {
+      "scenario": "failure_Q104984",
+      "trips": 234608,
+      "cost_rub": 2995676166.666667,
+      "valid": true,
+      "per_year": [
+        45419,
+        85005,
+        104184
+      ],
+      "schedule_reference": "base"
+    },
+    {
+      "scenario": "failure_Q4083068",
+      "trips": 234608,
+      "cost_rub": 2995676166.666667,
+      "valid": true,
+      "per_year": [
+        45419,
+        85005,
+        104184
+      ],
+      "schedule_reference": "base"
+    },
+    {
+      "scenario": "failure_Q4084372",
+      "trips": 234027,
+      "cost_rub": 2996875250.0,
+      "valid": true,
+      "per_year": [
+        45419,
+        85005,
+        103603
+      ],
+      "schedule_reference": "failure_Q4084372"
+    },
+    {
+      "scenario": "failure_Q105298",
+      "trips": 215772,
+      "cost_rub": 2967309333.3333335,
+      "valid": true,
+      "per_year": [
+        45419,
+        85005,
+        85348
+      ],
+      "schedule_reference": "failure_Q105298"
+    },
+    {
+      "scenario": "failure_Q4104853",
+      "trips": 234608,
+      "cost_rub": 2995676166.666667,
+      "valid": true,
+      "per_year": [
+        45419,
+        85005,
+        104184
+      ],
+      "schedule_reference": "base"
+    },
+    {
+      "scenario": "failure_Q4106764",
+      "trips": 234608,
+      "cost_rub": 2995676166.666667,
+      "valid": true,
+      "per_year": [
+        45419,
+        85005,
+        104184
+      ],
+      "schedule_reference": "failure_Q4106764"
+    },
+    {
+      "scenario": "failure_Q133061",
+      "trips": 234608,
+      "cost_rub": 2995676166.666667,
+      "valid": true,
+      "per_year": [
+        45419,
+        85005,
+        104184
+      ],
+      "schedule_reference": "base"
+    },
+    {
+      "scenario": "failure_Q4129078",
+      "trips": 234608,
+      "cost_rub": 2995676166.666667,
+      "valid": true,
+      "per_year": [
+        45419,
+        85005,
+        104184
+      ],
+      "schedule_reference": "base"
+    },
+    {
+      "scenario": "failure_Q134181",
+      "trips": 224829,
+      "cost_rub": 2992858500.0,
+      "valid": true,
+      "per_year": [
+        45419,
+        85005,
+        94405
+      ],
+      "schedule_reference": "failure_Q134181"
+    },
+    {
+      "scenario": "failure_Q19989085",
+      "trips": 234608,
+      "cost_rub": 2995676166.666667,
+      "valid": true,
+      "per_year": [
+        45419,
+        85005,
+        104184
+      ],
+      "schedule_reference": "base"
+    },
+    {
+      "scenario": "failure_Q20638030",
+      "trips": 234608,
+      "cost_rub": 2995676166.666667,
+      "valid": true,
+      "per_year": [
+        45419,
+        85005,
+        104184
+      ],
+      "schedule_reference": "base"
+    },
+    {
+      "scenario": "failure_Q3328850",
+      "trips": 234608,
+      "cost_rub": 2995676166.666667,
+      "valid": true,
+      "per_year": [
+        45419,
+        85005,
+        104184
+      ],
+      "schedule_reference": "base"
+    },
+    {
+      "scenario": "failure_Q4535287",
+      "trips": 234608,
+      "cost_rub": 2995676166.666667,
+      "valid": true,
+      "per_year": [
+        45419,
+        85005,
+        104184
+      ],
+      "schedule_reference": "base"
+    },
+    {
+      "scenario": "failure_Q27599149",
+      "trips": 234608,
+      "cost_rub": 2995676166.666667,
+      "valid": true,
+      "per_year": [
+        45419,
+        85005,
+        104184
+      ],
+      "schedule_reference": "base"
+    },
+    {
+      "scenario": "failure_Q4537012",
+      "trips": 234608,
+      "cost_rub": 2995676166.666667,
+      "valid": true,
+      "per_year": [
+        45419,
+        85005,
+        104184
+      ],
+      "schedule_reference": "base"
+    },
+    {
+      "scenario": "failure_Q19989094",
+      "trips": 234608,
+      "cost_rub": 2995676166.666667,
+      "valid": true,
+      "per_year": [
+        45419,
+        85005,
+        104184
+      ],
+      "schedule_reference": "base"
+    },
+    {
+      "scenario": "failure_Q19690782",
+      "trips": 234608,
+      "cost_rub": 2995676166.666667,
+      "valid": true,
+      "per_year": [
+        45419,
+        85005,
+        104184
+      ],
+      "schedule_reference": "base"
+    },
+    {
+      "scenario": "failure_Q4537248",
+      "trips": 234608,
+      "cost_rub": 2995676166.666667,
+      "valid": true,
+      "per_year": [
+        45419,
+        85005,
+        104184
+      ],
+      "schedule_reference": "base"
+    },
+    {
+      "scenario": "failure_Q19929489",
+      "trips": 234608,
+      "cost_rub": 2995676166.666667,
+      "valid": true,
+      "per_year": [
+        45419,
+        85005,
+        104184
+      ],
+      "schedule_reference": "base"
+    }
+  ],
+  "base_worst": 170960,
+  "robust_worst": 185739,
+  "base_case_loss": 16039,
+  "worst_case_gain": 14779,
+  "cost_change_rub": 151965083.33333397,
+  "iterations": 1,
+  "algorithm": "deterministic max-min local search; no global claim",
+  "failure_period": "whole year 3; CAPEX and fixed OPEX retained",
+  "worst_base_scenario": "failure_Q2235",
+  "worst_robust_scenario": "failure_Q2235"
+}

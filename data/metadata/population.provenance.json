@@ -1,0 +1,33 @@
+{
+  "source": "https://query.wikidata.org/sparql",
+  "retrieved_utc": "2026-10-25T18:27:31.471150+00:00",
+  "input_hashes": {
+    "data/parameters.json": "a7e4d0674a1c308a562f6e2c9c30641ac96c69fff538fbd0cde4f741f1929859",
+    "data/processed/points_main.csv": "48baf349cee76833d8dae7591a02b3fcc2fa88c2577bce2cb9582ca0c845d126",
+    "data/processed/points_small.csv": "301eb53eccbc438c323ce002159aba701e98c009dd255e19ece56648ba4abbb4",
+    "data/processed/demand_main.csv": "e9812237a8c595dfc3ed9c187acf49a918f576e274a7501c9c7af85e18984b08"
+  },
+  "queries": [
+    {
+      "query": "SELECT ?item ?population ?date WHERE { VALUES (?item ?target) { (wd:Q23905997 170) (wd:Q4066438 233) (wd:Q29566984 1015) (wd:Q108786941 112) (wd:Q4071757 225) (wd:Q1970884 2473) (wd:Q4090210 1415) (wd:Q4091244 4395) (wd:Q132714 46325) (wd:Q4097035 2627) (wd:Q132947 14074) (wd:Q2235 222669) (wd:Q1970880 2485) (wd:Q4124170 923) (wd:Q641418 882) } ?item p:P1082 ?statement . ?statement ps:P1082 ?population . FILTER(?population=?target) OPTIONAL { ?statement pq:P585 ?date } }",
+      "error": ""
+    },
+    {
+      "query": "SELECT ?item ?population ?date WHERE { VALUES (?item ?target) { (wd:Q4533539 1778) (wd:Q23902848 16) (wd:Q19691485 22) (wd:Q29567614 5) (wd:Q14621237 8) (wd:Q29404543 66) (wd:Q4351871 1402) (wd:Q13643783 590) (wd:Q29403166 909) (wd:Q29402306 88) (wd:Q4057446 274) (wd:Q4066000 270) (wd:Q4071590 171) (wd:Q4071674 206) (wd:Q4073438 327) } ?item p:P1082 ?statement . ?statement ps:P1082 ?population . FILTER(?population=?target) OPTIONAL { ?statement pq:P585 ?date } }",
+      "error": ""
+    },
+    {
+      "query": "SELECT ?item ?population ?date WHERE { VALUES (?item ?target) { (wd:Q4076376 820) (wd:Q2008933 3731) (wd:Q4082730 942) (wd:Q4093919 7293) (wd:Q4094096 522) (wd:Q4105335 650) (wd:Q101825 84655) (wd:Q4107965 602) (wd:Q4125811 553) (wd:Q18771665 1737) (wd:Q4534917 22) (wd:Q4535523 127) (wd:Q4535575 44) (wd:Q4535598 35) (wd:Q4535607 24) } ?item p:P1082 ?statement . ?statement ps:P1082 ?population . FILTER(?population=?target) OPTIONAL { ?statement pq:P585 ?date } }",
+      "error": ""
+    },
+    {
+      "query": "SELECT ?item ?population ?date WHERE { VALUES (?item ?target) { (wd:Q13652883 122) (wd:Q3742242 577) (wd:Q4539359 103) (wd:Q4539455 152) (wd:Q4539459 67) (wd:Q4055436 1284) (wd:Q4059169 1046) (wd:Q103604 6956) (wd:Q4070644 473) (wd:Q13667477 855) (wd:Q104654 30800) (wd:Q104984 3125) (wd:Q4083068 2022) (wd:Q4084372 2207) (wd:Q105298 19310) } ?item p:P1082 ?statement . ?statement ps:P1082 ?population . FILTER(?population=?target) OPTIONAL { ?statement pq:P585 ?date } }",
+      "error": ""
+    },
+    {
+      "query": "SELECT ?item ?population ?date WHERE { VALUES (?item ?target) { (wd:Q4104853 2309) (wd:Q4106764 2068) (wd:Q133061 6330) (wd:Q4129078 1659) (wd:Q134181 42884) (wd:Q19989085 916) (wd:Q20638030 138) (wd:Q3328850 74) (wd:Q4535287 528) (wd:Q27599149 302) (wd:Q4537012 130) (wd:Q19989094 43) (wd:Q19690782 236) (wd:Q4537248 49) (wd:Q19929489 222) } ?item p:P1082 ?statement . ?statement ps:P1082 ?population . FILTER(?population=?target) OPTIONAL { ?statement pq:P585 ?date } }",
+      "error": ""
+    }
+  ],
+  "rule": "match frozen population exactly; no imputed observation year"
+}

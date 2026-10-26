@@ -1,0 +1,23 @@
+{
+  "lp_upper_bound": 181311.83755400003,
+  "upper_bound": 176438.887,
+  "lower_bound": 162242,
+  "gap_percent": 8.046348081984892,
+  "definition": "100*(upper-scheduled_lower)/upper",
+  "attempts": [
+    {
+      "limit_s": 5,
+      "wall_s": 5.352501600000323,
+      "solver_status": "Not Solved",
+      "solution_status": "No Solution Found",
+      "termination": "time_limit",
+      "has_integer_incumbent": false,
+      "scheduled_lower_bound": 162242,
+      "upper_bound": 176438.887,
+      "gap_percent": 8.046348081984892
+    }
+  ],
+  "relaxation_proof": "Each day starts/ends full. Recharge restores <=range; distance<=range*charges. Actual flight+turn+charge time fits fleet hours. Omitting event ordering enlarges feasibility.",
+  "certification_valid": false,
+  "invalid_reason": "Superseded: cumulative PuLP expression aliasing; do not use this upper bound"
+}

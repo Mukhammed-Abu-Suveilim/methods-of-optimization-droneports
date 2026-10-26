@@ -1,0 +1,2531 @@
+[
+  {
+    "cell": null,
+    "code": "W505",
+    "end_location": {
+      "column": 74,
+      "row": 9
+    },
+    "filename": "C:\\Users\\Mo\\work\\study\\Магистратура\\2к\\1с\\Методы оптимзации\\output\\analysis\\analyze_project.py",
+    "fix": null,
+    "location": {
+      "column": 73,
+      "row": 9
+    },
+    "message": "Doc line too long (73 > 72)",
+    "name": "doc-line-too-long",
+    "noqa_row": 9,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/doc-line-too-long"
+  },
+  {
+    "cell": null,
+    "code": "W505",
+    "end_location": {
+      "column": 75,
+      "row": 29
+    },
+    "filename": "C:\\Users\\Mo\\work\\study\\Магистратура\\2к\\1с\\Методы оптимзации\\scripts\\bounds.py",
+    "fix": null,
+    "location": {
+      "column": 73,
+      "row": 29
+    },
+    "message": "Doc line too long (74 > 72)",
+    "name": "doc-line-too-long",
+    "noqa_row": 29,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/doc-line-too-long"
+  },
+  {
+    "cell": null,
+    "code": "W505",
+    "end_location": {
+      "column": 75,
+      "row": 178
+    },
+    "filename": "C:\\Users\\Mo\\work\\study\\Магистратура\\2к\\1с\\Методы оптимзации\\scripts\\bounds.py",
+    "fix": null,
+    "location": {
+      "column": 73,
+      "row": 178
+    },
+    "message": "Doc line too long (74 > 72)",
+    "name": "doc-line-too-long",
+    "noqa_row": 178,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/doc-line-too-long"
+  },
+  {
+    "cell": null,
+    "code": "W505",
+    "end_location": {
+      "column": 75,
+      "row": 193
+    },
+    "filename": "C:\\Users\\Mo\\work\\study\\Магистратура\\2к\\1с\\Методы оптимзации\\scripts\\bounds.py",
+    "fix": null,
+    "location": {
+      "column": 73,
+      "row": 193
+    },
+    "message": "Doc line too long (74 > 72)",
+    "name": "doc-line-too-long",
+    "noqa_row": 193,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/doc-line-too-long"
+  },
+  {
+    "cell": null,
+    "code": "E501",
+    "end_location": {
+      "column": 82,
+      "row": 280
+    },
+    "filename": "C:\\Users\\Mo\\work\\study\\Магистратура\\2к\\1с\\Методы оптимзации\\scripts\\bounds.py",
+    "fix": null,
+    "location": {
+      "column": 80,
+      "row": 280
+    },
+    "message": "Line too long (81 > 79)",
+    "name": "line-too-long",
+    "noqa_row": 280,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/line-too-long"
+  },
+  {
+    "cell": null,
+    "code": "W505",
+    "end_location": {
+      "column": 78,
+      "row": 1
+    },
+    "filename": "C:\\Users\\Mo\\work\\study\\Магистратура\\2к\\1с\\Методы оптимзации\\scripts\\build_dataset.py",
+    "fix": null,
+    "location": {
+      "column": 73,
+      "row": 1
+    },
+    "message": "Doc line too long (77 > 72)",
+    "name": "doc-line-too-long",
+    "noqa_row": 1,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/doc-line-too-long"
+  },
+  {
+    "cell": null,
+    "code": "W505",
+    "end_location": {
+      "column": 77,
+      "row": 9
+    },
+    "filename": "C:\\Users\\Mo\\work\\study\\Магистратура\\2к\\1с\\Методы оптимзации\\scripts\\build_dataset.py",
+    "fix": null,
+    "location": {
+      "column": 73,
+      "row": 9
+    },
+    "message": "Doc line too long (76 > 72)",
+    "name": "doc-line-too-long",
+    "noqa_row": 9,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/doc-line-too-long"
+  },
+  {
+    "cell": null,
+    "code": "F841",
+    "end_location": {
+      "column": 10,
+      "row": 11
+    },
+    "filename": "C:\\Users\\Mo\\work\\study\\Магистратура\\2к\\1с\\Методы оптимзации\\scripts\\build_dataset.py",
+    "fix": {
+      "applicability": "unsafe",
+      "edits": [
+        {
+          "content": "",
+          "end_location": {
+            "column": 13,
+            "row": 11
+          },
+          "location": {
+            "column": 5,
+            "row": 11
+          }
+        }
+      ],
+      "message": "Remove assignment to unused variable `label`"
+    },
+    "location": {
+      "column": 5,
+      "row": 11
+    },
+    "message": "Local variable `label` is assigned to but never used",
+    "name": "unused-variable",
+    "noqa_row": 11,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/unused-variable"
+  },
+  {
+    "cell": null,
+    "code": "W505",
+    "end_location": {
+      "column": 77,
+      "row": 1
+    },
+    "filename": "C:\\Users\\Mo\\work\\study\\Магистратура\\2к\\1с\\Методы оптимзации\\scripts\\build_demand.py",
+    "fix": null,
+    "location": {
+      "column": 73,
+      "row": 1
+    },
+    "message": "Doc line too long (76 > 72)",
+    "name": "doc-line-too-long",
+    "noqa_row": 1,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/doc-line-too-long"
+  },
+  {
+    "cell": null,
+    "code": "W505",
+    "end_location": {
+      "column": 77,
+      "row": 9
+    },
+    "filename": "C:\\Users\\Mo\\work\\study\\Магистратура\\2к\\1с\\Методы оптимзации\\scripts\\build_demand.py",
+    "fix": null,
+    "location": {
+      "column": 73,
+      "row": 9
+    },
+    "message": "Doc line too long (76 > 72)",
+    "name": "doc-line-too-long",
+    "noqa_row": 9,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/doc-line-too-long"
+  },
+  {
+    "cell": null,
+    "code": "F841",
+    "end_location": {
+      "column": 10,
+      "row": 11
+    },
+    "filename": "C:\\Users\\Mo\\work\\study\\Магистратура\\2к\\1с\\Методы оптимзации\\scripts\\build_demand.py",
+    "fix": {
+      "applicability": "unsafe",
+      "edits": [
+        {
+          "content": "",
+          "end_location": {
+            "column": 13,
+            "row": 11
+          },
+          "location": {
+            "column": 5,
+            "row": 11
+          }
+        }
+      ],
+      "message": "Remove assignment to unused variable `label`"
+    },
+    "location": {
+      "column": 5,
+      "row": 11
+    },
+    "message": "Local variable `label` is assigned to but never used",
+    "name": "unused-variable",
+    "noqa_row": 11,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/unused-variable"
+  },
+  {
+    "cell": null,
+    "code": "W505",
+    "end_location": {
+      "column": 79,
+      "row": 1
+    },
+    "filename": "C:\\Users\\Mo\\work\\study\\Магистратура\\2к\\1с\\Методы оптимзации\\scripts\\build_schedule.py",
+    "fix": null,
+    "location": {
+      "column": 73,
+      "row": 1
+    },
+    "message": "Doc line too long (78 > 72)",
+    "name": "doc-line-too-long",
+    "noqa_row": 1,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/doc-line-too-long"
+  },
+  {
+    "cell": null,
+    "code": "W505",
+    "end_location": {
+      "column": 77,
+      "row": 9
+    },
+    "filename": "C:\\Users\\Mo\\work\\study\\Магистратура\\2к\\1с\\Методы оптимзации\\scripts\\build_schedule.py",
+    "fix": null,
+    "location": {
+      "column": 73,
+      "row": 9
+    },
+    "message": "Doc line too long (76 > 72)",
+    "name": "doc-line-too-long",
+    "noqa_row": 9,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/doc-line-too-long"
+  },
+  {
+    "cell": null,
+    "code": "F841",
+    "end_location": {
+      "column": 10,
+      "row": 11
+    },
+    "filename": "C:\\Users\\Mo\\work\\study\\Магистратура\\2к\\1с\\Методы оптимзации\\scripts\\build_schedule.py",
+    "fix": {
+      "applicability": "unsafe",
+      "edits": [
+        {
+          "content": "",
+          "end_location": {
+            "column": 13,
+            "row": 11
+          },
+          "location": {
+            "column": 5,
+            "row": 11
+          }
+        }
+      ],
+      "message": "Remove assignment to unused variable `label`"
+    },
+    "location": {
+      "column": 5,
+      "row": 11
+    },
+    "message": "Local variable `label` is assigned to but never used",
+    "name": "unused-variable",
+    "noqa_row": 11,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/unused-variable"
+  },
+  {
+    "cell": null,
+    "code": "W505",
+    "end_location": {
+      "column": 79,
+      "row": 141
+    },
+    "filename": "C:\\Users\\Mo\\work\\study\\Магистратура\\2к\\1с\\Методы оптимзации\\scripts\\commands.py",
+    "fix": null,
+    "location": {
+      "column": 73,
+      "row": 141
+    },
+    "message": "Doc line too long (78 > 72)",
+    "name": "doc-line-too-long",
+    "noqa_row": 141,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/doc-line-too-long"
+  },
+  {
+    "cell": null,
+    "code": "W505",
+    "end_location": {
+      "column": 80,
+      "row": 1
+    },
+    "filename": "C:\\Users\\Mo\\work\\study\\Магистратура\\2к\\1с\\Методы оптимзации\\scripts\\compare_routing.py",
+    "fix": null,
+    "location": {
+      "column": 73,
+      "row": 1
+    },
+    "message": "Doc line too long (79 > 72)",
+    "name": "doc-line-too-long",
+    "noqa_row": 1,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/doc-line-too-long"
+  },
+  {
+    "cell": null,
+    "code": "W505",
+    "end_location": {
+      "column": 77,
+      "row": 9
+    },
+    "filename": "C:\\Users\\Mo\\work\\study\\Магистратура\\2к\\1с\\Методы оптимзации\\scripts\\compare_routing.py",
+    "fix": null,
+    "location": {
+      "column": 73,
+      "row": 9
+    },
+    "message": "Doc line too long (76 > 72)",
+    "name": "doc-line-too-long",
+    "noqa_row": 9,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/doc-line-too-long"
+  },
+  {
+    "cell": null,
+    "code": "F841",
+    "end_location": {
+      "column": 10,
+      "row": 11
+    },
+    "filename": "C:\\Users\\Mo\\work\\study\\Магистратура\\2к\\1с\\Методы оптимзации\\scripts\\compare_routing.py",
+    "fix": {
+      "applicability": "unsafe",
+      "edits": [
+        {
+          "content": "",
+          "end_location": {
+            "column": 13,
+            "row": 11
+          },
+          "location": {
+            "column": 5,
+            "row": 11
+          }
+        }
+      ],
+      "message": "Remove assignment to unused variable `label`"
+    },
+    "location": {
+      "column": 5,
+      "row": 11
+    },
+    "message": "Local variable `label` is assigned to but never used",
+    "name": "unused-variable",
+    "noqa_row": 11,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/unused-variable"
+  },
+  {
+    "cell": null,
+    "code": "W505",
+    "end_location": {
+      "column": 78,
+      "row": 1
+    },
+    "filename": "C:\\Users\\Mo\\work\\study\\Магистратура\\2к\\1с\\Методы оптимзации\\scripts\\compare_small.py",
+    "fix": null,
+    "location": {
+      "column": 73,
+      "row": 1
+    },
+    "message": "Doc line too long (77 > 72)",
+    "name": "doc-line-too-long",
+    "noqa_row": 1,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/doc-line-too-long"
+  },
+  {
+    "cell": null,
+    "code": "W505",
+    "end_location": {
+      "column": 77,
+      "row": 9
+    },
+    "filename": "C:\\Users\\Mo\\work\\study\\Магистратура\\2к\\1с\\Методы оптимзации\\scripts\\compare_small.py",
+    "fix": null,
+    "location": {
+      "column": 73,
+      "row": 9
+    },
+    "message": "Doc line too long (76 > 72)",
+    "name": "doc-line-too-long",
+    "noqa_row": 9,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/doc-line-too-long"
+  },
+  {
+    "cell": null,
+    "code": "F841",
+    "end_location": {
+      "column": 10,
+      "row": 11
+    },
+    "filename": "C:\\Users\\Mo\\work\\study\\Магистратура\\2к\\1с\\Методы оптимзации\\scripts\\compare_small.py",
+    "fix": {
+      "applicability": "unsafe",
+      "edits": [
+        {
+          "content": "",
+          "end_location": {
+            "column": 13,
+            "row": 11
+          },
+          "location": {
+            "column": 5,
+            "row": 11
+          }
+        }
+      ],
+      "message": "Remove assignment to unused variable `label`"
+    },
+    "location": {
+      "column": 5,
+      "row": 11
+    },
+    "message": "Local variable `label` is assigned to but never used",
+    "name": "unused-variable",
+    "noqa_row": 11,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/unused-variable"
+  },
+  {
+    "cell": null,
+    "code": "W505",
+    "end_location": {
+      "column": 85,
+      "row": 1
+    },
+    "filename": "C:\\Users\\Mo\\work\\study\\Магистратура\\2к\\1с\\Методы оптимзации\\scripts\\compare_staged_joint.py",
+    "fix": null,
+    "location": {
+      "column": 73,
+      "row": 1
+    },
+    "message": "Doc line too long (84 > 72)",
+    "name": "doc-line-too-long",
+    "noqa_row": 1,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/doc-line-too-long"
+  },
+  {
+    "cell": null,
+    "code": "E501",
+    "end_location": {
+      "column": 85,
+      "row": 1
+    },
+    "filename": "C:\\Users\\Mo\\work\\study\\Магистратура\\2к\\1с\\Методы оптимзации\\scripts\\compare_staged_joint.py",
+    "fix": null,
+    "location": {
+      "column": 80,
+      "row": 1
+    },
+    "message": "Line too long (84 > 79)",
+    "name": "line-too-long",
+    "noqa_row": 1,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/line-too-long"
+  },
+  {
+    "cell": null,
+    "code": "W505",
+    "end_location": {
+      "column": 77,
+      "row": 9
+    },
+    "filename": "C:\\Users\\Mo\\work\\study\\Магистратура\\2к\\1с\\Методы оптимзации\\scripts\\compare_staged_joint.py",
+    "fix": null,
+    "location": {
+      "column": 73,
+      "row": 9
+    },
+    "message": "Doc line too long (76 > 72)",
+    "name": "doc-line-too-long",
+    "noqa_row": 9,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/doc-line-too-long"
+  },
+  {
+    "cell": null,
+    "code": "F841",
+    "end_location": {
+      "column": 10,
+      "row": 11
+    },
+    "filename": "C:\\Users\\Mo\\work\\study\\Магистратура\\2к\\1с\\Методы оптимзации\\scripts\\compare_staged_joint.py",
+    "fix": {
+      "applicability": "unsafe",
+      "edits": [
+        {
+          "content": "",
+          "end_location": {
+            "column": 13,
+            "row": 11
+          },
+          "location": {
+            "column": 5,
+            "row": 11
+          }
+        }
+      ],
+      "message": "Remove assignment to unused variable `label`"
+    },
+    "location": {
+      "column": 5,
+      "row": 11
+    },
+    "message": "Local variable `label` is assigned to but never used",
+    "name": "unused-variable",
+    "noqa_row": 11,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/unused-variable"
+  },
+  {
+    "cell": null,
+    "code": "W505",
+    "end_location": {
+      "column": 74,
+      "row": 98
+    },
+    "filename": "C:\\Users\\Mo\\work\\study\\Магистратура\\2к\\1с\\Методы оптимзации\\scripts\\data_audit.py",
+    "fix": null,
+    "location": {
+      "column": 73,
+      "row": 98
+    },
+    "message": "Doc line too long (73 > 72)",
+    "name": "doc-line-too-long",
+    "noqa_row": 98,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/doc-line-too-long"
+  },
+  {
+    "cell": null,
+    "code": "W505",
+    "end_location": {
+      "column": 76,
+      "row": 134
+    },
+    "filename": "C:\\Users\\Mo\\work\\study\\Магистратура\\2к\\1с\\Методы оптимзации\\scripts\\data_audit.py",
+    "fix": null,
+    "location": {
+      "column": 73,
+      "row": 134
+    },
+    "message": "Doc line too long (75 > 72)",
+    "name": "doc-line-too-long",
+    "noqa_row": 134,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/doc-line-too-long"
+  },
+  {
+    "cell": null,
+    "code": "W505",
+    "end_location": {
+      "column": 81,
+      "row": 146
+    },
+    "filename": "C:\\Users\\Mo\\work\\study\\Магистратура\\2к\\1с\\Методы оптимзации\\scripts\\data_audit.py",
+    "fix": null,
+    "location": {
+      "column": 73,
+      "row": 146
+    },
+    "message": "Doc line too long (80 > 72)",
+    "name": "doc-line-too-long",
+    "noqa_row": 146,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/doc-line-too-long"
+  },
+  {
+    "cell": null,
+    "code": "E501",
+    "end_location": {
+      "column": 81,
+      "row": 146
+    },
+    "filename": "C:\\Users\\Mo\\work\\study\\Магистратура\\2к\\1с\\Методы оптимзации\\scripts\\data_audit.py",
+    "fix": null,
+    "location": {
+      "column": 80,
+      "row": 146
+    },
+    "message": "Line too long (80 > 79)",
+    "name": "line-too-long",
+    "noqa_row": 146,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/line-too-long"
+  },
+  {
+    "cell": null,
+    "code": "W505",
+    "end_location": {
+      "column": 74,
+      "row": 147
+    },
+    "filename": "C:\\Users\\Mo\\work\\study\\Магистратура\\2к\\1с\\Методы оптимзации\\scripts\\data_audit.py",
+    "fix": null,
+    "location": {
+      "column": 73,
+      "row": 147
+    },
+    "message": "Doc line too long (73 > 72)",
+    "name": "doc-line-too-long",
+    "noqa_row": 147,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/doc-line-too-long"
+  },
+  {
+    "cell": null,
+    "code": "W505",
+    "end_location": {
+      "column": 77,
+      "row": 163
+    },
+    "filename": "C:\\Users\\Mo\\work\\study\\Магистратура\\2к\\1с\\Методы оптимзации\\scripts\\data_audit.py",
+    "fix": null,
+    "location": {
+      "column": 73,
+      "row": 163
+    },
+    "message": "Doc line too long (76 > 72)",
+    "name": "doc-line-too-long",
+    "noqa_row": 163,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/doc-line-too-long"
+  },
+  {
+    "cell": null,
+    "code": "W505",
+    "end_location": {
+      "column": 78,
+      "row": 203
+    },
+    "filename": "C:\\Users\\Mo\\work\\study\\Магистратура\\2к\\1с\\Методы оптимзации\\scripts\\data_audit.py",
+    "fix": null,
+    "location": {
+      "column": 73,
+      "row": 203
+    },
+    "message": "Doc line too long (77 > 72)",
+    "name": "doc-line-too-long",
+    "noqa_row": 203,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/doc-line-too-long"
+  },
+  {
+    "cell": null,
+    "code": "E501",
+    "end_location": {
+      "column": 84,
+      "row": 269
+    },
+    "filename": "C:\\Users\\Mo\\work\\study\\Магистратура\\2к\\1с\\Методы оптимзации\\scripts\\data_audit.py",
+    "fix": null,
+    "location": {
+      "column": 80,
+      "row": 269
+    },
+    "message": "Line too long (83 > 79)",
+    "name": "line-too-long",
+    "noqa_row": 269,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/line-too-long"
+  },
+  {
+    "cell": null,
+    "code": "W505",
+    "end_location": {
+      "column": 79,
+      "row": 46
+    },
+    "filename": "C:\\Users\\Mo\\work\\study\\Магистратура\\2к\\1с\\Методы оптимзации\\scripts\\evaluation.py",
+    "fix": null,
+    "location": {
+      "column": 73,
+      "row": 46
+    },
+    "message": "Doc line too long (78 > 72)",
+    "name": "doc-line-too-long",
+    "noqa_row": 46,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/doc-line-too-long"
+  },
+  {
+    "cell": null,
+    "code": "W505",
+    "end_location": {
+      "column": 78,
+      "row": 86
+    },
+    "filename": "C:\\Users\\Mo\\work\\study\\Магистратура\\2к\\1с\\Методы оптимзации\\scripts\\evaluation.py",
+    "fix": null,
+    "location": {
+      "column": 73,
+      "row": 86
+    },
+    "message": "Doc line too long (77 > 72)",
+    "name": "doc-line-too-long",
+    "noqa_row": 86,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/doc-line-too-long"
+  },
+  {
+    "cell": null,
+    "code": "W505",
+    "end_location": {
+      "column": 74,
+      "row": 140
+    },
+    "filename": "C:\\Users\\Mo\\work\\study\\Магистратура\\2к\\1с\\Методы оптимзации\\scripts\\evaluation.py",
+    "fix": null,
+    "location": {
+      "column": 73,
+      "row": 140
+    },
+    "message": "Doc line too long (73 > 72)",
+    "name": "doc-line-too-long",
+    "noqa_row": 140,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/doc-line-too-long"
+  },
+  {
+    "cell": null,
+    "code": "W505",
+    "end_location": {
+      "column": 74,
+      "row": 154
+    },
+    "filename": "C:\\Users\\Mo\\work\\study\\Магистратура\\2к\\1с\\Методы оптимзации\\scripts\\evaluation.py",
+    "fix": null,
+    "location": {
+      "column": 73,
+      "row": 154
+    },
+    "message": "Doc line too long (73 > 72)",
+    "name": "doc-line-too-long",
+    "noqa_row": 154,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/doc-line-too-long"
+  },
+  {
+    "cell": null,
+    "code": "W505",
+    "end_location": {
+      "column": 79,
+      "row": 1
+    },
+    "filename": "C:\\Users\\Mo\\work\\study\\Магистратура\\2к\\1с\\Методы оптимзации\\scripts\\evaluator.py",
+    "fix": null,
+    "location": {
+      "column": 73,
+      "row": 1
+    },
+    "message": "Doc line too long (78 > 72)",
+    "name": "doc-line-too-long",
+    "noqa_row": 1,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/doc-line-too-long"
+  },
+  {
+    "cell": null,
+    "code": "E501",
+    "end_location": {
+      "column": 88,
+      "row": 12
+    },
+    "filename": "C:\\Users\\Mo\\work\\study\\Магистратура\\2к\\1с\\Методы оптимзации\\scripts\\fetch_settlements.py",
+    "fix": null,
+    "location": {
+      "column": 80,
+      "row": 12
+    },
+    "message": "Line too long (87 > 79)",
+    "name": "line-too-long",
+    "noqa_row": 12,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/line-too-long"
+  },
+  {
+    "cell": null,
+    "code": "E501",
+    "end_location": {
+      "column": 131,
+      "row": 20
+    },
+    "filename": "C:\\Users\\Mo\\work\\study\\Магистратура\\2к\\1с\\Методы оптимзации\\scripts\\fetch_settlements.py",
+    "fix": null,
+    "location": {
+      "column": 80,
+      "row": 20
+    },
+    "message": "Line too long (130 > 79)",
+    "name": "line-too-long",
+    "noqa_row": 32,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/line-too-long"
+  },
+  {
+    "cell": null,
+    "code": "E501",
+    "end_location": {
+      "column": 93,
+      "row": 29
+    },
+    "filename": "C:\\Users\\Mo\\work\\study\\Магистратура\\2к\\1с\\Методы оптимзации\\scripts\\fetch_settlements.py",
+    "fix": null,
+    "location": {
+      "column": 80,
+      "row": 29
+    },
+    "message": "Line too long (92 > 79)",
+    "name": "line-too-long",
+    "noqa_row": 32,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/line-too-long"
+  },
+  {
+    "cell": null,
+    "code": "E501",
+    "end_location": {
+      "column": 99,
+      "row": 38
+    },
+    "filename": "C:\\Users\\Mo\\work\\study\\Магистратура\\2к\\1с\\Методы оптимзации\\scripts\\fetch_settlements.py",
+    "fix": null,
+    "location": {
+      "column": 80,
+      "row": 38
+    },
+    "message": "Line too long (98 > 79)",
+    "name": "line-too-long",
+    "noqa_row": 38,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/line-too-long"
+  },
+  {
+    "cell": null,
+    "code": "W505",
+    "end_location": {
+      "column": 78,
+      "row": 1
+    },
+    "filename": "C:\\Users\\Mo\\work\\study\\Магистратура\\2к\\1с\\Методы оптимзации\\scripts\\legacy_evaluator.py",
+    "fix": null,
+    "location": {
+      "column": 73,
+      "row": 1
+    },
+    "message": "Doc line too long (77 > 72)",
+    "name": "doc-line-too-long",
+    "noqa_row": 1,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/doc-line-too-long"
+  },
+  {
+    "cell": null,
+    "code": "W505",
+    "end_location": {
+      "column": 75,
+      "row": 10
+    },
+    "filename": "C:\\Users\\Mo\\work\\study\\Магистратура\\2к\\1с\\Методы оптимзации\\scripts\\legacy_greedy.py",
+    "fix": null,
+    "location": {
+      "column": 73,
+      "row": 10
+    },
+    "message": "Doc line too long (74 > 72)",
+    "name": "doc-line-too-long",
+    "noqa_row": 10,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/doc-line-too-long"
+  },
+  {
+    "cell": null,
+    "code": "W505",
+    "end_location": {
+      "column": 74,
+      "row": 1
+    },
+    "filename": "C:\\Users\\Mo\\work\\study\\Магистратура\\2к\\1с\\Методы оптимзации\\scripts\\make_maps.py",
+    "fix": null,
+    "location": {
+      "column": 73,
+      "row": 1
+    },
+    "message": "Doc line too long (73 > 72)",
+    "name": "doc-line-too-long",
+    "noqa_row": 1,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/doc-line-too-long"
+  },
+  {
+    "cell": null,
+    "code": "W505",
+    "end_location": {
+      "column": 77,
+      "row": 9
+    },
+    "filename": "C:\\Users\\Mo\\work\\study\\Магистратура\\2к\\1с\\Методы оптимзации\\scripts\\make_maps.py",
+    "fix": null,
+    "location": {
+      "column": 73,
+      "row": 9
+    },
+    "message": "Doc line too long (76 > 72)",
+    "name": "doc-line-too-long",
+    "noqa_row": 9,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/doc-line-too-long"
+  },
+  {
+    "cell": null,
+    "code": "F841",
+    "end_location": {
+      "column": 10,
+      "row": 11
+    },
+    "filename": "C:\\Users\\Mo\\work\\study\\Магистратура\\2к\\1с\\Методы оптимзации\\scripts\\make_maps.py",
+    "fix": {
+      "applicability": "unsafe",
+      "edits": [
+        {
+          "content": "",
+          "end_location": {
+            "column": 13,
+            "row": 11
+          },
+          "location": {
+            "column": 5,
+            "row": 11
+          }
+        }
+      ],
+      "message": "Remove assignment to unused variable `label`"
+    },
+    "location": {
+      "column": 5,
+      "row": 11
+    },
+    "message": "Local variable `label` is assigned to but never used",
+    "name": "unused-variable",
+    "noqa_row": 11,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/unused-variable"
+  },
+  {
+    "cell": null,
+    "code": "W505",
+    "end_location": {
+      "column": 81,
+      "row": 1
+    },
+    "filename": "C:\\Users\\Mo\\work\\study\\Магистратура\\2к\\1с\\Методы оптимзации\\scripts\\make_plan_tables.py",
+    "fix": null,
+    "location": {
+      "column": 73,
+      "row": 1
+    },
+    "message": "Doc line too long (80 > 72)",
+    "name": "doc-line-too-long",
+    "noqa_row": 1,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/doc-line-too-long"
+  },
+  {
+    "cell": null,
+    "code": "E501",
+    "end_location": {
+      "column": 81,
+      "row": 1
+    },
+    "filename": "C:\\Users\\Mo\\work\\study\\Магистратура\\2к\\1с\\Методы оптимзации\\scripts\\make_plan_tables.py",
+    "fix": null,
+    "location": {
+      "column": 80,
+      "row": 1
+    },
+    "message": "Line too long (80 > 79)",
+    "name": "line-too-long",
+    "noqa_row": 1,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/line-too-long"
+  },
+  {
+    "cell": null,
+    "code": "W505",
+    "end_location": {
+      "column": 77,
+      "row": 9
+    },
+    "filename": "C:\\Users\\Mo\\work\\study\\Магистратура\\2к\\1с\\Методы оптимзации\\scripts\\make_plan_tables.py",
+    "fix": null,
+    "location": {
+      "column": 73,
+      "row": 9
+    },
+    "message": "Doc line too long (76 > 72)",
+    "name": "doc-line-too-long",
+    "noqa_row": 9,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/doc-line-too-long"
+  },
+  {
+    "cell": null,
+    "code": "F841",
+    "end_location": {
+      "column": 10,
+      "row": 11
+    },
+    "filename": "C:\\Users\\Mo\\work\\study\\Магистратура\\2к\\1с\\Методы оптимзации\\scripts\\make_plan_tables.py",
+    "fix": {
+      "applicability": "unsafe",
+      "edits": [
+        {
+          "content": "",
+          "end_location": {
+            "column": 13,
+            "row": 11
+          },
+          "location": {
+            "column": 5,
+            "row": 11
+          }
+        }
+      ],
+      "message": "Remove assignment to unused variable `label`"
+    },
+    "location": {
+      "column": 5,
+      "row": 11
+    },
+    "message": "Local variable `label` is assigned to but never used",
+    "name": "unused-variable",
+    "noqa_row": 11,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/unused-variable"
+  },
+  {
+    "cell": null,
+    "code": "W505",
+    "end_location": {
+      "column": 74,
+      "row": 153
+    },
+    "filename": "C:\\Users\\Mo\\work\\study\\Магистратура\\2к\\1с\\Методы оптимзации\\scripts\\model_data.py",
+    "fix": null,
+    "location": {
+      "column": 73,
+      "row": 153
+    },
+    "message": "Doc line too long (73 > 72)",
+    "name": "doc-line-too-long",
+    "noqa_row": 153,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/doc-line-too-long"
+  },
+  {
+    "cell": null,
+    "code": "W505",
+    "end_location": {
+      "column": 74,
+      "row": 148
+    },
+    "filename": "C:\\Users\\Mo\\work\\study\\Магистратура\\2к\\1с\\Методы оптимзации\\scripts\\operations.py",
+    "fix": null,
+    "location": {
+      "column": 73,
+      "row": 148
+    },
+    "message": "Doc line too long (73 > 72)",
+    "name": "doc-line-too-long",
+    "noqa_row": 148,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/doc-line-too-long"
+  },
+  {
+    "cell": null,
+    "code": "W505",
+    "end_location": {
+      "column": 75,
+      "row": 173
+    },
+    "filename": "C:\\Users\\Mo\\work\\study\\Магистратура\\2к\\1с\\Методы оптимзации\\scripts\\operations.py",
+    "fix": null,
+    "location": {
+      "column": 73,
+      "row": 173
+    },
+    "message": "Doc line too long (74 > 72)",
+    "name": "doc-line-too-long",
+    "noqa_row": 173,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/doc-line-too-long"
+  },
+  {
+    "cell": null,
+    "code": "W505",
+    "end_location": {
+      "column": 79,
+      "row": 197
+    },
+    "filename": "C:\\Users\\Mo\\work\\study\\Магистратура\\2к\\1с\\Методы оптимзации\\scripts\\operations.py",
+    "fix": null,
+    "location": {
+      "column": 73,
+      "row": 197
+    },
+    "message": "Doc line too long (78 > 72)",
+    "name": "doc-line-too-long",
+    "noqa_row": 197,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/doc-line-too-long"
+  },
+  {
+    "cell": null,
+    "code": "W505",
+    "end_location": {
+      "column": 79,
+      "row": 264
+    },
+    "filename": "C:\\Users\\Mo\\work\\study\\Магистратура\\2к\\1с\\Методы оптимзации\\scripts\\operations.py",
+    "fix": null,
+    "location": {
+      "column": 73,
+      "row": 264
+    },
+    "message": "Doc line too long (78 > 72)",
+    "name": "doc-line-too-long",
+    "noqa_row": 264,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/doc-line-too-long"
+  },
+  {
+    "cell": null,
+    "code": "W505",
+    "end_location": {
+      "column": 74,
+      "row": 372
+    },
+    "filename": "C:\\Users\\Mo\\work\\study\\Магистратура\\2к\\1с\\Методы оптимзации\\scripts\\operations.py",
+    "fix": null,
+    "location": {
+      "column": 73,
+      "row": 372
+    },
+    "message": "Doc line too long (73 > 72)",
+    "name": "doc-line-too-long",
+    "noqa_row": 372,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/doc-line-too-long"
+  },
+  {
+    "cell": null,
+    "code": "W505",
+    "end_location": {
+      "column": 77,
+      "row": 398
+    },
+    "filename": "C:\\Users\\Mo\\work\\study\\Магистратура\\2к\\1с\\Методы оптимзации\\scripts\\operations.py",
+    "fix": null,
+    "location": {
+      "column": 73,
+      "row": 398
+    },
+    "message": "Doc line too long (76 > 72)",
+    "name": "doc-line-too-long",
+    "noqa_row": 398,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/doc-line-too-long"
+  },
+  {
+    "cell": null,
+    "code": "W505",
+    "end_location": {
+      "column": 78,
+      "row": 399
+    },
+    "filename": "C:\\Users\\Mo\\work\\study\\Магистратура\\2к\\1с\\Методы оптимзации\\scripts\\operations.py",
+    "fix": null,
+    "location": {
+      "column": 73,
+      "row": 399
+    },
+    "message": "Doc line too long (77 > 72)",
+    "name": "doc-line-too-long",
+    "noqa_row": 399,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/doc-line-too-long"
+  },
+  {
+    "cell": null,
+    "code": "W505",
+    "end_location": {
+      "column": 78,
+      "row": 436
+    },
+    "filename": "C:\\Users\\Mo\\work\\study\\Магистратура\\2к\\1с\\Методы оптимзации\\scripts\\operations.py",
+    "fix": null,
+    "location": {
+      "column": 73,
+      "row": 436
+    },
+    "message": "Doc line too long (77 > 72)",
+    "name": "doc-line-too-long",
+    "noqa_row": 436,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/doc-line-too-long"
+  },
+  {
+    "cell": null,
+    "code": "W505",
+    "end_location": {
+      "column": 76,
+      "row": 1
+    },
+    "filename": "C:\\Users\\Mo\\work\\study\\Магистратура\\2к\\1с\\Методы оптимзации\\scripts\\reporting.py",
+    "fix": null,
+    "location": {
+      "column": 73,
+      "row": 1
+    },
+    "message": "Doc line too long (75 > 72)",
+    "name": "doc-line-too-long",
+    "noqa_row": 1,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/doc-line-too-long"
+  },
+  {
+    "cell": null,
+    "code": "W505",
+    "end_location": {
+      "column": 74,
+      "row": 88
+    },
+    "filename": "C:\\Users\\Mo\\work\\study\\Магистратура\\2к\\1с\\Методы оптимзации\\scripts\\reporting.py",
+    "fix": null,
+    "location": {
+      "column": 73,
+      "row": 88
+    },
+    "message": "Doc line too long (73 > 72)",
+    "name": "doc-line-too-long",
+    "noqa_row": 88,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/doc-line-too-long"
+  },
+  {
+    "cell": null,
+    "code": "W505",
+    "end_location": {
+      "column": 74,
+      "row": 149
+    },
+    "filename": "C:\\Users\\Mo\\work\\study\\Магистратура\\2к\\1с\\Методы оптимзации\\scripts\\reporting.py",
+    "fix": null,
+    "location": {
+      "column": 73,
+      "row": 149
+    },
+    "message": "Doc line too long (73 > 72)",
+    "name": "doc-line-too-long",
+    "noqa_row": 149,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/doc-line-too-long"
+  },
+  {
+    "cell": null,
+    "code": "W505",
+    "end_location": {
+      "column": 74,
+      "row": 407
+    },
+    "filename": "C:\\Users\\Mo\\work\\study\\Магистратура\\2к\\1с\\Методы оптимзации\\scripts\\reporting.py",
+    "fix": null,
+    "location": {
+      "column": 73,
+      "row": 407
+    },
+    "message": "Doc line too long (73 > 72)",
+    "name": "doc-line-too-long",
+    "noqa_row": 407,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/doc-line-too-long"
+  },
+  {
+    "cell": null,
+    "code": "W505",
+    "end_location": {
+      "column": 78,
+      "row": 408
+    },
+    "filename": "C:\\Users\\Mo\\work\\study\\Магистратура\\2к\\1с\\Методы оптимзации\\scripts\\reporting.py",
+    "fix": null,
+    "location": {
+      "column": 73,
+      "row": 408
+    },
+    "message": "Doc line too long (77 > 72)",
+    "name": "doc-line-too-long",
+    "noqa_row": 408,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/doc-line-too-long"
+  },
+  {
+    "cell": null,
+    "code": "E501",
+    "end_location": {
+      "column": 82,
+      "row": 477
+    },
+    "filename": "C:\\Users\\Mo\\work\\study\\Магистратура\\2к\\1с\\Методы оптимзации\\scripts\\reporting.py",
+    "fix": null,
+    "location": {
+      "column": 80,
+      "row": 477
+    },
+    "message": "Line too long (81 > 79)",
+    "name": "line-too-long",
+    "noqa_row": 477,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/line-too-long"
+  },
+  {
+    "cell": null,
+    "code": "E501",
+    "end_location": {
+      "column": 81,
+      "row": 484
+    },
+    "filename": "C:\\Users\\Mo\\work\\study\\Магистратура\\2к\\1с\\Методы оптимзации\\scripts\\reporting.py",
+    "fix": null,
+    "location": {
+      "column": 80,
+      "row": 484
+    },
+    "message": "Line too long (80 > 79)",
+    "name": "line-too-long",
+    "noqa_row": 484,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/line-too-long"
+  },
+  {
+    "cell": null,
+    "code": "E501",
+    "end_location": {
+      "column": 100,
+      "row": 511
+    },
+    "filename": "C:\\Users\\Mo\\work\\study\\Магистратура\\2к\\1с\\Методы оптимзации\\scripts\\reporting.py",
+    "fix": null,
+    "location": {
+      "column": 80,
+      "row": 511
+    },
+    "message": "Line too long (99 > 79)",
+    "name": "line-too-long",
+    "noqa_row": 511,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/line-too-long"
+  },
+  {
+    "cell": null,
+    "code": "E501",
+    "end_location": {
+      "column": 81,
+      "row": 515
+    },
+    "filename": "C:\\Users\\Mo\\work\\study\\Магистратура\\2к\\1с\\Методы оптимзации\\scripts\\reporting.py",
+    "fix": null,
+    "location": {
+      "column": 80,
+      "row": 515
+    },
+    "message": "Line too long (80 > 79)",
+    "name": "line-too-long",
+    "noqa_row": 515,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/line-too-long"
+  },
+  {
+    "cell": null,
+    "code": "E501",
+    "end_location": {
+      "column": 81,
+      "row": 519
+    },
+    "filename": "C:\\Users\\Mo\\work\\study\\Магистратура\\2к\\1с\\Методы оптимзации\\scripts\\reporting.py",
+    "fix": null,
+    "location": {
+      "column": 80,
+      "row": 519
+    },
+    "message": "Line too long (80 > 79)",
+    "name": "line-too-long",
+    "noqa_row": 519,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/line-too-long"
+  },
+  {
+    "cell": null,
+    "code": "E501",
+    "end_location": {
+      "column": 83,
+      "row": 578
+    },
+    "filename": "C:\\Users\\Mo\\work\\study\\Магистратура\\2к\\1с\\Методы оптимзации\\scripts\\reporting.py",
+    "fix": null,
+    "location": {
+      "column": 80,
+      "row": 578
+    },
+    "message": "Line too long (82 > 79)",
+    "name": "line-too-long",
+    "noqa_row": 578,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/line-too-long"
+  },
+  {
+    "cell": null,
+    "code": "E501",
+    "end_location": {
+      "column": 83,
+      "row": 590
+    },
+    "filename": "C:\\Users\\Mo\\work\\study\\Магистратура\\2к\\1с\\Методы оптимзации\\scripts\\reporting.py",
+    "fix": null,
+    "location": {
+      "column": 80,
+      "row": 590
+    },
+    "message": "Line too long (82 > 79)",
+    "name": "line-too-long",
+    "noqa_row": 590,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/line-too-long"
+  },
+  {
+    "cell": null,
+    "code": "E501",
+    "end_location": {
+      "column": 83,
+      "row": 603
+    },
+    "filename": "C:\\Users\\Mo\\work\\study\\Магистратура\\2к\\1с\\Методы оптимзации\\scripts\\reporting.py",
+    "fix": null,
+    "location": {
+      "column": 80,
+      "row": 603
+    },
+    "message": "Line too long (82 > 79)",
+    "name": "line-too-long",
+    "noqa_row": 603,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/line-too-long"
+  },
+  {
+    "cell": null,
+    "code": "E501",
+    "end_location": {
+      "column": 87,
+      "row": 604
+    },
+    "filename": "C:\\Users\\Mo\\work\\study\\Магистратура\\2к\\1с\\Методы оптимзации\\scripts\\reporting.py",
+    "fix": null,
+    "location": {
+      "column": 80,
+      "row": 604
+    },
+    "message": "Line too long (86 > 79)",
+    "name": "line-too-long",
+    "noqa_row": 604,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/line-too-long"
+  },
+  {
+    "cell": null,
+    "code": "E501",
+    "end_location": {
+      "column": 85,
+      "row": 608
+    },
+    "filename": "C:\\Users\\Mo\\work\\study\\Магистратура\\2к\\1с\\Методы оптимзации\\scripts\\reporting.py",
+    "fix": null,
+    "location": {
+      "column": 80,
+      "row": 608
+    },
+    "message": "Line too long (84 > 79)",
+    "name": "line-too-long",
+    "noqa_row": 608,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/line-too-long"
+  },
+  {
+    "cell": null,
+    "code": "E501",
+    "end_location": {
+      "column": 82,
+      "row": 637
+    },
+    "filename": "C:\\Users\\Mo\\work\\study\\Магистратура\\2к\\1с\\Методы оптимзации\\scripts\\reporting.py",
+    "fix": null,
+    "location": {
+      "column": 80,
+      "row": 637
+    },
+    "message": "Line too long (81 > 79)",
+    "name": "line-too-long",
+    "noqa_row": 637,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/line-too-long"
+  },
+  {
+    "cell": null,
+    "code": "E501",
+    "end_location": {
+      "column": 81,
+      "row": 664
+    },
+    "filename": "C:\\Users\\Mo\\work\\study\\Магистратура\\2к\\1с\\Методы оптимзации\\scripts\\reporting.py",
+    "fix": null,
+    "location": {
+      "column": 80,
+      "row": 664
+    },
+    "message": "Line too long (80 > 79)",
+    "name": "line-too-long",
+    "noqa_row": 664,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/line-too-long"
+  },
+  {
+    "cell": null,
+    "code": "E501",
+    "end_location": {
+      "column": 82,
+      "row": 677
+    },
+    "filename": "C:\\Users\\Mo\\work\\study\\Магистратура\\2к\\1с\\Методы оптимзации\\scripts\\reporting.py",
+    "fix": null,
+    "location": {
+      "column": 80,
+      "row": 677
+    },
+    "message": "Line too long (81 > 79)",
+    "name": "line-too-long",
+    "noqa_row": 677,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/line-too-long"
+  },
+  {
+    "cell": null,
+    "code": "E501",
+    "end_location": {
+      "column": 81,
+      "row": 679
+    },
+    "filename": "C:\\Users\\Mo\\work\\study\\Магистратура\\2к\\1с\\Методы оптимзации\\scripts\\reporting.py",
+    "fix": null,
+    "location": {
+      "column": 80,
+      "row": 679
+    },
+    "message": "Line too long (80 > 79)",
+    "name": "line-too-long",
+    "noqa_row": 679,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/line-too-long"
+  },
+  {
+    "cell": null,
+    "code": "E501",
+    "end_location": {
+      "column": 81,
+      "row": 680
+    },
+    "filename": "C:\\Users\\Mo\\work\\study\\Магистратура\\2к\\1с\\Методы оптимзации\\scripts\\reporting.py",
+    "fix": null,
+    "location": {
+      "column": 80,
+      "row": 680
+    },
+    "message": "Line too long (80 > 79)",
+    "name": "line-too-long",
+    "noqa_row": 680,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/line-too-long"
+  },
+  {
+    "cell": null,
+    "code": "E501",
+    "end_location": {
+      "column": 83,
+      "row": 683
+    },
+    "filename": "C:\\Users\\Mo\\work\\study\\Магистратура\\2к\\1с\\Методы оптимзации\\scripts\\reporting.py",
+    "fix": null,
+    "location": {
+      "column": 80,
+      "row": 683
+    },
+    "message": "Line too long (82 > 79)",
+    "name": "line-too-long",
+    "noqa_row": 683,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/line-too-long"
+  },
+  {
+    "cell": null,
+    "code": "E501",
+    "end_location": {
+      "column": 83,
+      "row": 684
+    },
+    "filename": "C:\\Users\\Mo\\work\\study\\Магистратура\\2к\\1с\\Методы оптимзации\\scripts\\reporting.py",
+    "fix": null,
+    "location": {
+      "column": 80,
+      "row": 684
+    },
+    "message": "Line too long (82 > 79)",
+    "name": "line-too-long",
+    "noqa_row": 684,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/line-too-long"
+  },
+  {
+    "cell": null,
+    "code": "E501",
+    "end_location": {
+      "column": 82,
+      "row": 685
+    },
+    "filename": "C:\\Users\\Mo\\work\\study\\Магистратура\\2к\\1с\\Методы оптимзации\\scripts\\reporting.py",
+    "fix": null,
+    "location": {
+      "column": 80,
+      "row": 685
+    },
+    "message": "Line too long (81 > 79)",
+    "name": "line-too-long",
+    "noqa_row": 685,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/line-too-long"
+  },
+  {
+    "cell": null,
+    "code": "W505",
+    "end_location": {
+      "column": 77,
+      "row": 55
+    },
+    "filename": "C:\\Users\\Mo\\work\\study\\Магистратура\\2к\\1с\\Методы оптимзации\\scripts\\routing.py",
+    "fix": null,
+    "location": {
+      "column": 73,
+      "row": 55
+    },
+    "message": "Doc line too long (76 > 72)",
+    "name": "doc-line-too-long",
+    "noqa_row": 55,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/doc-line-too-long"
+  },
+  {
+    "cell": null,
+    "code": "W505",
+    "end_location": {
+      "column": 80,
+      "row": 1
+    },
+    "filename": "C:\\Users\\Mo\\work\\study\\Магистратура\\2к\\1с\\Методы оптимзации\\scripts\\run_experiments.py",
+    "fix": null,
+    "location": {
+      "column": 73,
+      "row": 1
+    },
+    "message": "Doc line too long (79 > 72)",
+    "name": "doc-line-too-long",
+    "noqa_row": 1,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/doc-line-too-long"
+  },
+  {
+    "cell": null,
+    "code": "W505",
+    "end_location": {
+      "column": 77,
+      "row": 9
+    },
+    "filename": "C:\\Users\\Mo\\work\\study\\Магистратура\\2к\\1с\\Методы оптимзации\\scripts\\run_experiments.py",
+    "fix": null,
+    "location": {
+      "column": 73,
+      "row": 9
+    },
+    "message": "Doc line too long (76 > 72)",
+    "name": "doc-line-too-long",
+    "noqa_row": 9,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/doc-line-too-long"
+  },
+  {
+    "cell": null,
+    "code": "F841",
+    "end_location": {
+      "column": 10,
+      "row": 11
+    },
+    "filename": "C:\\Users\\Mo\\work\\study\\Магистратура\\2к\\1с\\Методы оптимзации\\scripts\\run_experiments.py",
+    "fix": {
+      "applicability": "unsafe",
+      "edits": [
+        {
+          "content": "",
+          "end_location": {
+            "column": 13,
+            "row": 11
+          },
+          "location": {
+            "column": 5,
+            "row": 11
+          }
+        }
+      ],
+      "message": "Remove assignment to unused variable `label`"
+    },
+    "location": {
+      "column": 5,
+      "row": 11
+    },
+    "message": "Local variable `label` is assigned to but never used",
+    "name": "unused-variable",
+    "noqa_row": 11,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/unused-variable"
+  },
+  {
+    "cell": null,
+    "code": "W505",
+    "end_location": {
+      "column": 79,
+      "row": 1
+    },
+    "filename": "C:\\Users\\Mo\\work\\study\\Магистратура\\2к\\1с\\Методы оптимзации\\scripts\\run_game_small.py",
+    "fix": null,
+    "location": {
+      "column": 73,
+      "row": 1
+    },
+    "message": "Doc line too long (78 > 72)",
+    "name": "doc-line-too-long",
+    "noqa_row": 1,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/doc-line-too-long"
+  },
+  {
+    "cell": null,
+    "code": "W505",
+    "end_location": {
+      "column": 77,
+      "row": 9
+    },
+    "filename": "C:\\Users\\Mo\\work\\study\\Магистратура\\2к\\1с\\Методы оптимзации\\scripts\\run_game_small.py",
+    "fix": null,
+    "location": {
+      "column": 73,
+      "row": 9
+    },
+    "message": "Doc line too long (76 > 72)",
+    "name": "doc-line-too-long",
+    "noqa_row": 9,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/doc-line-too-long"
+  },
+  {
+    "cell": null,
+    "code": "F841",
+    "end_location": {
+      "column": 10,
+      "row": 11
+    },
+    "filename": "C:\\Users\\Mo\\work\\study\\Магистратура\\2к\\1с\\Методы оптимзации\\scripts\\run_game_small.py",
+    "fix": {
+      "applicability": "unsafe",
+      "edits": [
+        {
+          "content": "",
+          "end_location": {
+            "column": 13,
+            "row": 11
+          },
+          "location": {
+            "column": 5,
+            "row": 11
+          }
+        }
+      ],
+      "message": "Remove assignment to unused variable `label`"
+    },
+    "location": {
+      "column": 5,
+      "row": 11
+    },
+    "message": "Local variable `label` is assigned to but never used",
+    "name": "unused-variable",
+    "noqa_row": 11,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/unused-variable"
+  },
+  {
+    "cell": null,
+    "code": "W505",
+    "end_location": {
+      "column": 78,
+      "row": 1
+    },
+    "filename": "C:\\Users\\Mo\\work\\study\\Магистратура\\2к\\1с\\Методы оптимзации\\scripts\\run_scenarios.py",
+    "fix": null,
+    "location": {
+      "column": 73,
+      "row": 1
+    },
+    "message": "Doc line too long (77 > 72)",
+    "name": "doc-line-too-long",
+    "noqa_row": 1,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/doc-line-too-long"
+  },
+  {
+    "cell": null,
+    "code": "W505",
+    "end_location": {
+      "column": 77,
+      "row": 9
+    },
+    "filename": "C:\\Users\\Mo\\work\\study\\Магистратура\\2к\\1с\\Методы оптимзации\\scripts\\run_scenarios.py",
+    "fix": null,
+    "location": {
+      "column": 73,
+      "row": 9
+    },
+    "message": "Doc line too long (76 > 72)",
+    "name": "doc-line-too-long",
+    "noqa_row": 9,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/doc-line-too-long"
+  },
+  {
+    "cell": null,
+    "code": "F841",
+    "end_location": {
+      "column": 10,
+      "row": 11
+    },
+    "filename": "C:\\Users\\Mo\\work\\study\\Магистратура\\2к\\1с\\Методы оптимзации\\scripts\\run_scenarios.py",
+    "fix": {
+      "applicability": "unsafe",
+      "edits": [
+        {
+          "content": "",
+          "end_location": {
+            "column": 13,
+            "row": 11
+          },
+          "location": {
+            "column": 5,
+            "row": 11
+          }
+        }
+      ],
+      "message": "Remove assignment to unused variable `label`"
+    },
+    "location": {
+      "column": 5,
+      "row": 11
+    },
+    "message": "Local variable `label` is assigned to but never used",
+    "name": "unused-variable",
+    "noqa_row": 11,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/unused-variable"
+  },
+  {
+    "cell": null,
+    "code": "W505",
+    "end_location": {
+      "column": 74,
+      "row": 1
+    },
+    "filename": "C:\\Users\\Mo\\work\\study\\Магистратура\\2к\\1с\\Методы оптимзации\\scripts\\search.py",
+    "fix": null,
+    "location": {
+      "column": 73,
+      "row": 1
+    },
+    "message": "Doc line too long (73 > 72)",
+    "name": "doc-line-too-long",
+    "noqa_row": 1,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/doc-line-too-long"
+  },
+  {
+    "cell": null,
+    "code": "W505",
+    "end_location": {
+      "column": 75,
+      "row": 17
+    },
+    "filename": "C:\\Users\\Mo\\work\\study\\Магистратура\\2к\\1с\\Методы оптимзации\\scripts\\search.py",
+    "fix": null,
+    "location": {
+      "column": 73,
+      "row": 17
+    },
+    "message": "Doc line too long (74 > 72)",
+    "name": "doc-line-too-long",
+    "noqa_row": 17,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/doc-line-too-long"
+  },
+  {
+    "cell": null,
+    "code": "W505",
+    "end_location": {
+      "column": 77,
+      "row": 1
+    },
+    "filename": "C:\\Users\\Mo\\work\\study\\Магистратура\\2к\\1с\\Методы оптимзации\\scripts\\solve_greedy.py",
+    "fix": null,
+    "location": {
+      "column": 73,
+      "row": 1
+    },
+    "message": "Doc line too long (76 > 72)",
+    "name": "doc-line-too-long",
+    "noqa_row": 1,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/doc-line-too-long"
+  },
+  {
+    "cell": null,
+    "code": "W505",
+    "end_location": {
+      "column": 77,
+      "row": 9
+    },
+    "filename": "C:\\Users\\Mo\\work\\study\\Магистратура\\2к\\1с\\Методы оптимзации\\scripts\\solve_greedy.py",
+    "fix": null,
+    "location": {
+      "column": 73,
+      "row": 9
+    },
+    "message": "Doc line too long (76 > 72)",
+    "name": "doc-line-too-long",
+    "noqa_row": 9,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/doc-line-too-long"
+  },
+  {
+    "cell": null,
+    "code": "W505",
+    "end_location": {
+      "column": 81,
+      "row": 1
+    },
+    "filename": "C:\\Users\\Mo\\work\\study\\Магистратура\\2к\\1с\\Методы оптимзации\\scripts\\solve_milp_small.py",
+    "fix": null,
+    "location": {
+      "column": 73,
+      "row": 1
+    },
+    "message": "Doc line too long (80 > 72)",
+    "name": "doc-line-too-long",
+    "noqa_row": 1,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/doc-line-too-long"
+  },
+  {
+    "cell": null,
+    "code": "E501",
+    "end_location": {
+      "column": 81,
+      "row": 1
+    },
+    "filename": "C:\\Users\\Mo\\work\\study\\Магистратура\\2к\\1с\\Методы оптимзации\\scripts\\solve_milp_small.py",
+    "fix": null,
+    "location": {
+      "column": 80,
+      "row": 1
+    },
+    "message": "Line too long (80 > 79)",
+    "name": "line-too-long",
+    "noqa_row": 1,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/line-too-long"
+  },
+  {
+    "cell": null,
+    "code": "W505",
+    "end_location": {
+      "column": 77,
+      "row": 9
+    },
+    "filename": "C:\\Users\\Mo\\work\\study\\Магистратура\\2к\\1с\\Методы оптимзации\\scripts\\solve_milp_small.py",
+    "fix": null,
+    "location": {
+      "column": 73,
+      "row": 9
+    },
+    "message": "Doc line too long (76 > 72)",
+    "name": "doc-line-too-long",
+    "noqa_row": 9,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/doc-line-too-long"
+  },
+  {
+    "cell": null,
+    "code": "F841",
+    "end_location": {
+      "column": 10,
+      "row": 11
+    },
+    "filename": "C:\\Users\\Mo\\work\\study\\Магистратура\\2к\\1с\\Методы оптимзации\\scripts\\solve_milp_small.py",
+    "fix": {
+      "applicability": "unsafe",
+      "edits": [
+        {
+          "content": "",
+          "end_location": {
+            "column": 13,
+            "row": 11
+          },
+          "location": {
+            "column": 5,
+            "row": 11
+          }
+        }
+      ],
+      "message": "Remove assignment to unused variable `label`"
+    },
+    "location": {
+      "column": 5,
+      "row": 11
+    },
+    "message": "Local variable `label` is assigned to but never used",
+    "name": "unused-variable",
+    "noqa_row": 11,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/unused-variable"
+  },
+  {
+    "cell": null,
+    "code": "W505",
+    "end_location": {
+      "column": 77,
+      "row": 9
+    },
+    "filename": "C:\\Users\\Mo\\work\\study\\Магистратура\\2к\\1с\\Методы оптимзации\\scripts\\solve_sa.py",
+    "fix": null,
+    "location": {
+      "column": 73,
+      "row": 9
+    },
+    "message": "Doc line too long (76 > 72)",
+    "name": "doc-line-too-long",
+    "noqa_row": 9,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/doc-line-too-long"
+  },
+  {
+    "cell": null,
+    "code": "W505",
+    "end_location": {
+      "column": 78,
+      "row": 1
+    },
+    "filename": "C:\\Users\\Mo\\work\\study\\Магистратура\\2к\\1с\\Методы оптимзации\\scripts\\studies.py",
+    "fix": null,
+    "location": {
+      "column": 73,
+      "row": 1
+    },
+    "message": "Doc line too long (77 > 72)",
+    "name": "doc-line-too-long",
+    "noqa_row": 1,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/doc-line-too-long"
+  },
+  {
+    "cell": null,
+    "code": "W505",
+    "end_location": {
+      "column": 75,
+      "row": 26
+    },
+    "filename": "C:\\Users\\Mo\\work\\study\\Магистратура\\2к\\1с\\Методы оптимзации\\scripts\\studies.py",
+    "fix": null,
+    "location": {
+      "column": 73,
+      "row": 26
+    },
+    "message": "Doc line too long (74 > 72)",
+    "name": "doc-line-too-long",
+    "noqa_row": 26,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/doc-line-too-long"
+  },
+  {
+    "cell": null,
+    "code": "W505",
+    "end_location": {
+      "column": 83,
+      "row": 36
+    },
+    "filename": "C:\\Users\\Mo\\work\\study\\Магистратура\\2к\\1с\\Методы оптимзации\\scripts\\studies.py",
+    "fix": null,
+    "location": {
+      "column": 73,
+      "row": 36
+    },
+    "message": "Doc line too long (82 > 72)",
+    "name": "doc-line-too-long",
+    "noqa_row": 36,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/doc-line-too-long"
+  },
+  {
+    "cell": null,
+    "code": "E501",
+    "end_location": {
+      "column": 83,
+      "row": 36
+    },
+    "filename": "C:\\Users\\Mo\\work\\study\\Магистратура\\2к\\1с\\Методы оптимзации\\scripts\\studies.py",
+    "fix": null,
+    "location": {
+      "column": 80,
+      "row": 36
+    },
+    "message": "Line too long (82 > 79)",
+    "name": "line-too-long",
+    "noqa_row": 36,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/line-too-long"
+  },
+  {
+    "cell": null,
+    "code": "W505",
+    "end_location": {
+      "column": 77,
+      "row": 89
+    },
+    "filename": "C:\\Users\\Mo\\work\\study\\Магистратура\\2к\\1с\\Методы оптимзации\\scripts\\studies.py",
+    "fix": null,
+    "location": {
+      "column": 73,
+      "row": 89
+    },
+    "message": "Doc line too long (76 > 72)",
+    "name": "doc-line-too-long",
+    "noqa_row": 89,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/doc-line-too-long"
+  },
+  {
+    "cell": null,
+    "code": "E501",
+    "end_location": {
+      "column": 86,
+      "row": 117
+    },
+    "filename": "C:\\Users\\Mo\\work\\study\\Магистратура\\2к\\1с\\Методы оптимзации\\scripts\\studies.py",
+    "fix": null,
+    "location": {
+      "column": 80,
+      "row": 117
+    },
+    "message": "Line too long (85 > 79)",
+    "name": "line-too-long",
+    "noqa_row": 117,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/line-too-long"
+  },
+  {
+    "cell": null,
+    "code": "W505",
+    "end_location": {
+      "column": 80,
+      "row": 125
+    },
+    "filename": "C:\\Users\\Mo\\work\\study\\Магистратура\\2к\\1с\\Методы оптимзации\\scripts\\studies.py",
+    "fix": null,
+    "location": {
+      "column": 73,
+      "row": 125
+    },
+    "message": "Doc line too long (79 > 72)",
+    "name": "doc-line-too-long",
+    "noqa_row": 125,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/doc-line-too-long"
+  },
+  {
+    "cell": null,
+    "code": "W505",
+    "end_location": {
+      "column": 77,
+      "row": 149
+    },
+    "filename": "C:\\Users\\Mo\\work\\study\\Магистратура\\2к\\1с\\Методы оптимзации\\scripts\\studies.py",
+    "fix": null,
+    "location": {
+      "column": 73,
+      "row": 149
+    },
+    "message": "Doc line too long (76 > 72)",
+    "name": "doc-line-too-long",
+    "noqa_row": 149,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/doc-line-too-long"
+  },
+  {
+    "cell": null,
+    "code": "W505",
+    "end_location": {
+      "column": 76,
+      "row": 150
+    },
+    "filename": "C:\\Users\\Mo\\work\\study\\Магистратура\\2к\\1с\\Методы оптимзации\\scripts\\studies.py",
+    "fix": null,
+    "location": {
+      "column": 73,
+      "row": 150
+    },
+    "message": "Doc line too long (75 > 72)",
+    "name": "doc-line-too-long",
+    "noqa_row": 150,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/doc-line-too-long"
+  },
+  {
+    "cell": null,
+    "code": "W505",
+    "end_location": {
+      "column": 76,
+      "row": 198
+    },
+    "filename": "C:\\Users\\Mo\\work\\study\\Магистратура\\2к\\1с\\Методы оптимзации\\scripts\\studies.py",
+    "fix": null,
+    "location": {
+      "column": 73,
+      "row": 198
+    },
+    "message": "Doc line too long (75 > 72)",
+    "name": "doc-line-too-long",
+    "noqa_row": 198,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/doc-line-too-long"
+  },
+  {
+    "cell": null,
+    "code": "W505",
+    "end_location": {
+      "column": 77,
+      "row": 240
+    },
+    "filename": "C:\\Users\\Mo\\work\\study\\Магистратура\\2к\\1с\\Методы оптимзации\\scripts\\studies.py",
+    "fix": null,
+    "location": {
+      "column": 73,
+      "row": 240
+    },
+    "message": "Doc line too long (76 > 72)",
+    "name": "doc-line-too-long",
+    "noqa_row": 240,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/doc-line-too-long"
+  },
+  {
+    "cell": null,
+    "code": "W505",
+    "end_location": {
+      "column": 75,
+      "row": 241
+    },
+    "filename": "C:\\Users\\Mo\\work\\study\\Магистратура\\2к\\1с\\Методы оптимзации\\scripts\\studies.py",
+    "fix": null,
+    "location": {
+      "column": 73,
+      "row": 241
+    },
+    "message": "Doc line too long (74 > 72)",
+    "name": "doc-line-too-long",
+    "noqa_row": 241,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/doc-line-too-long"
+  },
+  {
+    "cell": null,
+    "code": "W505",
+    "end_location": {
+      "column": 80,
+      "row": 260
+    },
+    "filename": "C:\\Users\\Mo\\work\\study\\Магистратура\\2к\\1с\\Методы оптимзации\\scripts\\studies.py",
+    "fix": null,
+    "location": {
+      "column": 73,
+      "row": 260
+    },
+    "message": "Doc line too long (79 > 72)",
+    "name": "doc-line-too-long",
+    "noqa_row": 260,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/doc-line-too-long"
+  },
+  {
+    "cell": null,
+    "code": "E501",
+    "end_location": {
+      "column": 82,
+      "row": 290
+    },
+    "filename": "C:\\Users\\Mo\\work\\study\\Магистратура\\2к\\1с\\Методы оптимзации\\scripts\\studies.py",
+    "fix": null,
+    "location": {
+      "column": 80,
+      "row": 290
+    },
+    "message": "Line too long (81 > 79)",
+    "name": "line-too-long",
+    "noqa_row": 290,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/line-too-long"
+  },
+  {
+    "cell": null,
+    "code": "W505",
+    "end_location": {
+      "column": 76,
+      "row": 322
+    },
+    "filename": "C:\\Users\\Mo\\work\\study\\Магистратура\\2к\\1с\\Методы оптимзации\\scripts\\studies.py",
+    "fix": null,
+    "location": {
+      "column": 73,
+      "row": 322
+    },
+    "message": "Doc line too long (75 > 72)",
+    "name": "doc-line-too-long",
+    "noqa_row": 322,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/doc-line-too-long"
+  },
+  {
+    "cell": null,
+    "code": "W505",
+    "end_location": {
+      "column": 75,
+      "row": 384
+    },
+    "filename": "C:\\Users\\Mo\\work\\study\\Магистратура\\2к\\1с\\Методы оптимзации\\scripts\\studies.py",
+    "fix": null,
+    "location": {
+      "column": 73,
+      "row": 384
+    },
+    "message": "Doc line too long (74 > 72)",
+    "name": "doc-line-too-long",
+    "noqa_row": 384,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/doc-line-too-long"
+  },
+  {
+    "cell": null,
+    "code": "W505",
+    "end_location": {
+      "column": 75,
+      "row": 28
+    },
+    "filename": "C:\\Users\\Mo\\work\\study\\Магистратура\\2к\\1с\\Методы оптимзации\\tests\\test_model.py",
+    "fix": null,
+    "location": {
+      "column": 73,
+      "row": 28
+    },
+    "message": "Doc line too long (74 > 72)",
+    "name": "doc-line-too-long",
+    "noqa_row": 28,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/doc-line-too-long"
+  },
+  {
+    "cell": null,
+    "code": "W505",
+    "end_location": {
+      "column": 75,
+      "row": 29
+    },
+    "filename": "C:\\Users\\Mo\\work\\study\\Магистратура\\2к\\1с\\Методы оптимзации\\tests\\test_model.py",
+    "fix": null,
+    "location": {
+      "column": 73,
+      "row": 29
+    },
+    "message": "Doc line too long (74 > 72)",
+    "name": "doc-line-too-long",
+    "noqa_row": 29,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/doc-line-too-long"
+  },
+  {
+    "cell": null,
+    "code": "W505",
+    "end_location": {
+      "column": 74,
+      "row": 127
+    },
+    "filename": "C:\\Users\\Mo\\work\\study\\Магистратура\\2к\\1с\\Методы оптимзации\\tests\\test_model.py",
+    "fix": null,
+    "location": {
+      "column": 73,
+      "row": 127
+    },
+    "message": "Doc line too long (73 > 72)",
+    "name": "doc-line-too-long",
+    "noqa_row": 127,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/doc-line-too-long"
+  },
+  {
+    "cell": null,
+    "code": "W505",
+    "end_location": {
+      "column": 77,
+      "row": 136
+    },
+    "filename": "C:\\Users\\Mo\\work\\study\\Магистратура\\2к\\1с\\Методы оптимзации\\tests\\test_model.py",
+    "fix": null,
+    "location": {
+      "column": 73,
+      "row": 136
+    },
+    "message": "Doc line too long (76 > 72)",
+    "name": "doc-line-too-long",
+    "noqa_row": 136,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/doc-line-too-long"
+  },
+  {
+    "cell": null,
+    "code": "W505",
+    "end_location": {
+      "column": 75,
+      "row": 300
+    },
+    "filename": "C:\\Users\\Mo\\work\\study\\Магистратура\\2к\\1с\\Методы оптимзации\\tests\\test_model.py",
+    "fix": null,
+    "location": {
+      "column": 73,
+      "row": 300
+    },
+    "message": "Doc line too long (74 > 72)",
+    "name": "doc-line-too-long",
+    "noqa_row": 300,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/doc-line-too-long"
+  }
+]

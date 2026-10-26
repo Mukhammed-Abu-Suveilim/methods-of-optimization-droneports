@@ -1,0 +1,15 @@
+{
+  "small": {
+    "greedy": 199310
+  },
+  "main": {
+    "greedy": 233884,
+    "sa_seed2": 237442
+  },
+  "hashes": {
+    "data\\parameters.json": "a7e4d0674a1c308a562f6e2c9c30641ac96c69fff538fbd0cde4f741f1929859",
+    "data\\processed\\points_main.csv": "48baf349cee76833d8dae7591a02b3fcc2fa88c2577bce2cb9582ca0c845d126",
+    "data\\processed\\points_small.csv": "301eb53eccbc438c323ce002159aba701e98c009dd255e19ece56648ba4abbb4",
+    "data\\processed\\demand_main.csv": "e9812237a8c595dfc3ed9c187acf49a918f576e274a7501c9c7af85e18984b08"
+  }
+}

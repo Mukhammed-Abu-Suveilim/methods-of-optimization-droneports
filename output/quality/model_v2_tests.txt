@@ -1,9 +1,9 @@
-..C:\Users\Mo\work\study\Магистратура\2к\1с\Методы оптимзации\.venv\Lib\site-packages\pulp\pulp.py:318: DeprecationWarning: Constructing LpVariable(name, ...) directly is deprecated; in PuLP 4.0 use prob.add_variable(name, lowBound, upBound, cat=...). Variables are then attached to the model when created.
+.....C:\Users\Mo\work\study\Магистратура\2к\1с\Методы оптимзации\.venv\Lib\site-packages\pulp\pulp.py:318: DeprecationWarning: Constructing LpVariable(name, ...) directly is deprecated; in PuLP 4.0 use prob.add_variable(name, lowBound, upBound, cat=...). Variables are then attached to the model when created.
   _v4_deprecation(msg, stacklevel=2)
 C:\Users\Mo\work\study\Магистратура\2к\1с\Методы оптимзации\.venv\Lib\site-packages\pulp\apis\coin_api.py:70: DeprecationWarning: PULP_CBC_CMD is deprecated and will be removed in PuLP 4.0. Install CBC with `pip install pulp[cbc]` and use COIN_CMD instead.
   v4_deprecation(PULP_CBC_CMD_DEPRECATION_MSG, stacklevel=stacklevel)
 .........................
 ----------------------------------------------------------------------
-Ran 27 tests in 7.872s
+Ran 30 tests in 8.368s
 
 OK

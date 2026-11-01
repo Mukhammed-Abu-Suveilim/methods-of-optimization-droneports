@@ -703,7 +703,7 @@ def available_experiments() -> dict[str, object]:
     return result
 
 
-def build_report(available_only: bool = False) -> None:
+def build_report(available_only: bool = False, profile: str = "full") -> None:
     """
     Собрать восемь элементов сдачи только из существующих расчётов.
     """
@@ -742,6 +742,44 @@ def build_report(available_only: bool = False) -> None:
         if available_only
         else read_record(OUTPUT / "experiments.json")
     )
+    if profile == "bounded":
+        bounded = read_record(OUTPUT / "experiments_bounded.json")
+        if not bounded.get("revised_protocol_completed"):
+            raise ValueError("Ограниченный протокол не завершён")
+        experiments["funding"] = sorted(
+            records(bounded["funding"]),
+            key=lambda row: number(row, "multiplier"),
+        )
+        experiments["sensitivity"] = [
+            row
+            for row in records(bounded["sensitivity"])
+            if row["trips"] is not None
+        ]
+        for index, row in enumerate(records(bounded["sensitivity"])):
+            if row["result"] is None:
+                continue
+            variant = read_instance(
+                OUTPUT
+                / "bounded"
+                / str(bounded["identity"])
+                / f"sensitivity_{index}_instance.json"
+            )
+            row["case"] = "; ".join(
+                f"{key}={value:g}"
+                for key, value in variant["settings"].items()
+                if value != instance["settings"][key]
+            )
+            experiments["sensitivity"] = [
+                row if target["result"] == row["result"] else target
+                for target in records(experiments["sensitivity"])
+            ]
+        experiments["data_quality"] = [
+            {**statistics, "strategy": strategy}
+            for strategy in ("drop_missing", "type_median")
+        ]
+        experiments["profile"] = "bounded"
+        experiments["bounded_evidence"] = bounded
+        write_json(OUTPUT / "experiments_available.json", experiments)
     routing = read_record(OUTPUT / "routing.json")
     planning = read_record(OUTPUT / "planning_comparison.json")
     robust = read_record(OUTPUT / "robustness.json")
@@ -1450,6 +1488,14 @@ def build_report(available_only: bool = False) -> None:
         if len(tables) != 1:
             raise ValueError(f"Неоднозначная таблица отчёта: {name}")
         report_values[name] = readable_table(tables[0])
+        if name == "schedule":
+            # Короткое начало не отрывает таблицу от вводного абзаца.
+            lines = report_values[name].splitlines()
+            report_values[name] = (
+                "\n".join(lines[:10])
+                + "\n\n"
+                + "\n".join(lines[:2] + lines[10:])
+            )
     report_values.update(
         {
             "main_trips": formatted(best["objective_trips"]),
@@ -1518,6 +1564,51 @@ def build_report(available_only: bool = False) -> None:
         }
     )
     narrative = (ROOT / "docs/REPORT_TEMPLATE.md").read_text("utf-8")
+    if profile == "bounded":
+        narrative = narrative.replace(
+            "report --available-results`",
+            "report --available-results --profile bounded`",
+        ).replace(
+            "scripts/run_project.py all` запускает полный вычислительный "
+            "цикл, включая оставшиеся эксперименты.",
+            "scripts/run_project.py all --profile bounded "
+            "--max-wall-seconds 1800` воспроизводит ограниченный протокол "
+            "без повторного CBC. Исходный неограниченный режим доступен "
+            "без флага профиля.",
+        )
+        narrative = narrative.replace(
+            "Для каждой из них также выполнены десять запусков.",
+            "Сопоставляется общий портфель допустимых сетей; короткий "
+            "дополнительный поиск выполнен для недостающих точек.",
+        )
+        report_values["experiment_scope"] = (
+            "Для завершения экспериментов применён ограниченный протокол: "
+            "сохранённые сети сравниваются на всей бюджетной сетке, "
+            "дополненной двумя уточнениями. Для недостающих точек выполнены "
+            "короткие запуски с seed 0, 1, 2 и пределом 60 секунд каждый. "
+            "Это сравнение доступного портфеля, а не оценка оптимальной "
+            "бюджетной кривой. Новые запуски не объединяются с прежними "
+            "десятью запусками как равноценные наблюдения. "
+            "Исключение пропусков населения и заполнение медианой типа "
+            "дали одинаковые выбранные пункты, населения и матрицы спроса. "
+            "Поэтому сеть и число поездок совпадают с базовым решением; "
+            "повторная оптимизация не требуется. Эквивалентность относится "
+            "только к этому набору. Девять случаев чувствительности "
+            "сохранены из прежних расчётов; для остальных предусмотрен "
+            "один поиск с seed 0 продолжительностью до 45 секунд. "
+            f"Подтверждено расписаний чувствительности: "
+            f"{len(records(experiments['sensitivity']))} из 16. "
+            "Отсутствие результата в срок не означает невозможности "
+            "перевозок. Общие новые вычисления заняли "
+            f"{formatted(number(bounded, 'wall_s') / 60, 1)} мин "
+            "при пределе 30 минут."
+        )
+        narrative = narrative.replace(
+            "Следующий этап исследования — завершение экспериментальной "
+            "сетки и уточнение исходного спроса;",
+            "Следующий этап исследования — уточнение исходного спроса "
+            "и расширение поиска за пределами ограниченного портфеля;",
+        )
     for name, value in report_values.items():
         narrative = narrative.replace("{{" + name + "}}", value)
     if re.search(r"\{\{[^}]+\}\}", narrative):
@@ -1571,6 +1662,16 @@ def build_report(available_only: bool = False) -> None:
             "сетка и анализ качества данных ещё не завершены, поэтому "
             "рекомендация относится к исследованным вариантам.\n"
         )
+    if profile == "bounded":
+        memo_text = memo_text.replace(
+            "Полная бюджетная сетка и анализ качества данных ещё не "
+            "завершены, поэтому рекомендация относится к исследованным "
+            "вариантам.",
+            "Бюджетная сетка исследована на портфеле сохранённых сетей "
+            "с коротким дополнительным поиском. Две стратегии обработки "
+            "пропусков дали одинаковые входы. Рекомендация ограничена "
+            "исследованными сетями и не означает глобального оптимума.",
+        )
     memo = report.with_name("management_memo.md")
     memo.write_text(memo_text, encoding="utf-8")
     export_pdf(report, ROOT / "output/pdf/report.pdf")
@@ -1586,6 +1687,7 @@ def build_report(available_only: bool = False) -> None:
             "schedule_templates": 24,
             "report_mode": "available_results" if available_only else "full",
             "all_experiments_completed": not available_only,
+            "experiment_profile": profile,
             "bound_search_converged": bool(certificate.get("complete")),
             "source": str((directory / "published").relative_to(ROOT)),
             "deliverables": {

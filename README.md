@@ -17,10 +17,14 @@
 ```powershell
 uv sync --locked
 uv run --locked python scripts/run_project.py check-data
-uv run --locked python scripts/run_project.py all
+uv run --locked python scripts/run_project.py all --profile bounded --max-wall-seconds 1800
 ```
 
-`all` выполняет все расчёты, десять seed для основных конфигураций,
+Рекомендуемый ограниченный профиль использует готовые свидетельства,
+ограничивает новые эксперименты 30 минутами и пересобирает документы.
+Уже завершённые совместимые эксперименты повторно не запускаются.
+
+`all` **без профиля** выполняет все расчёты, десять seed для основных конфигураций,
 адаптивные запуски CBC, эксперименты и формирует отчёт. Это длительный
 расчёт без общего лимита времени. Повторный запуск использует только
 совпадающие входы, версию модели и настройки. Незавершённый SA продолжается
@@ -70,6 +74,28 @@ Markdown: `output/reports/`; PDF: `output/pdf/`; карты и CSV:
 поля и таблицы подставляются из проверенных результатов при сборке.
 
 ## Данные v1: воспроизведение без перезаписи
+
+Ограниченный протокол завершения экспериментов (не более 30 минут новых
+вычислений, без повторного CBC):
+
+```powershell
+uv run --locked python scripts/run_project.py all --profile bounded --max-wall-seconds 1800
+```
+
+Отдельные этапы того же протокола:
+
+```powershell
+uv run --locked python scripts/run_project.py experiments --profile bounded --max-wall-seconds 1800
+uv run --locked python -c "from scripts.bounded import finalize_bounded; finalize_bounded()"
+uv run --locked python scripts/run_project.py report --available-results --profile bounded
+uv run --locked python scripts/run_project.py check-submission --available-results
+```
+
+Результаты записываются отдельно в `experiments_bounded.json` и `bounded/`.
+Повторный запуск завершённого совместимого профиля использует результат.
+Сравнивается сохранённый портфель; короткие поиски не подменяют полные
+серии из десяти seed. Отсутствие решения в срок не означает невозможности
+перевозок. Финальная проверка портфеля включается в общий лимит.
 
 Зафиксированы `data/parameters.json`, `points_main.csv`, `points_small.csv`
 и `demand_main.csv` в `data/processed/`: 75 и 12 пунктов. Их нельзя

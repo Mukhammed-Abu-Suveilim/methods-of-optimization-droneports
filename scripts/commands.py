@@ -215,6 +215,10 @@ def main(arguments: list[str] | None = None) -> None:
     parser.add_argument("--closed-port-id", default="")
     parser.add_argument("--result", type=Path)
     parser.add_argument(
+        "--profile", choices=["full", "bounded"], default="full"
+    )
+    parser.add_argument("--max-wall-seconds", type=float, default=1800)
+    parser.add_argument(
         "--available-results",
         action="store_true",
         help="Собрать документы по завершённым сериям, указав ограничения",
@@ -282,13 +286,37 @@ def main(arguments: list[str] | None = None) -> None:
             OUTPUT,
         )
     elif command == "experiments":
-        run_experiments(resume)
+        if options.profile == "bounded":
+            from scripts.bounded import run_bounded
+
+            if not 120 <= options.max_wall_seconds <= 1800:
+                parser.error("Ограниченный профиль: от 120 до 1800 секунд")
+            run_bounded(options.max_wall_seconds)
+        else:
+            run_experiments(resume)
     elif command == "all":
-        run_all(resume, seeds)
+        if options.profile == "bounded":
+            from scripts.bounded import finalize_bounded, run_bounded
+            from scripts.reporting import build_report
+            from scripts.submission import verify_submission
+
+            if not 120 <= options.max_wall_seconds <= 1800:
+                parser.error("Ограниченный профиль: от 120 до 1800 секунд")
+            run_quality_checks()
+            audit_data(ROOT / "output/repro-check")
+            run_bounded(options.max_wall_seconds)
+            finalize_bounded()
+            build_report(available_only=True, profile="bounded")
+            verification = verify_submission(available_only=True)
+            write_json(OUTPUT / "completion_bounded.json", verification)
+        else:
+            run_all(resume, seeds)
     elif command == "report":
         from scripts.reporting import build_report
 
-        build_report(available_only=options.available_results)
+        build_report(
+            available_only=options.available_results, profile=options.profile
+        )
     elif command == "check-submission":
         from scripts.submission import verify_submission
 

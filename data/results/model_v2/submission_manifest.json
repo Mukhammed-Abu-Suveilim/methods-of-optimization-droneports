@@ -12,6 +12,7 @@
   "schedule_templates": 24,
   "report_mode": "available_results",
   "all_experiments_completed": false,
+  "experiment_profile": "bounded",
   "bound_search_converged": false,
   "source": "data\\results\\model_v2\\configurations\\main_5e219cb479b4a095\\published",
   "deliverables": {

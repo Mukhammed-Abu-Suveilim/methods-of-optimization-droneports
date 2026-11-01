@@ -2,6 +2,8 @@
   "model_version": "2.1",
   "verified": true,
   "report_mode": "available_results",
+  "experiment_profile": "bounded",
+  "revised_protocol_completed": true,
   "all_experiments_completed": false,
   "input_hashes": {
     "data/parameters.json": "a7e4d0674a1c308a562f6e2c9c30641ac96c69fff538fbd0cde4f741f1929859",
@@ -15,10 +17,10 @@
   "small_gap_percent": 10.863245268930816,
   "plan_tables_agree": true,
   "artifact_hashes": {
-    "output\\reports\\report.md": "d5fce3bc7fbd990aae399aee4ef7188022b01a9a0eba990b07db0771f8aff664",
-    "output\\reports\\management_memo.md": "6b376a04901f2397c94cb2e51666516802a7d85648fbd60f4d3ccac751b68591",
-    "output\\pdf\\report.pdf": "b0aa0282c710f08b662047575f62a8e48a8f4f9c25cd3c6c94f0fe53e47c5be1",
-    "output\\pdf\\management_memo.pdf": "46b5e75f0ea7de0d10d7c1a1811e424e8a4fd5e831821ef5ea060df85fca79cb",
+    "output\\reports\\report.md": "cae614e9eded42245710f9e3a8a7f129ad58182851c3d9ade441c0cf89b1b588",
+    "output\\reports\\management_memo.md": "8cad74df9cb2947ba67f8533f532e28ef3d1ee79e3d4bb280a18981fe7a55ac8",
+    "output\\pdf\\report.pdf": "c423c490eac2929976afc1d87f435a3d98dc313a65d3369becef0483d34ae676",
+    "output\\pdf\\management_memo.pdf": "5cc8f219151d530670fa9ba1d66eb1d1d268253c2196ed61d08dc8e00c24eb4a",
     "data\\results\\model_v2\\plan\\budget.csv": "4bfe0ac4e7ae05413a1afa141abc5d15f40fa72eb55936c70fe3eb18665f59fb",
     "data\\results\\model_v2\\plan\\openings.csv": "8d3c0078fd43ed7480eb209d17fdf1beecf3959856b8ddce60272b9809778788",
     "data\\results\\model_v2\\plan\\fleet.csv": "e7f673848b36b0ba9603cdd44ecc161085ae22ee7d3a6448ec523b33fe91cfed",
@@ -31,8 +33,8 @@
     "data\\results\\model_v2\\figures\\map_3.png": "3f8fef738aba6524fe36b76abe3efa5002e36801901824f36a40364faf0f6a86"
   },
   "pdf_pages": {
-    "output\\pdf\\report.pdf": 16,
+    "output\\pdf\\report.pdf": 17,
     "output\\pdf\\management_memo.pdf": 1
   },
-  "visual_review": "passed: all 17 pages; see pdf_visual_review.json"
+  "visual_review": "passed: all 18 final pages"
 }

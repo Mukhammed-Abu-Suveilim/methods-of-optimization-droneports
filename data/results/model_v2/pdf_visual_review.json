@@ -1,7 +1,7 @@
 {
   "reviewed": true,
-  "reviewed_utc": "2026-10-26T07:15:56.210866+00:00",
-  "method": "Poppler PNG rendering; all final pages visually inspected after editorial rewrite",
+  "reviewed_utc": "2026-11-01T20:46:27.622634+00:00",
+  "method": "Poppler rendering; all final pages visually inspected; unchanged pages matched by PNG hashes",
   "checked_pages": {
     "output\\pdf\\report.pdf": [
       1,
@@ -19,15 +19,16 @@
       13,
       14,
       15,
-      16
+      16,
+      17
     ],
     "output\\pdf\\management_memo.pdf": [
       1
     ]
   },
   "artifact_hashes": {
-    "output\\pdf\\report.pdf": "b0aa0282c710f08b662047575f62a8e48a8f4f9c25cd3c6c94f0fe53e47c5be1",
-    "output\\pdf\\management_memo.pdf": "46b5e75f0ea7de0d10d7c1a1811e424e8a4fd5e831821ef5ea060df85fca79cb"
+    "output\\pdf\\report.pdf": "c423c490eac2929976afc1d87f435a3d98dc313a65d3369becef0483d34ae676",
+    "output\\pdf\\management_memo.pdf": "5cc8f219151d530670fa9ba1d66eb1d1d268253c2196ed61d08dc8e00c24eb4a"
   },
   "issues_remaining": []
 }

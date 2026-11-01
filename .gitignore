@@ -28,3 +28,4 @@ PROJECT.md
 /output/analysis/analyze_project.py.txt
 /output/analysis/profile_funding2_plan.json
 /small_bound_*-pulp.*
+*.tmp

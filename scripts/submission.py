@@ -154,6 +154,16 @@ def verify_submission(available_only: bool = False) -> dict[str, object]:
     for row in experiments["funding"]:
         instance = copy.deepcopy(base)
         instance["settings"]["tranche_rub_per_year"] *= row["multiplier"]
+        if experiments.get("profile") == "bounded":
+            result = read_result(
+                Path(row["result"]), instance, base_scenario()
+            )
+            if (
+                result["objective_trips"] != row["trips"]
+                or abs(result["cum_spend_rub"] - row["cost_rub"]) > 0.005
+            ):
+                raise ValueError("Бюджетная точка не совпадает с планом")
+            continue
         if series[configuration_directory(instance).name] != expected:
             raise ValueError("Бюджетный эксперимент требует десять seed")
     funding = {row["multiplier"] for row in experiments["funding"]}
@@ -163,6 +173,41 @@ def verify_submission(available_only: bool = False) -> dict[str, object]:
         raise ValueError("Неполная сетка финансирования или уточнения")
     if not available_only and len(experiments["sensitivity"]) != 16:
         raise ValueError("Неполная чувствительность учебных параметров")
+    if experiments.get("profile") == "bounded":
+        evidence = experiments["bounded_evidence"]
+        if (
+            evidence["wall_s"] > evidence["max_wall_seconds"]
+            or len(evidence["sensitivity"]) != 16
+            or not evidence["data_quality_equivalent"]
+            or not {0.5 + i * 0.25 for i in range(7)} <= funding
+            or len(funding) != 9
+        ):
+            raise ValueError("Не выполнен ограниченный протокол")
+        folder = OUTPUT / "bounded" / evidence["identity"]
+        for label in ("drop_missing", "type_median"):
+            variant = load_instance(
+                label,
+                folder / f"{label}_points.csv",
+                folder / f"{label}_demand.csv",
+            )
+            if variant["points"] != base["points"] or (
+                variant["demand"] != base["demand"]
+            ):
+                raise ValueError("Не подтверждена эквивалентность входов")
+        for index, row in enumerate(evidence["sensitivity"]):
+            if row["result"] is None:
+                if row["status"] != "not_established_within_allowance":
+                    raise ValueError("Неверный статус отсутствия решения")
+                continue
+            variant = read_instance(
+                folder / f"sensitivity_{index}_instance.json"
+            )
+            result = read_result(Path(row["result"]), variant, base_scenario())
+            if (
+                result["objective_trips"] != row["trips"]
+                or abs(result["cum_spend_rub"] - row["cost_rub"]) > 0.005
+            ):
+                raise ValueError("Не совпадает чувствительность")
 
     # 3. Восстановить все сохранённые сценарии и игровые ответы.
     robustness = json.loads((OUTPUT / "robustness.json").read_text("utf-8"))
@@ -193,7 +238,7 @@ def verify_submission(available_only: bool = False) -> dict[str, object]:
     cases = 0
     for path in case_files:
         payload = json.loads(path.read_text("utf-8"))
-        result: OperatingResult = payload["result"]
+        result = payload["result"]
         scenario: Scenario = payload["scenario"]
         instance = load_instance(result["instance"])
         if (
@@ -280,6 +325,12 @@ def verify_submission(available_only: bool = False) -> dict[str, object]:
         "model_version": MODEL_VERSION,
         "verified": True,
         "report_mode": "available_results" if available_only else "full",
+        "experiment_profile": experiments.get("profile", "full"),
+        "revised_protocol_completed": bool(
+            experiments.get("bounded_evidence", {}).get(
+                "revised_protocol_completed", False
+            )
+        ),
         "all_experiments_completed": not available_only,
         "input_hashes": input_hashes(),
         "configurations": configurations,

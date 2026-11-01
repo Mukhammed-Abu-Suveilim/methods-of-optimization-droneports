@@ -1,0 +1,386 @@
+{
+  "model_version": "2.1",
+  "input_hashes": {
+    "data/parameters.json": "a7e4d0674a1c308a562f6e2c9c30641ac96c69fff538fbd0cde4f741f1929859",
+    "data/processed/points_main.csv": "48baf349cee76833d8dae7591a02b3fcc2fa88c2577bce2cb9582ca0c845d126",
+    "data/processed/points_small.csv": "301eb53eccbc438c323ce002159aba701e98c009dd255e19ece56648ba4abbb4",
+    "data/processed/demand_main.csv": "e9812237a8c595dfc3ed9c187acf49a918f576e274a7501c9c7af85e18984b08"
+  },
+  "profile": "bounded",
+  "identity": "bce8f4e16bd53aad",
+  "max_wall_seconds": 1800.0,
+  "data_quality_equivalent": true,
+  "data_quality_source": "data/results/model_v2/configurations/main_5e219cb479b4a095",
+  "funding": [
+    {
+      "multiplier": 0.5,
+      "trips": 124352,
+      "cost_rub": 1487621000.0,
+      "result": "data/results/model_v2/bounded/bce8f4e16bd53aad/funding_0.json"
+    },
+    {
+      "multiplier": 0.75,
+      "trips": 192592,
+      "cost_rub": 2246061750.0,
+      "result": "data/results/model_v2/bounded/bce8f4e16bd53aad/funding_1.json"
+    },
+    {
+      "multiplier": 1.0,
+      "trips": 250647,
+      "cost_rub": 2843711083.333333,
+      "result": "data/results/model_v2/bounded/bce8f4e16bd53aad/funding_2.json"
+    },
+    {
+      "multiplier": 1.25,
+      "trips": 304396,
+      "cost_rub": 3744499666.6666665,
+      "result": "data/results/model_v2/bounded/bce8f4e16bd53aad/funding_3.json"
+    },
+    {
+      "multiplier": 1.5,
+      "trips": 333571,
+      "cost_rub": 4481488416.666667,
+      "result": "data/results/model_v2/bounded/bce8f4e16bd53aad/funding_4.json"
+    },
+    {
+      "multiplier": 1.75,
+      "trips": 334275,
+      "cost_rub": 5116010083.333333,
+      "result": "data/results/model_v2/bounded/bce8f4e16bd53aad/funding_5.json"
+    },
+    {
+      "multiplier": 2.0,
+      "trips": 431915,
+      "cost_rub": 5983247250.0,
+      "result": "data/results/model_v2/bounded/bce8f4e16bd53aad/funding_6.json"
+    },
+    {
+      "multiplier": 1.875,
+      "trips": 343505,
+      "cost_rub": 5559626916.666666,
+      "result": "data/results/model_v2/bounded/bce8f4e16bd53aad/funding_7.json"
+    },
+    {
+      "multiplier": 1.9375,
+      "trips": 354881,
+      "cost_rub": 5803122500.0,
+      "result": "data/results/model_v2/bounded/bce8f4e16bd53aad/funding_8.json"
+    }
+  ],
+  "runs": [
+    {
+      "case": 1.25,
+      "seed": 0,
+      "status": "time_limit"
+    },
+    {
+      "case": 1.25,
+      "seed": 1,
+      "status": "time_limit"
+    },
+    {
+      "case": 1.25,
+      "seed": 2,
+      "status": "time_limit"
+    },
+    {
+      "case": 1.5,
+      "seed": 0,
+      "status": "time_limit"
+    },
+    {
+      "case": 1.5,
+      "seed": 1,
+      "status": "time_limit"
+    },
+    {
+      "case": 1.5,
+      "seed": 2,
+      "status": "time_limit"
+    },
+    {
+      "case": 1.75,
+      "seed": 0,
+      "status": "time_limit"
+    },
+    {
+      "case": 1.75,
+      "seed": 1,
+      "status": "time_limit"
+    },
+    {
+      "case": 1.75,
+      "seed": 2,
+      "status": "time_limit"
+    },
+    {
+      "case": 2.0,
+      "seed": 0,
+      "status": "time_limit"
+    },
+    {
+      "case": 2.0,
+      "seed": 1,
+      "status": "time_limit"
+    },
+    {
+      "case": 2.0,
+      "seed": 2,
+      "status": "time_limit"
+    },
+    {
+      "case": 1.875,
+      "seed": 0,
+      "status": "time_limit"
+    },
+    {
+      "case": 1.875,
+      "seed": 1,
+      "status": "time_limit"
+    },
+    {
+      "case": 1.875,
+      "seed": 2,
+      "status": "time_limit"
+    },
+    {
+      "case": 1.9375,
+      "seed": 0,
+      "status": "time_limit"
+    },
+    {
+      "case": 1.9375,
+      "seed": 1,
+      "status": "time_limit"
+    },
+    {
+      "case": 1.9375,
+      "seed": 2,
+      "status": "time_limit"
+    }
+  ],
+  "sensitivity": [
+    {
+      "case": "price_rub_0.8",
+      "status": "saved_result",
+      "trips": 255857,
+      "cost_rub": 2988897250.0000005,
+      "result": "data/results/model_v2/bounded/bce8f4e16bd53aad/sensitivity_0.json"
+    },
+    {
+      "case": "price_rub_1.2",
+      "status": "saved_result",
+      "trips": 245613,
+      "cost_rub": 2906740000.0,
+      "result": "data/results/model_v2/bounded/bce8f4e16bd53aad/sensitivity_1.json"
+    },
+    {
+      "case": "opex_per_year_rub_0.8",
+      "status": "saved_result",
+      "trips": 250873,
+      "cost_rub": 2930856083.333333,
+      "result": "data/results/model_v2/bounded/bce8f4e16bd53aad/sensitivity_2.json"
+    },
+    {
+      "case": "opex_per_year_rub_1.2",
+      "status": "saved_result",
+      "trips": 248122,
+      "cost_rub": 2995116250.0,
+      "result": "data/results/model_v2/bounded/bce8f4e16bd53aad/sensitivity_3.json"
+    },
+    {
+      "case": "cost_per_flight_hour_rub_0.8",
+      "status": "saved_result",
+      "trips": 261824,
+      "cost_rub": 2983104599.9999995,
+      "result": "data/results/model_v2/bounded/bce8f4e16bd53aad/sensitivity_4.json"
+    },
+    {
+      "case": "cost_per_flight_hour_rub_1.2",
+      "status": "saved_result",
+      "trips": 241461,
+      "cost_rub": 2940504800.0,
+      "result": "data/results/model_v2/bounded/bce8f4e16bd53aad/sensitivity_5.json"
+    },
+    {
+      "case": "cruise_speed_kmh_0.8",
+      "status": "saved_result",
+      "trips": 224967,
+      "cost_rub": 2945335000.0,
+      "result": "data/results/model_v2/bounded/bce8f4e16bd53aad/sensitivity_6.json"
+    },
+    {
+      "case": "cruise_speed_kmh_1.2",
+      "status": "saved_result",
+      "trips": 270484,
+      "cost_rub": 2943077361.1111116,
+      "result": "data/results/model_v2/bounded/bce8f4e16bd53aad/sensitivity_7.json"
+    },
+    {
+      "case": "recharge_min_0.8",
+      "status": "saved_result",
+      "trips": 247167,
+      "cost_rub": 2987133750.0,
+      "result": "data/results/model_v2/bounded/bce8f4e16bd53aad/sensitivity_8.json"
+    },
+    {
+      "case": "recharge_min_1.2",
+      "status": "time_limit",
+      "trips": 178920,
+      "cost_rub": 2898253333.333333,
+      "result": "data/results/model_v2/bounded/bce8f4e16bd53aad/sensitivity_9.json"
+    },
+    {
+      "case": "port_capex_0.8",
+      "status": "time_limit",
+      "trips": 250755,
+      "cost_rub": 2861096416.6666665,
+      "result": "data/results/model_v2/bounded/bce8f4e16bd53aad/sensitivity_10.json"
+    },
+    {
+      "case": "port_capex_1.2",
+      "status": "time_limit",
+      "trips": 216468,
+      "cost_rub": 2849305166.6666665,
+      "result": "data/results/model_v2/bounded/bce8f4e16bd53aad/sensitivity_11.json"
+    },
+    {
+      "case": "takeoffs_per_hour_4",
+      "status": "time_limit",
+      "trips": 200041,
+      "cost_rub": 2998659416.6666665,
+      "result": "data/results/model_v2/bounded/bce8f4e16bd53aad/sensitivity_12.json"
+    },
+    {
+      "case": "takeoffs_per_hour_8",
+      "status": "time_limit",
+      "trips": 250647,
+      "cost_rub": 2983711083.333333,
+      "result": "data/results/model_v2/bounded/bce8f4e16bd53aad/sensitivity_13.json"
+    },
+    {
+      "case": "chargers_-1",
+      "status": "time_limit",
+      "trips": 250587,
+      "cost_rub": 2997445750.0,
+      "result": "data/results/model_v2/bounded/bce8f4e16bd53aad/sensitivity_14.json"
+    },
+    {
+      "case": "chargers_1",
+      "status": "time_limit",
+      "trips": 250647,
+      "cost_rub": 2983711083.333333,
+      "result": "data/results/model_v2/bounded/bce8f4e16bd53aad/sensitivity_15.json"
+    }
+  ],
+  "wall_s": 1420.8590000000113,
+  "revised_protocol_completed": true,
+  "original_unrestricted_completed": false,
+  "portfolio_hashes": [
+    "652dbce08c78bfe3e0c02046980f132025b0a26b8a02f9f3e324a46b6475cac9",
+    "a3d8c1e345f27169405b25f021f65bde89238b09eb334add4793b7163edb4c9f",
+    "21b47dd7dd700c5bd52aa55dc127a5f61ae769a56956b0fa3cc7c63b1fdffbfd",
+    "3c4e9f94a9cb3ec07a6571b9e6eb0d31007d3f4f5c6db9b7a0dc9f1bd493eb4b",
+    "c146e1620bf38ca35e119e29a329b13bcd28c00adeb655c866767b3e5beb2fe7",
+    "c394cc5f82315ad39029272734904e74406e0a7d7446ffd3f5222104236fecec",
+    "5b25bfd695db2f963174ad04c2b084ea0a242c3fa0ee8e5b233da21a15f62053",
+    "297f2bd85f20a9ede0b715e7b437cd2ef9cb38e1b2605493555c018d6e325caa",
+    "70b12b1d20da2964563f4402a608d28e1224ae4dbf48c94bb76823a0ac677a41",
+    "12afa4c5cd40ef6cb888a2ec91fa1fc3eb4485d640ce15d02269a5e0733bdbff",
+    "c089ee8e4b87b8cb84ca3c3ee92c7ef510ae2dfb014ff3847223cba7e4073e7c",
+    "44540b065daa83ab442dd8285dc5aaea3cdd6b93040e946445fa283ff47c3a37",
+    "aa1ee01fa56e3558cefece8864136dbeb488a743cc6c323aba0f9d041fda758b",
+    "878430df67c19ff71b38dae49bb78e031ad411603dcb94a6c8f83b4d9c414e55",
+    "84e9be715c5ab5040edddf8a66e050f1e5caf17a757875ce87f046ea34a57fb2",
+    "5394a89232aed72b7a313cf33cf9c00bcab1ee866bac98a7eddaf84ed658bff8",
+    "56710c30be09e540de66e55f9e00a42c4b3a72be040318b5f43da64605ea6321",
+    "484ed31d512a67c0362e0f275f31547e5e227709e6f355cbd351c6bcbb4e6d0e",
+    "71aa03942466df292689462f3f998e6196a68e4cec492a7a4a45e1336fcd5c01",
+    "ccff84165b379a4780057c6774765b045ee8b1804a117ef3933f60b190938797",
+    "d5b02691ebdc2c8eb6eb6cca83fceca0a2246242c25444b73c2e688ce2c0b07f",
+    "c4f0d3b05202f61e22033f3de3f2c4e16c482dec0ff6fa7d9ded608b770c0ffd",
+    "25209624c83ed4d01b063ce00b17f761278f40f0ceea76e912fee882d7b59f60",
+    "031bb7a4c526669b2438477518dc9fb1438efd95c47d204673bd384df7b11b1b",
+    "7166cba6418294cb0eea0a08480f0802ddcf2d0eee61b2dff624d7084df1a8c1",
+    "969d56b7b67718173d03d21806197394e7fdb7e1c2a0c609caf91537fbdf44be",
+    "f3c7941d2a74add6fbd95b88bedc8f78d899218b65a9c6543e3facbd88ab22f6",
+    "5ae4012804d2bac0a238581c0850eb94323a35c955206f7d89576fe05fdd6b18",
+    "2ceef7136a62913e22b942bf6bacd5e0e874bca550e6b990be3f4bb91e93102e",
+    "df3e2df997b60054996e84c033b33b8d8bb72b76bb92870b92c2f57907e4bfba",
+    "ffb2a779f1ab3f8d257d3b47f475e66064d4e5efddd34322b1f339ff12807aaf",
+    "8d21d9d36838a233a5fe71dd058037ec7c8dd8a41132ed8d56bca9d64152ffc2",
+    "51f6e5235fa0693c503c383c2e9214148837ebc6dcc7770ca32343cca06a30f4",
+    "a86a5046dcb7165c2a8e6c3d2f7ec9753eeffa506ecc40c3be566c0724645c03",
+    "dae867925828320c6d31c953389b29135817ab9775ed71304afe94b196742593",
+    "8d459f9860a3221fbe6d9458cc6dc93e1fe6470ab9ebecfbe20a34e87bcf63e5",
+    "6871c653ef04932046c07dda6d982945375390630c42f642d2f2bf861871f8c2",
+    "cfcdbfa1f2767e230844ef5396ebdd8de54751aadba57b751f2a23e5817fa102",
+    "f92b1d0612d392fa6e9f19b6728d009fd7d830356279a35d04257af8846ec8ce",
+    "518f26adf8d4ac96fdfb519c6060b3b3a4564c5afc512077c6abc9cf9df41d96",
+    "3d14922daf20a67b9c2e917ade1b74c272613e70cafa774a5bfbc690a8343cfc",
+    "378531c3332a4d9b748a62cfa281bdc54270950caeca867777ec0a9d1845fc63",
+    "a86a5046dcb7165c2a8e6c3d2f7ec9753eeffa506ecc40c3be566c0724645c03",
+    "2ceef7136a62913e22b942bf6bacd5e0e874bca550e6b990be3f4bb91e93102e",
+    "71aa03942466df292689462f3f998e6196a68e4cec492a7a4a45e1336fcd5c01",
+    "c394cc5f82315ad39029272734904e74406e0a7d7446ffd3f5222104236fecec",
+    "1bf17b9f31fd08759b7f9c62c855a010ecb7cf266d228c4cfc9396405a21cf65",
+    "806be59cf4a6c87a575be4be874c371af4eed36b98438163dddf450c581d0587",
+    "652dbce08c78bfe3e0c02046980f132025b0a26b8a02f9f3e324a46b6475cac9",
+    "552903c202637f71b05c66962618f31aa748890b54258cfcac5dd8e235687cc9",
+    "c381762dff7ff30b79f2e205870be600778823e124782c85a85c2a8517ff258f"
+  ],
+  "search_settings": {
+    "funding_seeds": [
+      0,
+      1,
+      2
+    ],
+    "funding_seed_seconds": 60,
+    "sensitivity_seed": 0,
+    "sensitivity_seconds": 45,
+    "max_concurrent_workers": 1,
+    "refinement_rule": "largest observed marginal gain at selection time"
+  },
+  "marginal_gains": [
+    {
+      "left": 0.5,
+      "right": 0.75,
+      "trips_per_million_rub": 90.98666666666666
+    },
+    {
+      "left": 0.75,
+      "right": 1.0,
+      "trips_per_million_rub": 77.40666666666667
+    },
+    {
+      "left": 1.0,
+      "right": 1.25,
+      "trips_per_million_rub": 71.66533333333334
+    },
+    {
+      "left": 1.25,
+      "right": 1.5,
+      "trips_per_million_rub": 38.9
+    },
+    {
+      "left": 1.5,
+      "right": 1.75,
+      "trips_per_million_rub": 0.9386666666666666
+    },
+    {
+      "left": 1.75,
+      "right": 1.875,
+      "trips_per_million_rub": 24.613333333333333
+    },
+    {
+      "left": 1.875,
+      "right": 1.9375,
+      "trips_per_million_rub": 60.672
+    },
+    {
+      "left": 1.9375,
+      "right": 2.0,
+      "trips_per_million_rub": 410.848
+    }
+  ]
+}

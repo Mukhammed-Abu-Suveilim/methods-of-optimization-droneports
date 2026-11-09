@@ -1,0 +1,29 @@
+{
+  "main_slides": 20,
+  "backup_slides": 10,
+  "planned_minutes": 18.75,
+  "speech_words_main": 1564,
+  "speech_sentences_at_most_20_words_fraction": 1.0,
+  "language_note": "Sentence length is one UTR property. No formal percentage compliance is claimed.",
+  "pptx_pdf_pages": 30,
+  "speech_pdf_pages": 8,
+  "matched_slide_speeches": 30,
+  "native_charts": 5,
+  "native_tables": 10,
+  "gif_frames": 150,
+  "cover_fields_verified": true,
+  "input_hashes_unchanged": true,
+  "quality_exit_codes": {
+    "ruff": 0,
+    "format": 0,
+    "mypy": 0,
+    "tests": 0
+  },
+  "visual_review": "All 30 slides reviewed. Final changes compared and inspected. All 8 speech pages reviewed. PowerPoint playback was not tested.",
+  "sha256": {
+    "droneports_academic_final.pptx": "6c6451575269ccc3397b6e9e6e9f90a4a431adbf2571d21545bc20f814747859",
+    "droneports_academic_final.pdf": "dcec6a444281ce3b75e3667ca2a15dc5f9419e7f0759f3cb912afc3be1298859",
+    "speaker_notes_academic.docx": "f94d4202cec619259e6f4653db1ab7a0509cc06d08a901d683a36072a449c77e",
+    "speaker_notes_academic.pdf": "4fac65f8af8af43da2b95bc1058239d6296cca8438b468c86372404d50ac4d53"
+  }
+}

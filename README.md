@@ -223,3 +223,16 @@ Ruff/mypy и stubs для проверок, ReportLab/pypdf для PDF; мате
 стек сохранён. Импорт модулей не запускает расчёты и не записывает файлы.
 Новые расчёты не требуют сети: запросы нужны только для первичной загрузки
 и отдельного восстановления метаданных населения.
+
+## Презентация защиты
+
+[PowerPoint](output/presentation/final20/droneports_academic_20slides_clean.pptx) и
+[PDF](output/presentation/final20/droneports_academic_20slides_clean.pdf) рассчитаны
+примерно на 10 минут: 13 основных слайдов. Слайды 14–20 оставлены
+для ответов на вопросы. Речь находится
+в заметках PowerPoint и в
+[отдельном файле](output/presentation/final20/speaker_notes.md),
+а также в DOCX и PDF в том же каталоге.
+На слайде 8 показана анимация расчётного дневного расписания;
+в PDF она представлена статическим кадром.
+[Состав презентации](output/presentation/final20/README.md).

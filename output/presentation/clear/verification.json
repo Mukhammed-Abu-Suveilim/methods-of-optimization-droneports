@@ -1,0 +1,28 @@
+{
+  "main_slides": 13,
+  "reserve_slides": 17,
+  "planned_minutes": 10,
+  "main_speech_words": 826,
+  "speech_pages": 8,
+  "all_30_speeches_match_pptx_docx_pdf": true,
+  "teacher_attribution": "Усачёв Александр Владимирович, к.т.н.",
+  "removed_old_reproduction_slide": true,
+  "unexplained_abbreviations_check": "No seed, SD, incumbent, bootstrap, leaves, game-value shorthand or template wording in slides/speech.",
+  "native_charts": 5,
+  "native_tables": 12,
+  "gif_frames": 150,
+  "input_hashes_unchanged": true,
+  "quality_exit_codes": {
+    "ruff": 0,
+    "format": 0,
+    "mypy": 0,
+    "tests": 0
+  },
+  "visual_review": "All 30 slides and all 8 speech pages inspected; final unchanged slides compared by rendered images. PowerPoint playback not tested.",
+  "sha256": {
+    "droneports_academic_10min.pptx": "a01031585cb5235b6f882937e90d706da9934ab1531b247bb2e6a54d47c06ae1",
+    "droneports_academic_10min.pdf": "575800601d391dd40d30d1d4afdfece1906b5702261af10ab89368ebfd3e4feb",
+    "speaker_notes_clear.docx": "2bf8865ff42386d5e43e6bf21867ca092c6d9bbd9ca4a6fbff15db282ffacd07",
+    "speaker_notes_clear.pdf": "8ca2efa8dba59466810489fb009ffb42fe83ae9ac22c3bc18e02005169b4cbce"
+  }
+}

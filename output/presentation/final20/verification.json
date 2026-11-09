@@ -1,0 +1,57 @@
+{
+  "total_slides": 20,
+  "main_slides": 13,
+  "question_slides": 7,
+  "planned_minutes": 10,
+  "annual_maps": {
+    "year_1": 14,
+    "year_2": 15,
+    "year_3": 16
+  },
+  "source_list_slide_removed": true,
+  "presentation_and_speech_content_scan": "No tool disclosure or internal project paths found, including XML metadata.",
+  "native_charts": 4,
+  "native_tables": 5,
+  "gif_frames": 150,
+  "speech_pages": 6,
+  "all_20_speeches_match": true,
+  "all_input_hashes_unchanged": true,
+  "quality_exit_codes": {
+    "ruff": 0,
+    "format": 0,
+    "mypy": 0,
+    "tests": 0
+  },
+  "tests_passed": 30,
+  "visual_review": "All 20 slides compared against the reviewed previous export. Only source-caption areas changed; contact sheet scanned.",
+  "sha256": {
+    "droneports_academic_20slides_clean.pptx": "8b5ecdb682e48ef70d96c4fb6d387ca63fcc1f8ebfb1f3ec6f526638925f945e",
+    "droneports_academic_20slides_clean.pdf": "c501ee233053ca4d9df728970ef5ed0ce28cf7ab7a51af255c655fabd0c1e761",
+    "speaker_notes_20slides.docx": "c6ee3b30a41fc211e2f22dc05a02a46946a58353703694db5ceef45b4add36a3",
+    "speaker_notes_20slides.pdf": "e33e3f267cb7d0236c7d6469ac840281abd224229dc2b470f8f6cabfd7699739"
+  },
+  "on_slide_source_captions_removed": true,
+  "all_other_slide_text_identical": true,
+  "unchanged_upper_image_regions": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15,
+    16,
+    17,
+    18,
+    19,
+    20
+  ]
+}

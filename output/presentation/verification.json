@@ -1,0 +1,29 @@
+{
+  "slides": 28,
+  "main_slides": 23,
+  "backup_slides": 5,
+  "planned_minutes": 18.166666666666668,
+  "pdf_pages": 28,
+  "speaker_notes": 28,
+  "native_charts": 5,
+  "native_tables": 9,
+  "embedded_images": 5,
+  "gif_frames": 150,
+  "main_speech_words": 1636,
+  "sentences_at_most_20_words_fraction": 1.0,
+  "language_note": "Sentence length is only one UTR property; no formal compliance score is claimed.",
+  "changed_pages_since_previous_render": [
+    28
+  ],
+  "quality_exit_codes": {
+    "ruff": 0,
+    "format": 0,
+    "mypy": 0,
+    "tests": 0
+  },
+  "sha256": {
+    "droneports_presentation_ru.pptx": "c9a9096be54d11087f3b869e52357118df96de1d4a73981a28049cc5a45ade54",
+    "droneports_presentation_ru.pdf": "4bdae846910e718d779d5006e64aac4a020796769cd7e3caf1b81a54490855e3"
+  },
+  "visual_review": "All slides inspected individually; final pages compared with previous reviewed export. No PowerPoint application playback test was performed."
+}
